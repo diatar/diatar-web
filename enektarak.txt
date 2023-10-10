@@ -1,0 +1,442 @@
+; ez a fajl tartalmazza a diatarak listajat
+; a feldolgozasat a letoltesek.php vegzi
+; a sorok elso karaktere vezerel:
+;  ; (pontosvesszo) megjegyzessor
+;  (ures sor) megjegyzessor
+;  - (kotojel) uj csoport kezdete, a sor tovabbi resze kozepre irodik cimnek
+;  # (szamjel) uj RIGHT TABLE sor kezdete, a sor tovabbi resze nem erdekes
+;  ! (felkialtojel) mint a #, de kiemelt tetel (TABLE_ENTRY_HIGHLIGHT)
+;  > (kacsacsor) a tabla bal oldala (letoltendo fajl) HTML hivatkozaskent
+;    (szokoz) a tabla jobb oldala (a fajl magyarazata) HTML hivatkozaskent
+
+
+- Népénekes könyvek
+
+# SzVU
+><a href="letoltes.php?letoltes=./downloads/enektarak/szvu.dtx">Szent Vagy, Uram! (SzVU)</a>
+ A SzVU orgonakötete, kiegészítve a Hozsanna néhány énekével. 
+ Hoze jóvoltából most már a végleges, lektorált, újratördelt változat. Tartalmazza a legújabb, Sajó József által elvégzett javításokat is.
+ A sortörési javaslatokkal kiegészítve szebb tördeléssel.
+ Ipacs Bence atya kiegészítette a Hozsanna 310-452 énekekkel, és néhány ének eredeti szövegét is beírta, köszönjük!
+
+# SzVU-elválasztásos
+><a href="letoltes.php?letoltes=./downloads/enektarak/szvu_elv.dtx">SzVU! elválasztásos (SzVU)</a>
+ Az SzVU alternatívája! A lehető legjobb helykihasználás érdekében Nagy Péter (Szeged)
+ feltételes elválasztókkal teletűzdelte, és a sorokra tördelést kivette.
+ Így a diák olyanok lettek, mint nagyon sok régi diavetítéses megoldásnál.
+ Aki ezt szeretné használni, az eredeti szvu.dtx-et feltehetőleg törölheti.
+ Legjobban akkor mutat, ha a beállításokban középre illesztjük a szöveget.
+
+# Éneklő egyház
+><a href="letoltes.php?letoltes=./downloads/enektarak/eneklo_egyhaz.dtx">Éneklő Egyház (ÉE)</a>
+ Az új népénektár, az Éneklő Egyház összes éneke. 
+ Esetleges gépelési hibáktól eltekintve teljes. Tartalmazza a legújabb, Sajó József által elvégzett javításokat is.
+ A korábbi "Introitusok kottával" kötet kottáit is átemelte ide.
+ 2020-ban további sok-sok éneket kottával láttunk el (a népénekeken kívül szinte mindent);
+ de Sajó József 2021-ben is folytatta a kottázást és kiegészítést. A hiányzó 67-es ének is bekerült.
+
+# Lelki gyöngyök
+><a href="letoltes.php?letoltes=./downloads/enektarak/gyongyok.dtx">Lelki gyöngyök (Gyöngyök)</a>
+ Lelki Gyöngyök – Ima- és énekeskönyv (Jósvay Gábor, 1929. Budapest, Szt.István társulat)<br/>
+ Internetes forrás címe:
+ <a href="https://library.hungaricana.hu/hu/view/ZTI_EnekesImadsagosKonyvek_096/?pg=1"
+   target="_blank">https://library.hungaricana.hu/hu/view/ZTI_EnekesImadsagosKonyvek_096/?pg=1</a>
+ <br/>Rieth Kati begépelése.
+ Busnyák Erik (Juhász László segítségével) átnézte, javította és kiegészítette
+ az 1937-es 10. kiadás alapján - nagyon köszönjük!
+
+# Szent László énekek
+><a href="letoltes.php?letoltes=./downloads/enektarak/sztlaszlo.dtx">Szent László énekek (SztLászló)</a>
+ "Himnikus és életrajzi költemények és könyörgő népénekek Szent László király tiszteletére"
+ <a href="http://www.ujvarosiportal.hu/uploads/cdocs/1508916282szent_laszlo_enekek.pdf"
+   target="_blank">http://www.ujvarosiportal.hu/uploads/cdocs/1508916282szent_laszlo_enekek.pdf</a>
+ (A forrást nem sikerült beazonosítani, valószínűleg a katped.hu segédanyaga)
+ Rieth Kati bemásolása.
+
+# Szent Márton tisztelete szülőföldje hangján
+><a href="letoltes.php?letoltes=./downloads/enektarak/sztmarton.dtx">Szent Márton tisztelete (SztMárton)</a>
+ Szent Márton tisztelete szülőföldje hangján.
+ Népénekek (gyakorlati kiadás) Szombathely, 2016.
+ Forrás: <a href="http://konyvtar.vaciegyhazmegye.hu/feltoltkepek/SZENT_MARTON-ENEKFUZET.pdf"
+   target="_blank">konyvtar.vaciegyhazmegye.hu/feltoltkepek/SZENT_MARTON-ENEKFUZET.pdf</a>
+ Bemásolta Rieth Kati
+
+# Zarándokének
+><a href="letoltes.php?letoltes=./downloads/enektarak/zarandok.dtx">Zarándokének (Zarándok)</a>
+ Gordos Dénes magánkiadásában (ISBN 978-615-00-4428-6) megjelent énekeskönyv a Mária-kegyhelyek
+ (elsősorban is a máriaremetei zarándokhely) és a különböző zarándoklatok kedvelt énekeiből
+ állít össze gyűjteményt.
+ A szerző engedélyével (kifejezett kérésére) begépelve és lektorálva.
+
+# Kottás Harangszó
+><a href="letoltes.php?letoltes=./downloads/enektarak/harangszo.dtx">Kottás harangszó (Harang)</a>
+ A Kassán kiadott szlovákiai magyar kötet szövegei, az 1. kiadás (2007) begépelve könyvből.
+ Busnyák Erik jócskán kiegészítette a "Harangszó" imakönyv 5. kiadás alapján - köszönet érte!
+
+# Szentkúti énekek (Szentkút)
+><a href="letoltes.php?letoltes=./downloads/enektarak/szentkut.dtx">Szentkúti énekek (Szentkút) </a>
+ Dr. Vonsik Imre: Köszöntünk Szentkút Csillaga (Novoprint, 2005) könyv énekei
+
+# Dicsérjétek az Urat! (DU)
+><a href="letoltes.php?letoltes=./downloads/enektarak/dicserjetek.dtx">Dicsérjétek az Urat! (DU)</a>
+ Az Erdélyben elterjedt énekeskönyv PPT formáját Sebestyén Antaltól kaptuk meg Gyimesfelsőlokról.
+ A lektorálás elkészült, a könyv teljes és hibái végig javítva.
+
+# Harmatozzatok, egek!
+><a href="letoltes.php?letoltes=./downloads/enektarak/harmatozzatok.dtx">Harmatozzatok, egek!</a>
+ Kónya Sándor könyve "Népünk vallásos énekei Észak-Bánságban" alcímmel jelent meg (Zenta, 2004),
+ elérhető PDF formában a <a href="http://mek.oszk.hu/01800/01855/">Magyar Elektronikus Könyvtárban</a>.
+ Hozé jóvoltából immáron teljes.
+ 
+ 
+- Mise és liturgia
+
+! Imák, válaszok
+><a href="letoltes.php?letoltes=./downloads/enektarak/ima.dtx">Imák, válaszok magyarul</a>
+><a href="letoltes.php?letoltes=./downloads/enektarak/latin.dtx">Imák, válaszok latinul</a>
+ Különböző imák, a szentmise és egyéb szertartások (litániák, rózsafűzérek stb.) válaszai magyar,
+ illetve latin nyelven; Sajó József tovább bővíti.
+ A latin mise kiegészült a papi szövegekkel.
+ A magyar változat módosítva az új Misekönyv alapján.
+ Veni Creator Spiritus 1.vsz. kottával is,
+ Tristis est anima mea - új szövegfordítás,
+ Rózsafűzér titkok,
+ Litániák utáni verzikulusok és könyörgések
+
+! Zsoltár: páros hétköznap (Zsoltár)
+><a href="letoltes.php?letoltes=./downloads/enektarak/zsoltar_paros.dtx">Zsoltár: páros hétköznap (Zsoltár)</a>
+ Az év összes hetének hétköznapi zsoltárválaszai, a páros évekre.<br/>
+ Ipacs Bence atya kiegészítette, illetve javította az Olvasmányos könyvből.
+
+! Zsoltár: páratlan hétköznap (Zsoltár)
+><a href="letoltes.php?letoltes=./downloads/enektarak/zsoltar_paratlan.dtx">Zsoltár: páratlan hétköznap (Zsoltár)</a>
+ Az év összes hetének hétköznapi zsoltárválaszai, a páratlan évekre.<br/>
+ Ipacs Bence atya kiegészítette, illetve javította az Olvasmányos könyvből.
+
+# Zsoltár: votív (Zsoltár)
+><a href="letoltes.php?letoltes=./downloads/enektarak/votiv.dtx">Zsoltár: votív (Zsoltár)</a>
+ ÚJDONSÁG! Votív misék zsoltárválaszai. Forrás: A szentmise olvasmányai a különféle szükségletekben és votív misékben (SzIT, 2004.)<br/>
+ Köszönjük Soós Jánosnak, aki adaptálta számunkra, kottákkal is ellátta!
+
+# Zsoltár: gyászmisék (Zsoltár)
+><a href="letoltes.php?letoltes=./downloads/enektarak/zsoltar_gyasz.dtx">Zsoltár: gyászmisék (Zsoltár)</a>
+ ÚJDONSÁG! A gyászmisék zsoltárválaszai Ipacs Bence atya munkája. Forrás: A szentmise olvasmányai gyászmisékhez (SzIT, 2008.)<br/>
+ Máris újabb fejlesztés hozzá: Soós János kottákkal is kiegészítette a kötetet. Hálásan köszönjük mindkettejük munkáját!
+
+# Alleluja
+><a href="letoltes.php?letoltes=./downloads/enektarak/alleluja.dtx">Alleluják</a>
+ A vasárnapi alleluja dallamok kottái, Sajó Józseftől.
+ 
+# Ordinarium
+><a href="letoltes.php?letoltes=./downloads/enektarak/ordinarium.dtx">Ordinárium (Ord)</a>
+ A szentmise állandó részei, kiegészítve a főbb imákkal és válaszokkal. 
+ <i>Pl.: Uram, irgalmazz; Isten Báránya; Miatyánk; Hitvallás; Bűnbánat; 
+ Evangélium előtti vers (Nagyböjtben Alleluja helyett)</i>
+ A sortörési javaslatokkal kiegészítve szebb tördeléssel.<br/>
+ Ipacs Bence atya jócskán bővítette a mise rendszeres imaválaszaival, mindhárom bűnbánati formulával,
+ evangélium előtti versekkel, a Szigeti Kilián: Missa Hungarica beosztása szerinti Hitvallás diákkal,
+ gyászmise Isten Báránya, lucernárium szövegekkel stb.
+ A szöveg módosítva az új Misekönyv alapján.
+
+# Zsoltár: vasárnapok (Zsoltár)
+><a href="letoltes.php?letoltes=./downloads/enektarak/zsoltar.dtx">Zsoltár: vasárnapok (Zsoltár)</a>
+ A zsoltárválaszok mennyiségi okokból négy énektárba vannak szétszedve. Az eredetileg különböző
+ forrásokból összeszedett diák az 1991-es kiadású hivatalos olvasmányoskönyv alapján teljes
+ egészében javítva, kiegészítve, hajlítási jelekkel ellátva.
+ Ez az összes (nem ünnepi) vasárnap: Ádvent, Évközi vasárnapok sorozata, Karácsony 2. vasárnapja,
+ Nagyböjt és Húsvét vasárnapjai.<br/>
+ ÚJDONSÁG! A vasárnapi zsoltárok kottaképpel is ki vannak egészítve, javítva és ellenőrizve.
+
+# Zsoltár: ünnepek (Zsoltár)
+><a href="letoltes.php?letoltes=./downloads/enektarak/zsoltar_unnepek.dtx">Zsoltár: ünnepek (Zsoltár)</a>
+ Az ünnepek zsoltárválaszai, pl.: Karácsony, Szentcsalád, Hamvazószerda, Nagyhét napjai, stb. 
+ valamint a kötött dátumokhoz kapcsolódó ünnepek (pl. 09.08 Kisboldogasszony) 
+ s a szentek emléknapjai.<br/>
+ ÚJDONSÁG! A zsoltárok kottaképpel is ki vannak egészítve.
+
+# Zsolozsma
+><a href="letoltes.php?letoltes=./downloads/enektarak/zsolozsma.dtx">Zsolozsma</a>
+ A zsolozsmák szövege a Kis zsolozsmáskönyv (III.kiadás, Szt.István Társulat 2014) alapján teljes,
+ az egész év összeállítható belőle, és énekrendekbe tehető.
+ Azóta a "nagy" Zsolozsmáskönyv segítségével lassan bővül minden napra a megfelelő imákkal, válaszokkal.
+
+# Graduale
+><a href="letoltes.php?letoltes=./downloads/enektarak/graduale.dtx">Graduale (GRAD)</a>
+ Sajó Józsefnek köszönhető a Graduale Hungaricum (2007 OPrem, Gödöllő)
+ anyaga, kottaképekkel és az Éneklő Egyház énekszámozásával egyeztetve
+ Folyamatosan bővül.
+
+# Nagyheti szertartás!
+><a href="letoltes.php?letoltes=./downloads/enektarak/nagyhet.ZIP">Nagyheti szertartás!</a>
+><a href="letoltes.php?letoltes=./downloads/enektarak/Nagycsutortok.dia">Nagycsütörtök</a>
+><a href="letoltes.php?letoltes=./downloads/enektarak/Nagypentek.dia">Nagypéntek</a>
+><a href="letoltes.php?letoltes=./downloads/enektarak/Nagyszombat.dia">Nagyszombat</a>
+  Sajó József küldött a nagyheti szertartásokra egy-egy vázlatot.
+	Innen letölthető a ZIP csomag (tartalmazza mindhárom diát) de akár a "dia"-k egyesével is.
+  Az így kapott vázlatokat bárki tetszése szerint bővítheti, átalakíthatja.
+
+# Szentségimádás
+><a href="letoltes.php?letoltes=./downloads/enektarak/szentsegimadas.dtx">Szentségimádás</a>
+ A Bánk József váci érsek-püspök által összeállított katolikus imakönyv 
+ (Ecclesia, 1999, XII. kiadás) válaszai. Sok különféle szentségimádásnak a hívek által mondandó 
+ feleleteit tartalmazza. Barabás Ferenc székesfehérvári kántor készítette el számunkra 
+ (hibákat <a href="mailto:fecokam7@gmail.com">neki is lehet jelezni</a> de ha kell, természetesen közvetítünk).
+
+# Karácsonyi gyűjtemény
+><a href="letoltes.php?letoltes=./downloads/enektarak/AKE.dtx">Advent és karácsony</a>
+ Adventi és karácsonyi énekek Tamás László közreműködésével
+
+# Keresztutak
+><a href="letoltes.php?letoltes=./downloads/enektarak/keresztut.dtx">Keresztutak</a>
+ Kiegészítve a Csanád Béla: Gyermek Keresztúttal és Liszt: Via Crucis
+
+# Búcsújárók ima- és énekeskönyve
+><a href="letoltes.php?letoltes=./downloads/enektarak/bucsu.dtx">Búcsújárók (Búcsú)</a>
+ A Mária Rádió 2014-es kiadványa búcsújárók részére, zarándoklatra alkalmas énekek gyűjteménye.
+
+ 
+- Nemzetiségi és helyi énekek
+
+! Somogyi Gyűjtemény
+><a href="letoltes.php?letoltes=./downloads/enektarak/somogy.dtx">Somogyi gyűjtemény (Somogy)</a>
+ Busnyák Erik találta és szedte le internetről egy Mernye-környéki kántor magán-gyűjtését.
+ Forrás: <a href="https://somogyigyujtemeny.pallcsalad.hu" target="_blank">somogyigyujtemeny.pallcsalad.hu</a>
+ (itt négyszólamú kíséret kották is letölthetők)<br/>
+ Incze Attila javította és kiegészítette 2023.januárban
+
+# Eucharisztikus Kongresszus énekei
+><a href="letoltes.php?letoltes=./downloads/enektarak/iec2021.dtx">Eucharisztikus Kongresszus énekei (iec2021)</a>
+ Soós János begépelt néhányat az IEC2021 zárómise énekei közül, köszönet érte!
+
+# Emmánuel közösség énekei
+><a href="letoltes.php?letoltes=./downloads/enektarak/emmanuel.dtx">Emmánuel közösség (Emmánuel)</a>
+ Az Emmánuel közösség énekei.
+ Forrás: <a href="http://www.emmanuel.hu/enekek_mobilra" target="_blank">www.emmanuel.hu/enekek_mobilra</a>
+ Bemásolást köszönjük Rieth Katinak!
+
+# Erdélyi gyűjtés (Erd.)
+><a href="letoltes.php?letoltes=./downloads/enektarak/erdelyi.dtx">Erdélyi gyűjtés (ex. Veresvizi)</a>
+ Krucz János Nagybányáról, a Krisztus Király plébánia kézzel írott kottái alapján kezdte kialakítani ezt a gyűjteményt. 
+ Szerencsére, az ötletnek akadtak támogatói, így Csergő Ákos jóvoltából jelentősen bővült a lista. Ezért úgy döntöttünk, 
+ hogy átnevezzük Erdélyi gyűjteménynek, és megpróbáljuk minél jobban kibővíteni. 
+ Időközben Ákos jeletősen  kibővítette a gyűjteményt. <br/>
+ A <a href="http://www.erdelyigyujtemeny.pallcsalad.hu/" target="_blank"> kották képe és a hanganyag itt  megtekinthető/meghallgatható</a>
+ A gyűjtemény (bár jelentősen bővűlt) még nem nevezhető teljesnek, ezért szívesen fogadunk bárkitől újabb, 
+ még nem szereplő olyan énekeket, amiket jellegzetesen Erdély területén ismernek, énekelnek.<br/>
+ Ákos közreműködésére továbbra is számítunk, így akinek csak egy "kézi" kottája van, nyugodtan jelezheti..<br/>
+ Az "eredeti" veresvizi kották képe <a href="veresvizi/veresvizi.html" target="_blank"> itt  megtekinthető</a>. 
+ A jövőbeni fejlesztésekről, természetesen, minél hamarabb beszámolunk.
+ i05/3 versszak Csépányi Bencétől
+
+# Kárpát-medencei gyűjtemény
+><a href="letoltes.php?letoltes=./downloads/enektarak/karpatmedencei.dtx">Kárpát-medencei gyűjtemény (KÉSZ)</a>
+ Kárpát-medencei gyűjtemény.
+ Forrás: <a href="https://nepenekgyujtemeny.keesz.hu/" target="_blank">https://nepenekgyujtemeny.keesz.hu/</a>
+
+# Román énekek
+><a href="letoltes.php?letoltes=./downloads/enektarak/Roman.zip">Román (Românești)</a>
+ Adi Istvántól, Brassóból kaptuk ezt a gyűjteményt (köszönjük), ami a román nyelvű liturgia énekeit tartalmazza.
+ Tömörített ZIP állomány, csak ki kell csomagolni a diatar programot tartalmazó könyvtárba és máris használható. </br>
+ De la Adi Ștefan din Brașov am primit această colecție (mulțumim frumos), care cuprinde cântecele liturgice în limba română.
+ Este o arhivă ZIP, trebuie doar dezarhivate în folderul aplicației diatar, și se pot utiliza.
+
+# Román Magnificat
+><a href="letoltes.php?letoltes=./downloads/enektarak/magnificat.dtx">Román Magnificat (Magnificat în limba română)</a>
+ Szintén Adi Istvántól, Brassóból kaptuk ezt az újabb gyűjteményt (köszönjük), A Jászvárosi (Iași) román nyelvű püspökség
+ egész Moldovára, mindennapos használatra kiadott liturgikus énekeit tartalmazza.
+ DTX állomány, a diatar programot tartalmazó könyvtárba bemásolva azonnal használható. </br>
+ Tot de la Adi Ștefan din Brașov am primit această colecție (mulțumim frumos), care cuprinde cântecele liturgice
+ în limba română, editată de Episcopia Iașului și recomandată pentru uzul cotidian pe întregul teritoriu al Moldovei.
+ Este un fișier DTX, trebuie doar salvată în folderul aplicației diatar, și se pot utiliza.
+
+# Gotteslob
+><a href="letoltes.php?letoltes=./downloads/enektarak/Gotteslob.dtx">Gotteslob (GL)<a>
+ Gotteslob Katholisches Gebet- und Gesangbuch Ausgabe für Rumänien
+ (1978 röm.kath. kirchliche Oberbehörde in Timisoara)</br>
+ A német nyelvű katolikusok régi imakönyvét Stefan Strenger Lippai (Arad megye) kantor gépelte be,
+ sok éneket kottával együtt.
+
+# Kirchenlieder
+><a href="letoltes.php?letoltes=./downloads/enektarak/Kirchenlied.dtx">Kirchenlieder (Lieder)</a>
+ Vecsésen, az Óplébánia templomában évek óta használják a Diatár programot.
+ Fennmaradt a helyi kisebbség német nyelvű énekeit tartalmazó énekeskönyv "Gesang und Gebetbuch",
+ az 1930-as évek kántorának, Oszkar Szeidl Schulmeisternek, Vecsésen nyomtatott kötete.
+ Frühwirth Mihály áldozatos munkájának hála az énekek számítógépre és a Diatár programba kerültek - köszönjük!
+
+# Kántoros énekek (Kántoros)
+><a href="letoltes.php?letoltes=./downloads/enektarak/kantoros.dtx">Kántoros énekek (Kántoros)</a>
+ Csorba Sándor különböző forrásból összegyűjtött énekei,
+ melyekhez a "Zenekíséretek" letöltésben kántori kíséretet is kaphatunk.
+ Részei: Advent, Karácsony, Nagypéntek, Nagyszombat, Búzaszentelés, Zsoltárok, Mária-énekek (Lurdi énekek is),
+ Szent József énekek, Szentségi énekek, Vegyes. Új részek a Zsoltárok és Latin énekek.
+ Busnyák Erik a hanganyag alapján folyamatosan javítja a szövegeket.
+
+# Ferences énekek
+><a href="letoltes.php?letoltes=./downloads/enektarak/ferences.dtx">Ferences énekek</a>
+ Ferencesek által használt speciális énekek. Készítette: Didák testvér, társai segítségével
+
+# Énekeljetek az Úrnak (ÉAÚ)
+><a href="letoltes.php?letoltes=./downloads/enektarak/enekeljetek.dtx">Énekeljetek az Úrnak</a>
+ Felnőtt, gyermek és egyéb énekek (2000.IX.08. Szalay Mihály r.k.kántor, Brezda).
+ Elkészült a bemásolása külső forrásból
+ (<a href="http://www.sagiweb.hu/kantor/book/szalay.pdf">http://www.sagiweb.hu/kantor/book/szalay.pdf</a>
+
+# Erdélyegyházmegyei Énekeskönyv (Baka)
+><a href="letoltes.php?letoltes=./downloads/enektarak/baka.dtx">Erdélyegyházmegyei Énekeskönyv</a>
+ Összeállította: Baka János (Sándory Mihály könyvnyomdája, Gyergyószentmiklós, 1914.)
+ forrás: <a href="https://mek.oszk.hu/15600/15681/15681.pdf">https://mek.oszk.hu/15600/15681/15681.pdf</a>
+ Félkész, folyamatban van a begépelése.
+
+ 
+- Ifjúsági énekek
+
+! Dalolj az Úrnak! Dicsőség az Úrnak! (DÚR)
+><a href="letoltes.php?letoltes=./downloads/enektarak/dur.dtx">Dicsőség az Úrnak! (DÚR)</a>
+ Dalolj az Úrnak! Dicsőség az Úrnak! Az Egyházi és Nemzetiségi Kapcsolatokért Felelős Államtitkárság
+ támogatásával megvalósult gyűjteményes könyv és weblap.
+ <a href="https://durkonyv.hu" target="_blank">https://durkonyv.hu</a>
+ Megjelent 2019. október 27-n.
+ Minden ének bemásolva a weblapról. A szerkesztőktől kapott szövegjavítások is átvezetve.
+ A weblapjukon minden javaslatot, kiegészítést, javítást köszönettel fogadnak!
+ 2022-ben a weblapon közzétett hanganyagot is hozzáillesztettük.
+
+# Fiatalok Énekes Könyve (FÉK)
+><a href="letoltes.php?letoltes=./downloads/enektarak/fek.dtx">Fiatalok Énekes Könyve (FÉK)</a>
+ Fiatalok Énekes Könyve. A baross téri Jézus Szíve templom gitáros énekkar gyűjteménye.
+ Forrás: <a href="https://barosstemplom.hu/szolgalat/jezus-szive-gitaros-enekkar"
+   target="_blank">https://barosstemplom.hu/szolgalat/jezus-szive-gitaros-enekkar</a>
+ DOC fájlokból bemásolta Rieth Kati
+
+# Jertek, énekeljünk (gyermekénekek)
+><a href="letoltes.php?letoltes=./downloads/enektarak/jertek.dtx">Jertek, énekeljünk! (jertek)</a>
+ Magvető kiadó, szerk: Czövek Olivér, Kertész Andrásné<br/>
+ Kéri Benedek (Atanáz a.) készítette a gyermekek számára kiadott énekeskönyv alapján
+
+# Taize-i énekek (Taize)
+><a href="letoltes.php?letoltes=./downloads/enektarak/taize.dtx">Taize-i énekek (Taize)</a>
+ "Imádkozzunk együtt minden nap" (Cselekvő Remény Alapítvány, 2007)
+
+# Kék könyv (Kék)
+><a href="letoltes.php?letoltes=./downloads/enektarak/kekkonyv.dtx">Kék könyv (Kék)</a>
+ Az "Énekelj az Úrnak!" bővített könyv (Pannonhalma, 1999) énekei. 
+ A szegedi Ferences Testvérek ajándékaként teljes.
+
+# Sárga könyv (Sárga)
+><a href="letoltes.php?letoltes=./downloads/enektarak/sargakonyv.dtx">Sárga könyv (Sárga)</a>
+ "Áldjad én lelkem az Urat!" könyv (a Katolikus Karizmatikus Megújulás dalai).
+ Olteán Zsolt munkatársainak köszönhetően teljes.
+ Korábban külön volt gitárakkordos verziója, ez 2022-ben összevonásra került a jelenlegivel.
+
+# Cserkészek daloskönyve (Cserkészek)
+><a href="letoltes.php?letoltes=./downloads/enektarak/cserkeszek.dtx">Cserkészek daloskönyve (Cserkészek)</a>
+ Az azonos nevű könyv (Márton Áron Kiadó; 9., javított és bővített kiadás) összes éneke. 
+ Számos olyan éneket is tartalmaz, mely nem misére való, de foglalkozáson, 
+ cserkészavatáson stb. szükség lehet rá.
+
+# Ujjongj az Úrnak! - népdalzsoltárok (Népdalzsoltárok)
+><a href="letoltes.php?letoltes=./downloads/enektarak/nepdalzsoltar.dtx">Ujjongj az Úrnak! - népdalzsoltárok (Népdalzsoltárok)</a>
+ Szegheő József atya és Szász Imre jóvoltából.
+
+# Gitáros
+><a href="letoltes.php?letoltes=./downloads/enektarak/gitaros.dtx">Gitáros</a>
+ Gitáros énekek, Holtner Rita segítségével
+
+# Mátyásföldi gitáros
+><a href="letoltes.php?letoltes=./downloads/enektarak/matyasfoldi.dtx">Mátyásföldi gitáros</a>
+ Mátyásföldi gitáros énekek. Forrás: Mátyásföldi Ifjúsági Csoport, 1995
+
+# Szent András énekfüzet (SztAE)
+><a href="letoltes.php?letoltes=./downloads/enektarak/szentandras.dtx">Szent András énekfüzet (SztAE)</a>
+ Tekse Árpád konvertálta számunkra a
+ (<a href="http://szentandras.ujevangelizacio.hu/">Szent András evangelizációs iskola honlapján</a>)
+ található énekfüzetet. Hálásan köszönjük a munkát, az iskolának pedig a közzétételhez hozzájárulását.
+
+
+- Más egyházak
+! Dunamelléki énekfüzetek
+><a href="letoltes.php?letoltes=./downloads/enektarak/dunamelleki.dtx">Dunamelléki énekfüzetek (Dunamelléki)</a>
+ Korábban "Erdélyi református énekfüzet" néven futott; valójában három kötet egyben a Dunamelléki Ref. Egyházkerület kiadásában:<br/>
+ "Hadd zengjen énekszó"
+ (Dunamelléki Református Egyházkerület, Budapest, 2009.)
+ Forrás: <a href="https://www.dmrek.hu/lap/dunamellek/dunamelleki-enekfuzetek/hadd-zengjen-enekszo"
+   target="_blank">https://www.dmrek.hu/lap/dunamellek/dunamelleki-enekfuzetek/hadd-zengjen-enekszo</a>
+ <br/>"Megváltva!"
+ (<a href="http://doulos.hu/albertirsa/Megvaltva_Enekfuzet_B5n_.pdf" target="_blank">http://doulos.hu/albertirsa/Megvaltva_Enekfuzet_B5n_.pdf</a>
+ <br/>"Ébredj, alvó!"
+ (<a href="http://doulos.hu/albertirsa/Ebredj_alvo.pdf" target="_blank">http://doulos.hu/albertirsa/Ebredj_alvo.pdf</a>
+ <br/>
+ PDFből bemásolta Rieth Kati, Hozé
+
+! Új Református Énekeskönyv
+><a href="letoltes.php?letoltes=./downloads/enektarak/re21.dtx">Új Református Énekeskönyv (Re21)</a>
+ Ez a 2021-ben megújítva megjelent Református Énekeskönyv (Kálvin János kiadó Bp, 2021, első kiadás)
+ Forrása: <a href="https://enekeskonyv.reformatus.hu/documents/2512/2021okt21_%C3%89nekesk%C3%B6nyv_teljes_k%C3%A9zirat_lez%C3%A1rt_MASTER.docx">
+ https://enekeskonyv.reformatus.hu/documents/2512/2021okt21_%C3%89nekesk%C3%B6nyv_teljes_k%C3%A9zirat_lez%C3%A1rt_MASTER.docx</a>
+ Egy gyors bemásolást követően Padányi Ádámnak köszönjük a lektorálást, javítást, kiegészítést.
+
+! Unitárius énekeskönyv
+><a href="letoltes.php?letoltes=./downloads/enektarak/unitarius.dtx">Unitárius Énekeskönyv (Uni)</a>
+ Unitárius Énekesköny (Unitárius egyház kiadása, 1974. Cluj) 9.kiadás.
+ Forrás: <a href=" https://library.hungaricana.hu/hu/view/ZTI_EnekesImadsagosKonyvek_144/?pg=20&layout=s"
+   target="_blank">https://library.hungaricana.hu/hu/view/ZTI_EnekesImadsagosKonyvek_144/?pg=20&layout=s</a>
+ Rieth Katinak köszönjük a begépelést!
+ 2022-ben Busnyák Erik jóvoltából énekkíséretekkel is kiegészült.
+
+# Református énekeskönyv
+><a href="letoltes.php?letoltes=./downloads/enektarak/reformatus.dtx">Református Énekeskönyv (Ref)</a>
+ A kötet a <a href="http://reformatus-enekeskonyv.foruma.hu/">http://reformatus-enekeskonyv.foruma.hu/</a>
+ webcímen található régi fajta (512 énekes) énekeskönyv teljes szövege a fenti címről bemásolva.
+ Minden ének be van másolva, de sok hibával terhelt a forrás (feltehetőleg szkennelt anyag).
+ Győrödi Dánieltől kapott szöveg alapján kiegészítve és javítva, ellenőrizve.
+
+# Erdélyi Református Énekeskönyv
+><a href="letoltes.php?letoltes=./downloads/enektarak/ERE.dtx">Erdélyi Református Énekeskönyv (E.Ref)</a>
+  "Magyar Református Énekeskönyv - Kolozsvár 1999" - közismert nevén a református énekeskönyv erdélyi változata,
+  az Erdélyi Református Énekeskönyv. A begépelést Nandor Kantornak köszönjük!
+
+# Evangélikus énekeskönyv
+><a href="letoltes.php?letoltes=./downloads/enektarak/evang.dtx">Evangélikus énekeskönyv (evang)</a>
+ A Magyarországi Evangélikus Egyház énekeskönyve (XIX.kiadás, Luther Kiadó, Bp, 2017.)
+ Könyvből begépelte Rieth Kati
+
+# Lélekkel és értelemmel
+><a href="letoltes.php?letoltes=./downloads/enektarak/ujref.dtx">Lélekkel és értelemmel (ÚjRef)</a>
+ Az új református énekeskönyv előkészítő füzete (Magyarországi Református Egyház, 2018.)
+ Forrás: <a href="http://egyhazzene.reformatus.hu/data/documents/1/2018/4/14/461/javitott_beliv_Lelekkel_es_ertelemmel_2.pdf"
+   target="_blank">http://egyhazzene.reformatus.hu/data/documents/1/2018/4/14/461/javitott_beliv_Lelekkel_es_ertelemmel_2.pdf</a>
+ PDFből bemásolta Rieth Kati
+
+# Ökumenikus énekeskönyv
+><a href="letoltes.php?letoltes=./downloads/enektarak/meot.dtx">MEOT ökumenikus (MEOT)</a>
+ Magyar Egyházak Ökumenikus Tanácsa. Ökumenikus énekeskönyv.
+ Kiadja: A Magyar Katolikus Püpöki Konferencia és a Magyarországi Egyházak Ökumenikus Tanácsa, 2010.
+ Forrás: <a href="http://meot.hu/dokumentumok/2019enekes/Okumenikus_EnekesKonyv.pdf"
+   target="_blank">http://meot.hu/dokumentumok/2019enekes/Okumenikus_EnekesKonyv.pdf</a>
+ PDFből bemásolta Rieth Kati
+
+# Hitünk énekei (Adventista)
+><a href="letoltes.php?letoltes=./downloads/enektarak/adventista.dtx">Adventista (Adventista)</a>
+ A Hetednapi Adventista Egyház gyülekezeti énekeskönyve
+ Advent Kiadó (9.kiadás, Budapest, 2016)<br/>
+ Elkészült, de nincs lektorálva. GAZDÁT KERESÜNK!
+
+# Metodista énekek
+><a href="letoltes.php?letoltes=./downloads/enektarak/metodista.dtx">Metodista énekeskönyv (Met)</a>
+ A Pesti Metodista Gyülekezet (<a href="http://pest.metodista.hu/dicseretek">http://pest.metodista.hu/dicseretek</a> címen
+ található énekeskönyv leírata. Rieth Kati segítségével elkészült.
+
+# Baptista énekek
+><a href="letoltes.php?letoltes=./downloads/enektarak/baptista.dtx">Baptista (Bapt)</a>
+ Baptista Gyülekezeti Énekeskönyv, a <a href="http://www.baptist.hu">http://www.baptist.hu</a> címen publikusan hozzáférhető
+ PPT fájlok másolata.
+
+# KRISZ
+><a href="letoltes.php?letoltes=./downloads/enektarak/krisz.dtx">KRISZ (Krisz)</a>
+ Kárpátaljai Református Ifjúsági Szervezet énekeskönyve, református (és ökumenikus) ifjúsági énekek.
+ Forrás: <a href="http://kisvarda.reformatus.hu">http://kisvarda.reformatus.hu</a>
+ Rieth Kati lektorálta
+
+# EKE (Evangélikus énekeskönyv)
+><a href="letoltes.php?letoltes=./downloads/enektarak/eke.dtx">Evangélikus énekeskönyv (EKE)</a>
+ Az "Evangélikusok Közössége az Evangéliumért (EKE) Alapítvány kiadványa, publikusan elérhető
+ <a href="http://kispest.lutheran.hu/eke/enekeskonyv/web2/index.html">http://kispest.lutheran.hu/eke/enekeskonyv/web2/index.html<a> címen.

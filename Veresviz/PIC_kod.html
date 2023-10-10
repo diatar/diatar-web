@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>
+			PIC vezerlo
+		</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />	   	
+	</head>
+
+<body bgcolor="white">
+			 <p> A PIC vezérlőkódja (C-nyelvű forráskód):
+			</p>
+        <pre>
+        #include "E:\Gazs munkak\Taviranyito_vegleges\tav_16f876.h"
+         
+        #define small_green_led_blink_period 10
+        
+        int8 status;
+        int8 led_status;
+        int1 recieved_data;
+        int1 blink_led;
+        int8 SGLBP;
+        
+        #int_RDA
+        void  RDA_isr(void) 
+        {
+           int8 B;
+           int8 byte1, byte2, byte3, byte4;
+           recieved_data=1;
+           byte1=0;
+           byte2=0;
+           byte3=0;
+           byte4=0;
+           B=0;
+           
+           byte1 = getc();
+           if (byte1==0x44) // A diatartol D jott
+           {
+              byte2 = getc();
+              B=INPUT_B();
+              if (byte2 == 0x49)// Megjott az I
+              {
+                 putc(B);
+                 putc(0x00);
+                 putc(B);
+              }
+              else
+              {
+              }
+           }
+           else
+           {
+              if(byte1==0x21)
+              {
+                 byte2=getc();
+                 byte3=getc();
+                 byte4=getc();
+        
+                 led_status =byte3;
+              }
+              else
+              {
+              }
+           }
+        }
+        
+        #int_TIMER2
+        void  TIMER2_isr(void)
+        {
+           if(!recieved_data)
+           {
+              if(SGLBP < small_green_led_blink_period)
+              {
+                 SGLBP++;
+              }
+              else
+              {
+                 SGLBP=0;
+                 blink_led++;
+                 output_bit(PIN_C0,blink_led);
+              }
+           }
+           else
+           {
+              output_bit(PIN_C0,1);
+           }
+        }
+        
+        void main()
+        {
+           setup_adc_ports(NO_ANALOGS);
+           setup_adc(ADC_OFF);
+           setup_spi(SPI_SS_DISABLED);
+           setup_timer_0(RTCC_INTERNAL|RTCC_DIV_1);
+           setup_timer_1(T1_DISABLED);
+           setup_timer_2(T2_DIV_BY_16,255,16);
+           enable_interrupts(INT_RDA);
+           enable_interrupts(INT_TIMER2);
+           enable_interrupts(GLOBAL);
+            
+           recieved_data=0;
+           status=0xFF;
+           led_status=0x00;
+           blink_led=0;
+           SGLBP=0;
+           
+           while(TRUE)
+           {
+              OUTPUT_A(led_status);
+           }
+        }
+        </pre>
+
+</body>
+</html>

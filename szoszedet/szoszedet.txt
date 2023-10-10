@@ -1,0 +1,83 @@
+; a sor elso karaktere vezerel:
+;  ; = megjegyzes
+;  1 = header1
+;  2 = header2 stb.
+;  > = kinyithato fogalom
+;  . = kinyithato resz vege (a sor többi része érdektelen)
+;  szóközzel kezdett sor normál szöveg
+
+1Szószedet
+ <br/>Részletezésért kattintson a nyilakra.
+ <br/>
+
+>Megjelenítés
+
+>két képernyő vagy két gép
+>egy gép, két képernyő
+.
+ lehet egy gép, két képernyő, vagy két gép egy-egy képernyő; vagy akár...
+.
+> projektor vezérlés
+ távoli ki-bekapcsolás és hasonlók,
+ valamint a kép beállítása
+.
+> digitális kottatartó a kántornak
+ fotóablak magyarán.<br/>és annak működtetése.
+.
+> gitárakkordok
+ van róla egy leírás...
+.
+> kottahangok
+ erről is van leírás!
+.
+> kórussal és/vagy scola-val éneklünk
+ akkor alulra egy sor a köv.versszakból
+.
+
+."Megjelenítés" vége
+
+>Éneklisták
+
+> ének keresése
+ egy listán belül,<br/>listák között
+.
+
+."Éneklisták" vége
+
+>Automatizálás
+
+> énekrendek összeállítása
+ módosítás, +1 dia stb.
+.
+> induláskor betöltés
+ dátum szerint
+.
+> funkcióbillentyűk
+ ez mi is?
+.
+> zenelejátszás
+ és zene után tovább!
+.
+> időzített továbbítás, ugrás
+ zenével vagy anélkül
+.
+
+."Automatizálás" vége
+
+>Szerkesztés
+
+> énekrendek összeállítása
+ ez is volt. módosítás, +1 dia stb.
+.
+> szöveg szerkesztése
+ formázás, undo-redo stb.
+.
+> gitárakkordok
+ ez már volt feljebb!
+.
+
+."Szerkesztés" vége
+
+>Többen használjuk a programot
+ profilok ugyebár
+.

@@ -1,0 +1,87 @@
+.TUTOR_FRAME
+{
+   background-color: #CCE0FF;
+   border: 0;
+   padding-left: 5px;
+   padding-right: 5px;
+} 
+
+.tutorial_txt
+{    
+    border: none; 
+    margin: 0px; 
+    text-indent: 30px; 
+    text-align: justify;
+}
+p
+{
+    margin:0px;    
+}
+.tutor_img
+{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 0;
+    padding: 0;
+    
+}
+.rigth_frame
+{
+    width: 32%;
+    float: right;
+    text-align: left;
+    text-indent: -10px;
+    margin-left: 8px;
+    margin-top: 13px;
+    border-style: outset;
+    border-width: 2px;
+    padding-left: 16px;
+    padding-right: 3px;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    
+}
+.tutor_subtitle
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.dotted_text
+{
+    margin: 0;
+    padding-left:70px;
+    text-indent: 0;
+}
+.left_dotted_text
+{
+    margin: 0;
+    padding-left:15px;
+    text-indent: 0;
+}
+.tutor_title
+{
+    font-size: 18px;
+    text-align: center;
+}
+.tutorial_popup_header
+{
+    margin-bottom:10px;
+    padding:2px;
+    
+    background-color: rgb(220,220,220);
+}
+.tutorial_popup_close
+{    
+    width:20px;
+    height:20px;
+    
+    background-image: url(/graphics/ex.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.tutorial_popup_body
+{    
+    overflow:hidden;
+}

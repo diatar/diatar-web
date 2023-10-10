@@ -1,0 +1,37 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<meta http-equiv="Content-Language" content="hu">
+<title>Jelszóval védett terület</title>
+</head>
+
+<body>
+
+<h1>Jelszóval védett terület!</h1>
+<hr>
+<p>Ön olyan oldalakat szeretne látni, amelyek nem publikusak, nem szeretném, 
+hogy bárki erre tévedő láthassa, csak azok, akikkel ezt egyeztettem.
+Nincsenek itt veszélyes vagy titkos információk, de esetleg 
+valakinek az érzékenységét sértheti, ha róla szóló 
+információkkal idegenek is találkoznak.</p>
+<p>Ezért most arra kérem, a továbblépéshez írja be a tőlem kapott jelszót. Amíg 
+a böngészőt be nem zárja, nem kell újra beírnia, a böngésző megjegyzi 
+azt.</p>
+<p>Ha még nem kapott jelszót, kérem írjon nekem egy emailt, és elküldöm Önnek.</p>
+<hr>
+<p><i><b><font size="5" color="#FFFF00"><span style="background-color: #FF0000">
+<?php echo(isset($hiba)?$hiba:""); ?>
+</span></font></b></i></p>
+<form method="POST" action=<?php echo "bejel.php?lap=".$lap; ?> >
+	Jelszó megadása</h2>
+	<p>Jelszó:<br>
+	<input type="password" size="25" maxlength="256" name="jelszo" autofocus> </p>
+	<p><input type="submit" value="Bejelentkezés"> </p>
+</form>
+<hr>
+<h5>&nbsp;</h5>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+.LEFT_SIDE
+{
+    width:210px;
+    margin-right:10px;
+    overflow: hidden;
+    float:left;
+}
+.RIGHT_SIDE
+{
+    width:540px;
+    float:left;
+    overflow: hidden;
+}
+.L2_SUBHEADER
+{
+    width:540px;
+    height:50px;
+    
+    background-color: rgb(190,219,241);
+    background-image: url(/graphics/bulina2.jpg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    
+    color:white;
+    font-family: trebuchet, arial, verdana;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight:bold;   
+    
+    text-decoration: none;
+    text-indent: 40px;
+}
+.L2_CONTENT
+{
+    width:540px;
+	overflow: hidden;
+    
+    margin-top: 10px;
+    color:black;
+    font-family: trebuchet, arial, verdana;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight:normal;   
+    
+    text-decoration: none;    
+}
+.L2_SCROLL
+{
+	height:80vh;
+	overflow-x: hidden;
+    overflow-y: auto;
+}
+.RIGHT_TABLE
+{
+    width:540px;
+    overflow: hidden;
+}
+
+.TABLE_ENTRY_ODD
+{
+    background-color: rgb(240,240,240);
+}
+.TABLE_ENTRY_EVEN
+{
+    background-color: rgb(225,225,225);        
+}
+
+.TABLE_ENTRY_HEADER
+{
+    background-color: rgb(255,255,128);
+		text-align: center;
+    font-size: 15px;
+    font-weight:bold;   
+}
+
+.TABLE_ENTRY_HIGHLIGHT_ODD
+{
+    background-color: rgb(208,255,176);
+}
+
+.TABLE_ENTRY_HIGHLIGHT_EVEN
+{
+    background-color: rgb(225,255,192);
+}
+
+.RIGHT_TABLE_LEFT
+{
+    width:164px;
+    float:left;
+    text-indent: 0px;
+}
+.RIGHT_TABLE_RIGHT
+{
+    width:376px;
+    float:left;
+}
+
+.BETA_CONTAINER
+{
+    width:500px;
+    overflow: hidden;
+    
+    margin-top: 20px;
+    color:black;
+    font-family: trebuchet, arial, verdana;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight:normal;
+      
+    border-color:#BEDBF1;
+    border-style:ridge;
+    border-width:5px;     
+    
+    padding: 10px;
+    background-color: Linen;
+    
+    text-decoration: none;
+}
+.BETA_TITLE
+{
+    font-family: trebuchet, arial, verdana;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: bold; 
+    text-align: center;  
+    color: #0029A0;
+}
+.BETA_CONTAINER_INT
+{
+    width:500px;
+    overflow: hidden;
+    margin-top: 3px;
+    text-indent: 0px;
+}
+.BETA_VERSION
+{
+    color: #3F4C6B;
+}
+.BETA_DOTTED
+{
+    padding-left: 13px;
+}
+.BETA_LEFT
+{
+    width:160px;
+    float:left;
+    text-indent: 0px;
+}
+.BETA_RIGHT
+{
+    width:320px;
+    float:left;
+}

@@ -1,0 +1,36 @@
+Használati utasítás
+----------------------
+
+Program a ScrollLock billentyû helyettesítéséhez
+Készült: a Diatár programhoz
+
+E program célja az, hogy a Diatár énekvetítõ programhoz szükséges 2. sz. képernyõt elõ tudjuk hozni,
+az olyan notebook-okon is, ahol a ScrollLock billentyû hiányzik a klaviatúráról.
+A billentyû cseréje az ""F12"" gomb helyettesítésével valósul meg.
+
+Leírás:
+
+---------------
+Telepítés:
+
+1. Kicsomagolás (tetszõleges helyre)
+2. A telepítõ alapértelmezett beállításokkal a C:/ProgramFiles/Diatár mappába teszi a szükséges fájlokat, valamint
+az asztalon parancsikont hoz létre.
+---------------
+Futtatási sorrend:
+
+1. A Diatár használata során fontos, hogy elõször ezt a programot nyissuk meg. Az ablak megjelenítését
+követõen akár kis méretre is tehetõ.
+2. Következõ lépés a Diatár program megnyitása
+3. Az énekrend betöltése/elkészítése után az F12 gomb megnyomásával aktiválható lesz a 2. sz. képernyõ.
+
+4. A vetítés befejését követõen ismét F12 gomb, és visszavált az asztali (1. sz. képernyõre)
+5. A Diatár bezárása után bezárható az X gombbal a jobb felsõ sarokban.
+--------------
+
+A használata sokkal könnyebb, mint ahogyan hosszasan leírtam, de remélem elég hasznos annak, aki kevésbé
+ért a számítástechnikához.
+
+További segítségért forduljon bizalommal hozzám:
+Ott Gergely
+email cím: ott.gergely@gmail.com

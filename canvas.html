@@ -1,0 +1,37 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+   <meta name="GENERATOR" content="Hoze by hand">
+   <title>Canvas test</title>
+</head>
+<body>
+
+<canvas id="MainCanvas" width="640" height="480" style="border:1px solid #0000ff;">
+HTML 'canvas' nem támogatott???...
+</canvas>
+
+</body>
+
+<script type="module">
+import PAINTDIA from "./JS/paintdia.js"
+
+let c = document.getElementById("MainCanvas");
+let ctx = c.getContext("2d");
+//ctx.moveTo(0,0);
+//ctx.lineTo(400,300);
+//ctx.stroke();
+
+let paintdia = new PAINTDIA(ctx);
+paintdia.addLine("Ál\\Udj\\uad, \\Bem\\bber e n\\Ia\\Bgy j\\ióda\\bt!");
+paintdia.paint();
+
+//ctx.font = "60px Arial";
+//let metrics = ctx.measureText("Áy");
+//let fontHeight = metrics.fontBoundingBoxAscent + metrics.fontBoundingBoxDescent;
+//ctx.fillText("Áldjad, ember", 0, fontHeight);
+//ctx.fillText("e nagy jódat", 100, 2*fontHeight);
+</script>
+
+</html>
+

@@ -1,0 +1,172 @@
+body
+{
+ 	background-color:#0464B8;
+	background-image: url(../graphics/bakground_img.jpg);
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+a
+{
+    color:rgb(120,130,200);
+}
+.frame
+{
+	width:897px;
+	background-color:white;
+	overflow:hidden;
+}
+.frame_top
+{
+ 	float:left;
+	width:897px;
+	height:12px;
+	background-image:url(../graphics/frame_top.jpg);
+	background-position:top left;
+	background-repeat:no-repeat;
+	overflow:hidden;
+}
+.frame_center
+{
+	float:left;
+	width:897px;
+}
+.frame_center_left
+{
+	float:left;
+	width:897px;
+	
+	background-image:url(../graphics/frame_left.jpg);
+	background-position:top left;
+	background-repeat:repeat-y;
+}
+.frame_center_right
+{
+	float:right;
+	width:887px;
+	
+	background-image:url(../graphics/frame_right.jpg);
+	background-position:top right;
+	background-repeat:repeat-y;
+}
+.frame_center_center
+{
+	float:left;
+	width:877px;
+	height:146px;
+	background-color:white;
+}
+
+.frame_bottom
+{
+	float:left;
+	width:897px;
+	height:12px;
+	background-image:url(../graphics/frame_bottom.jpg);
+	background-position:top left;
+	background-repeat:no-repeat;	
+	overflow:hidden;
+}
+.frame_logo
+{
+	float:left;	
+	margin:5px;
+	border:0px;
+	cursor:pointer;
+}
+.frame_textpos
+{
+	float:left;
+	overflow:hidden;
+	padding-left:25px;
+}
+.frame_title
+{
+	float:left;
+	clear:right;
+ 	height:45px;
+ 	overflow:hidden;
+ 	line-height:45px;
+	
+	font-family:Trebuchet MS, arial, verdana;
+	font-size:40px;
+	color:rgb(223,0,35);
+	text-align:left;
+}
+.diatar_logo
+{
+ 	float:left;
+ 	width:45px;
+ 	height:45px;
+ 	cursor:pointer;
+	background-image:url(../graphics/diatar_icon.gif);
+	margin-left:5px;
+	background-position:center center;
+	background-repeat:no-repeat;	
+}
+.frame_subtitle
+{
+	float:left;
+	clear:left;	
+	font-family:Trebuchet MS, arial, verdana;
+	font-size:25px;
+	color:black;	
+	text-align:left;
+    overflow: hidden;
+}
+.frame_alap
+{
+ 	float:center;
+	width:957px;
+}
+.text_box
+{
+	margin-top:10px;	
+	padding:5px;
+	width:897px;
+	
+	background-color:	white;
+	overflow:hidden;
+	
+	border-top:8px ridge blue;
+}
+.kis_text
+{
+	text-indent:20px;
+	text-align:justify;
+	font-size:90%;
+    margin:0px;
+	padding:0px;
+}
+.spaced
+{
+    margin-top:5px;
+    margin-bottom:0px;
+	padding:0px;
+}
+.body_text
+{
+	text-indent:20px;
+	text-align:justify;
+	font-size:110%;
+    margin:0px;
+	padding:0px;
+}
+.text_box_next
+{	
+	padding:5px;
+	width:897px;
+	
+	background-color:	white;
+	overflow:hidden;
+	
+	border-top:1px ridge blue;
+}
+ul
+{
+    text-align:left;
+    font-size: 110%;
+    padding:0px;
+    margin-left:50px;
+    margin-top:0px;
+    margin-bottom:0px;
+}

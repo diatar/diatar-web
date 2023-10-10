@@ -1,0 +1,6 @@
+_private/
+_vti_*/
+.ftpquota
+cgi-bin/
+/forum/
+/google*.html

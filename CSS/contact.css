@@ -1,0 +1,127 @@
+.MAIN_CONTENT_CONTACT
+{
+    font-family: trebuchet, verdana, tahoma;
+    font-size: 12px;
+    font-weight:normal;
+    text-indent: 20px;
+    line-height: 16px;
+    text-align: left;
+
+    background:white;
+    overflow:hidden;
+    padding:5px;
+    background-color: #CCE0FF;
+}
+
+
+.FORMINPUT_TXT
+{
+    width:400px;
+    height:25px;
+    background-color: white;
+    border:3px solid;
+    border-color:#CCE0FF;
+    float:left;
+    margin-top: 15px;
+}
+.FORMINPUT_TXT_HIGHLIGHT
+{
+    width:400px;
+    height:25px;
+    background-color: white;
+    border:3px inset red;
+    float:left;
+    margin-top: 15px;
+}
+.FORM_LABEL
+{
+    width:200px;
+    height: 25px;
+    float:left;
+    clear:right;
+    margin-top: 15px;
+    margin-right: 15px;
+    text-align: right;
+
+    font-family: arial, verdana, tahoma;
+    font-size:13px;
+    color:black;
+    line-height: 25px;
+}
+.FORM_LABEL_HIGHLIGHT
+{
+    width:200px;
+    height: 25px;
+    float:left;
+    clear:right;
+    margin-top: 15px;
+    margin-right: 15px;
+    text-align: right;
+
+    font-family: arial, verdana, tahoma;
+    font-size:13px;
+    color:red;
+    font-weight:bold;
+    text-decoration:blink;
+    line-height: 25px;
+}
+.FORMINPUT_TXTAREA
+{
+    width:400px;
+    height:150px;
+    font-family: arial, verdana, tahoma;
+    font-size:13px;
+    background-color: white;
+    border:3px solid;
+    border-color:#CCE0FF;
+    float:left;
+    margin-top: 15px;
+}
+.FORMINPUT_TXTAREA_HIGHLIGHT
+{
+    width:400px;
+    height:150px;
+    font-family: arial, verdana, tahoma;
+    font-size:13px;
+    background-color: white;
+    border:3px inset red;
+    float:left;
+    margin-top: 15px;
+}
+.FORM_CONTAINER
+{
+    padding-left: 20px;
+    float:right;
+    width: 700px;
+    overflow: hidden;
+}
+.FORM_BUTTON_CONT
+{
+    float: right;
+    width: 420px;
+    height: 25px;
+    margin-top: 15px;
+}
+.FORM_BUTTON
+{
+    width:100px;
+    height:25px;
+    float:left;
+    margin-right: 20px;
+
+    font-family: arial, verdana, tahoma;
+    font-size:13px;
+    background-color: white;
+    border:1px -moz-bg-inset black;
+}
+.MESSAGE
+{
+    width:520px;
+    float:right;
+    font-family: arial, verdana, tahoma;
+    font-size:16px;
+    font-weight:bold;
+    color:red;
+    clear:both;
+    overflow:hidden;
+}

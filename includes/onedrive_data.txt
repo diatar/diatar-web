@@ -1,0 +1,126 @@
+<?php return array(
+
+"v12.5wininst"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117407&authkey=AObaCpUSqwFjLYo",
+"v12.5winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117405&authkey=AHDBZHfWqbGxK_o",
+"v12.5i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117404&authkey=AGxwRMWAeE9JU4s",
+"v12.5x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117406&authkey=AA5Y8Fe3Ao_cT9M",
+"v12.5i386deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117401&authkey=ABv4KpMY5m2t9qQ",
+"v12.5x64deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117400&authkey=ALwJx6kCK4LPtJs",
+
+"v12.4wininst"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111293&authkey=AEmfkjavzJuI8-k",
+"v12.4winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111291&authkey=AG07YXQnuKzyt3o",
+"v12.4i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111290&authkey=AIkbBnFX_g_BCUM",
+"v12.4x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111292&authkey=AHdvtjFTRbvydGo",
+"v12.4i386deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111289&authkey=AD5OHLkyHESDsOU",
+"v12.4x64deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111288&authkey=ACY5bSVGrS3jpEE",
+
+"v12.3wininst"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111470&authkey=AEkslz_7l3_Qh4o",
+"v12.3winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111468&authkey=AP6o2oLmjvgHAtk",
+"v12.3i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111467&authkey=AB6zPJzqH6k-oUI",
+"v12.3x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111469&authkey=AFHJ49BBlDijnQk",
+"v12.3i386deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111466&authkey=AC--zguuUzzPI7g",
+"v12.3x64deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111465&authkey=ACm-lUuolk0BrxU",
+
+"v12.2wininst"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111457&authkey=AEtmyqQtn0bFZpA",
+"v12.2winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111455&authkey=AKb08WvPyAfnHu0",
+"v12.2i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111454&authkey=AN07IzmCLUnYcz0",
+"v12.2x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111456&authkey=APeLFcB8j8PHeNM",
+"v12.2i386deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111453&authkey=ALpFTIG50FTUm9c",
+"v12.2x64deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111452&authkey=AOCpwrP-WH2gqs0",
+
+"v12.1wininst"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111445&authkey=AHzMP4JQkX3Iepw",
+"v12.1winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111438&authkey=ACfmsg6CqV7OBnQ",
+"v12.1i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111440&authkey=AJo4j-4m0RDfpy8",
+"v12.1x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111442&authkey=AJ9txxkhsrm9-l8",
+"v12.1i386deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111444&authkey=AF53XF4vzwRGUIE",
+"v12.1x64deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111443&authkey=ABNMGLSTds8n1sM",
+
+"v12.0winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111426&authkey=AApDZe5qF6kev08",
+"v12.0i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111425&authkey=ANfRMlLmhLgVbzs",
+"v12.0x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111427&authkey=AJI74E6sF7bp95o",
+"v12.0i386deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111434&authkey=AFxBgBzm5Jd2ZrY",
+"v12.0x64deb"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111433&authkey=AFm7vnV7frfxJIk",
+
+"v11.4winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111416&authkey=AKaefN2t-lPfmhc",
+"v11.4i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111415&authkey=AIE9lfUVCHKAeuk",
+"v11.4x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111419&authkey=AC-bzHy0GziIoDU",
+
+"v11.3winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111405&authkey=AGVNJcdw_IiRHy0",
+"v11.3i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111404&authkey=ALs3HT_7kxctPKg",
+"v11.3x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111408&authkey=ANjBRvZ3oqwqmD0",
+
+"v11.2winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111394&authkey=AFokWFJORePiUxM",
+"v11.2i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111393&authkey=AKBHsZ7qvzwkRYA",
+"v11.2x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111399&authkey=AOauQcTc9DrKqO8",
+
+"v11.1winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111384&authkey=AE2EHYBJ_SGMUSs",
+"v11.1i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111383&authkey=AKPunGVc2v-SjLY",
+"v11.1x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111387&authkey=AFi6dCNGmNVj5_Y",
+
+"v11.0winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111372&authkey=AC_MCAmkgo_Zt58",
+"v11.0i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111371&authkey=AJXmckAkdZCYyo8",
+"v11.0x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111376&authkey=AOQU-od_8DtGK00",
+
+"v10.5winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111360&authkey=AFyyIbYci0mP4Ro",
+"v10.5i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111359&authkey=ALMAbojigmE2QmY",
+"v10.5x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111363&authkey=AMsua5k61vBl_ac",
+
+"v10.4winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111347&authkey=ADPGLmDq3C0uVQE",
+"v10.4i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111346&authkey=ANMIHZpMer760Oo",
+"v10.4x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111350&authkey=APDYrc8dgC1tfcc",
+
+"v10.3winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111323&authkey=AF5TrURhENinCIA",
+"v10.3i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111322&authkey=AIFFA9v9wUj7zwc",
+"v10.3x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111326&authkey=AJ50BEJpHik3Wek",
+
+"v10.2winzip" 		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111335&authkey=AIM5-Xmm9TYXzCI",
+"v10.2i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111334&authkey=AHhpvPDd6vf-8Zk",
+"v10.2x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111339&authkey=AOn2T4x33trLab4",
+
+"v10.1winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111311&authkey=AG17J2sSjSkFJ7Y",
+"v10.1i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111310&authkey=ADTN2dHFBOEexz0",
+"v10.1x64targz"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111314&authkey=ADl8dZU93gYKyQU",
+
+"zene/szvu1"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111561&authkey=AMFFP6SN-FOLOE0",
+"zene/szvu2"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111565&authkey=ABhIHl99M-s6LhU",
+"zene/szvu3"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111566&authkey=AMGhs7v04Lgo-Pw",
+"zene/szvu4"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111567&authkey=AOs-6r49lW7iIrQ",
+"zene/szvu5"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111568&authkey=ALpavRryIUAOVcE",
+"zene/szvu6"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111569&authkey=AOQRy51rlDRxEo0",
+"zene/szvu7"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111570&authkey=AMiUrfxqurK9WTM",
+"zene/szvu8"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111574&authkey=AHNsYOTP7GxTsPQ",
+"zene/szvu9"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111575&authkey=AA0c7p9QoQOtD3w",
+"zene/szvu10"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111563&authkey=AO7_oAvthexOfy4",
+"zene/szvu11"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111564&authkey=APtJa4QEkDEP6YQ",
+"zene/szvu12"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111562&authkey=ACWEqJ9lr1zwCOY",
+
+"zene/dur"			=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117394&authkey=AFpSE1n-ecLrDQI",
+"zene/ord"			=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111541&authkey=AM-ycxwdBeqTpEg",
+"zene/szentkut"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111542&authkey=AIyKQBa-hT6Hq4E",
+"zene/szkcsill"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111543&authkey=AKFy1CrpHh9IrR8",
+
+"zene/du1"			=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111550&authkey=AKR7rO2YVwKoQ3E",
+"zene/du2"			=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111551&authkey=AFczDe_ZbWl5d88",
+"zene/du3"			=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111552&authkey=AK-4tovPDaZMQks",
+"zene/du4"			=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111553&authkey=ANgN3IDzToYorLA",
+"zene/du5"			=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111555&authkey=AKvJI3SMAk2q4kk",
+"zene/du6"			=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111554&authkey=AIFNPTtKaGnVN0k",
+
+"zene/kantoros1"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111545&authkey=AMwR78s0x93RbbM",
+"zene/kantoros2"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111546&authkey=ADyh32J5zLqWEPU",
+"zene/kantoros3"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111547&authkey=AMepr-0x6L8XR7k",
+"zene/kantoros4"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111548&authkey=AB4eqptbCSe0gfE",
+"zene/kantoros5"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111549&authkey=AP9vrVodEY2tUo8",
+
+"zene/sarga1"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111557&authkey=AJL5CxzyyU-dswY",
+"zene/sarga2"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111558&authkey=AOWi739FKmadYY8",
+"zene/sarga3"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111559&authkey=AIcIOsmYuhk-Od8",
+"zene/sarga4"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2111560&authkey=AJhCyTSlhB4aolk",
+
+"zene/unitarius"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117395&authkey=AAPxOg1j4X_m_Ek",
+
+"zene/dunamelleki1" => "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117410&authkey=AL5H6SaTaPD_Ei0",
+"zene/dunamelleki2" => "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117411&authkey=ACNKTuTZMagGRrQ",
+"zene/dunamelleki3" => "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117409&authkey=AGaCO2134D8v4rk",
+
+) ?>

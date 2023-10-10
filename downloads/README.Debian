@@ -1,0 +1,108 @@
+diatar for Debian
+----------------
+
+[HU]    Kiegészítő információk a Diatár 12.6-es verziójának Linux (.deb) csomagjaihoz 
+        -----------------------------------------------------------------------------
+
+Általános:
+
+ – a csomag tartalmazza a Diatár és a DiaSzerkesztő programot az összes énekeskönyv előre elkészített diájával együtt, kivéve a hozzávaló hangfájlokat
+ – ezek a programok kompatibilisek mind a Windowsos mind az Androidos változataikkal, azaz képesek hálózati üzemmódban együtt működni velük
+ – standard Debian bináris csomag ami Linux és Freedesktop.org ajánlásokat próbál követni, így elvileg szinte minden Linux disztribúcióban használható (némi korlátozással, lásd alább)
+ – a letöltött csomag dpkg-vel installálható, ill. letörölhető
+ – a telepített programok automatikusan indíthatóak bejelentkezéskor vagy kézzel a menüből ill. asztalról ikonok segítségével 
+
+Telepítés:  (A program globálisan, minden Linux felhasználó számára települ, már nem kell létrehozni egy speciális 'diatar' nevű felhasználót)
+
+ 1) A letöltött csomagot szuper-user (root) jogosultságokkal lehet telepíteni (privilegizált felhasználó alatt):
+
+    - Terminálban:          sudo dpkg -i diatar_12.6.0-1_i386.deb   (a 32 bites installálása)
+                            sudo dpkg -r diatar                     (általános un-installálás/letörlés)
+
+    - Fájl-menedzserben:    a letöltött csomag ikonjára (dupla) kattintva, majd a megjelenő ablakban értelemszerűen (pl. GDebi-vel)
+
+ 2) Ha hangfájlokat is le akarunk játszani, akkor szükség van a "libportaudio2" csomagra, mely általában alapból nincs installálva.
+
+    a) a csomag állapotának ellenörzése:                    dpkg-query -s libportaudio2     ("Status: install ok installed"-nak kell lennie)
+    b) ha nem akkor le kell tölteni és telepíteni kell:     sudo apt install libportaudio2  (vagy Synaptic)
+
+ 3) Az összetömörített (.zip) .mp3 hangfájlok kibontásához szükséges az "unzip" csomag, mely általában alapból szintén nincs installálva.
+
+    a) a csomag állapotának ellenörzése:                    dpkg-query -s unzip     ("Status: install ok installed"-nak kell lennie)
+    b) ha nem akkor le kell tölteni és telepíteni kell:     sudo apt install unzip  (vagy Synaptic)
+
+ 4) A honlap Letöltés/Zenekiséretek oldaláról le kell tölteni a kívánt .zip fájlokat a /var/local/diatar/dtx könyvtárba
+    majd kicsomagolni őket:     cd /var/local/diatar/dtx; unzip -q "*.zip"
+
+ (Az esetleges későbbi frissítés dpkg-vel (valószínűleg) NEM működik, így először manuálisan un-installálni kell a régi csomagot, majd ezután lehet az újat feltelepíteni! A saját magunk által létrehozott dia-lista ill. konfigurációs fájlok elmentéséről és át-hozataláról nekünk kell gondoskodnunk! Lásd a lap alján*! )
+
+Megjegyzések:
+
+ – program indító ikonok az asztalon és a tálcán általában a menüben kiválasztott elemen történő jobb egeres kattintással hozhatók létre
+ – a diatár automatikus indulása bejelentkezéskor általában az alábbi parancsokkal érhető el:
+	a) globálisan, minden Linux felhasználó számára:	1) sudo mkdir -p /etc/xdg/autostart 2) sudo cp -t /etc/xdg/autostart /usr/local/share/diatar/inst/polyjoe-diatar.desktop
+	b) csak az aktuális Linux felhasználó számára:   1) mkdir -p ~/.config/autostart 2) cp -t ~/.config/autostart /usr/local/share/diatar/inst/polyjoe-diatar.desktop
+ – a telepítés a diatar közös elérésű adatainak egy /var/local/diatar alatti könyvtár struktúrát hoz létre. (Ez a hely használandó a mindenki számára hozzáférhető adatok számára, míg a saját fájljainkat a HOME könyvtárunkban tarthatjuk elkülönítve.)
+ – figyelem: a /var/local/diatar alatti közös elérésű könyvtárak mindenki számára írhatóak, így akkor is módosítható bennük egy fájl, ha nincs rá közvetlen írási jogosultságunk!
+ – a csomagok LinuxMint 21.1 Cinnamon (64-bit) és LMDE (LinuxMintDebianEdition) 5 Cinnamon (32-bit) alatt lettek kipróbálva
+ – a hangrendszerrel kapcsolatos üzenetek (ALSA lib..., Cannot connect to server..., Jack...) csak információk, így figyelmen kívül hagyhatóak!
+ – ismert problémák: a külső (vezérlő) hardware-k működése nem lett kipróbálva; tisztázatlan csomag függőségek, a Diatár főablakának minimalizálása, egy-gépes üzemmódban egyes disztribúcióknál és külső monitor típusoknál nem működik a második képernyőre való vetítés.
+
+
+
+[En]    Additional information for Linux (.deb) package of Diatar ver. 12.6
+        -------------------------------------------------------------------
+
+General:
+
+ – the package contains the Diatar and the DiaEditor programs together with the ready made slides of all songbooks, excluding the matching sound files
+ – these programs are compatible whith their Windows and Android variants i.e. they are able to collaborate with them in network installation
+ – standard Debian binary package which follows Linux and Freedesktop.org recommendations, so theoretically it can be used (with smaller restrictions, see below) in any Linux distribution
+ – the downloaded package can be installed or removed with dpkg
+ – the installed programs can be launched automatically at login or manually from menu or desktop with icons
+
+Installation:   (The program is installing globally for all Linux users, there is no need to create a special 'diatar' user anymore)
+
+ 1) The downloaded package can be installed as a super-user (root) under privileged user account:
+
+    - in terminal:          sudo dpkg -i diatar_12.6.0-1_i386.deb   (32 bit installation)
+                            sudo dpkg -r diatar                     (general uninstall/remove)
+
+	- with file-manager:	double click on the package's icon, than use the buttons of dialogue
+
+ 2) To play the sound-files the "libportaudio2" package is required, which is typically not installed by default.
+
+    a) verify the state of package:                                 dpkg-query -s libportaudio2     (it has to be "Status: install ok installed")
+    b) if not the package has to be downloaded and installed:       sudo apt install libportaudio2  (or by Synaptic)
+
+ 3) To unzip the compressed (.zip) .mp3 sound-files the "unzip" package is required which typically also not installed by default 
+
+    a) verify the state of package:                                 dpkg-query -s unzip     (it has to be "Status: install ok installed")
+    b) if not the package has to be downloaded and installed:       sudo apt install unzip  (or Synaptic)
+
+ 4) The selected .zip files has to be downloaded from the Letöltés/Zenekiséretek page of homepage to the /var/local/diatar/dtx directory
+    and unzipped:   cd /var/local/diatar/dtx; unzip -q "*.zip"
+
+ (The future updates with dpkg will (probably) NOT work, so you have to uninstall first manually and than install the new package. You also have to take care of manually saving and transferring your dia-list and configuration files! See at the bottom of page!* )
+
+Notes:
+
+ – generally, the program launching icons on the desktop and tray can be created by right-clicking on the selected menu item
+ – to launch diatar automatically at login typically use the commands below:
+    a) globally for all Linux users:   1) sudo mkdir -p /etc/xdg/autostart 2) sudo cp -t /etc/xdg/autostart /usr/local/share/diatar/inst/polyjoe-diatar.desktop
+    b) only for the actual Linux user:   1) mkdir -p ~/.config/autostart 2) cp -t ~/.config/autostart /usr/local/share/diatar/inst/polyjoe-diatar.desktop
+ – the installation creates a sub-directory system under /var/local/diatar for the commonly accessible data of diatar (This location is intended to store data for everybody's usage, while your HOME directory is for your private files.)
+ – attention: the globally accessible common directories under /var/local/diatar are writable for everybody so files there can be modified even if there is no direct write permission for them!
+ – the packages were tested on LinuxMint 21.1 Cinnamon (64-bit) and LMDE (LinuxMintDebianEdition) 5 Cinnamon (32-bit)
+ – sound system related messages (ALSA lib..., Cannot connect to server..., Jack...) are only information, so they can be ignored!
+ – known problems: the external control hardware has not been tested; unclear package dependencies, the minimalization of Diatar's main window; in one-machine mode on some distributions with some type of external monitors projecting to the second monitor does not work.
+
+
+            *Felhasználó által készített tipikus diatár fájlok / *Typical user created diatar files
+
+    /var/local/diatar/diatar.xml                - a diatár beállításai / setup data of diatar
+    /var/local/diatar/dtx/_javitasok_.dtx       - az énekes könyvek szövegeinek helyi változatai / local versions of song-book texts'
+    /var/local/diatar/dia/*.dia                 - közös elérésű dia-sor fájlok / commonly accessible dia-list files
+    /var/local/diatar/dtx/xxx/yyy.mp3           - az 'xxx' énekeskönyv hang fájljai / the sound files of song book 'xxx'
+    /var/local/diatar/*.pdf                     - linkek a felhasználói kézikönyvekre / links to the user manuals
+

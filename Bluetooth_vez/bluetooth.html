@@ -1,0 +1,129 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="hu">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Windows-os Diatár bluetooth távvezérlése</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/DESIGN_TUTOR.css"/>
+    <link rel="stylesheet" type="text/css" href="../CSS/DESIGN_FRAME.css"/>
+</head>
+
+
+<div class="TUTOR_FRAME">
+    <div class="title16">
+        <p>
+         Windows-os Diatár bluetooth távvezérlése okostelefonról
+        </p>
+		<br/>
+    </div>
+    <div class="text">
+        <p> 
+            <img src="controller.jpg" width="200" style="float:left; margin-right:10px;"/>
+			Egy Arduino alapú mikrovezérlővel és egy ingyenesen használható okostelefonos alkalmazással sikerült megoldani,
+			hogy okostelefonról bluetooth kapcsolaton keresztül lehet vezérelni a Diatár programot.
+		</p>
+		<p>
+			Mindössze a RemoteXY alkalmazás ingyenes verzióját kell letölteni, mely megtalálható Android és IOS
+			eszközökre egyaránt.
+			<a href="https://play.google.com/store/apps/details?id=com.shevauto.remotexy.free&amp;hl=hu&amp;gl=US">RemoteXY Google Play</a>
+			vagy
+			<a href="https://apps.apple.com/us/app/remotexy/id1168130280">RemoteXY IOS</a>
+        </p> 
+		<p>
+			Szükséges hozzá egy ESP32 alapú
+			<a href="http://www.lilygo.cn/prod_view.aspx?TypeId=50060&amp;Id=1326&amp;FId=t3:50060:3">TTGO LoRa32-OLED</a>
+			mikrovezérlő.
+		</p>
+		<p>
+			Ezt USB kábellel kell csatlakoztatni a PC-hez.
+		</p>
+		<p>
+			<a href="https://downloads.arduino.cc/arduino-1.8.13-windows.zip">Arduino 1.8.13</a>
+			fejlesztőkörnyezethez telepíteni kell a
+			<a href="https://remotexy.com/en/library/">RemoteXY 3.1.9</a>
+			könyvtárat.
+			Az alaplap típusát ki kell választani, majd a soros portot is ki kell választani:
+		</p>
+        <p>
+			<img src="install1.jpg" width="200"  style="margin-right:10px;"/>
+		</p>
+        <p>
+			<img src="selhw.jpg" width="200"  style="margin-right:10px;"/>
+            <img src="selport.jpg" width="200"  style="margin-right:10px;"/>
+		</p>
+	</div>
+
+        <hr />
+    </div>
+    <div>
+         <p>   
+            Szóval sok apró bosszúság és kisebb-nagyobb probléma miatt döntöttünk úgy, hogy projektoros vetítéssel próbálkozunk. 
+            Pacor István barátom alakította ki a rendszert, üzemelte be a projektort, installálta a számítógépet, felszerelte a tartó-konzolt, 
+            én pedig segítettem neki, de főleg a programot fejlesztettem. 
+        </p> 
+        <p>
+            Mivel a projektor kicsi, a diavetítőnél csöndesebb, nem zavarja a híveket. Az első pad szélére erősítettünk egy magas rúdon álló lapot,
+            arra helyeztük el a vetítőt. A szentély legszélére van a vászon állítva, így mindenhonnan jól látható, de kevéssé zavar. 
+            Templomunk most volt száz éves, ennek tiszteletére alapos felújításon esett át. Jó lett volna a vezetékezést ennek keretében az 
+            aljzatba rejteni. Sajnos azonban a vetítőt csak később tudtuk felszerelni, így egyelőre a jeleket továbbító RGB kábel a padok  
+            tövében fut, azon a két rövid helyen pedig, ahol valaki ráléphetne, egy szőnyeggel letakart kábelcsatornában. 
+            Folyamatosan keressük persze a lehetőséget, hogy ezt a kábelt megszûntessük.
+        </p>
+        <p>
+            Az első próbálkozás az 
+            volt, hogy rádiófrekvenciás videojel-továbbítót üzemeltünk be. Sajnos ennek a képe igen gyenge volt, mert csak 640x480 pixeles 
+            felbontású kompozit videojelet továbbít. Ezután döntöttünk az RGB kábel használata mellett. Féltünk, hogy zajos lesz a kép a hosszú 
+            vezeték miatt, de kipróbáltuk, és akár 60m hosszú dróton is tûéles képet ad a projektor. Az egyetlen zavaró az volt, hogy ha a szöveg 
+            nem töltötte ki a teljes képet, a projektor időnként elveszítette a szinkront, és esetleg képkockánként újraállította a felbontást. 
+            Ezt a problémát azonban szoftveres úton sikerült megoldani.
+        </p>
+        <p>
+            A végleges megoldás talán az lesz, hogy egy számítógépet telepítünk az első padba (vagy mellé). Ekkor video-vetítéshez, gitáros miséhez, 
+            lelkigyakorlatokhoz közvetlen innen lehet majd a projektort használni, nem csak a kórusról. Az ottani géppel WiFi (rádiófrekvenciás) 
+            hálózaton kell majd az összeköttetést megoldani, és akkor nem lesz szükség a vezetékezésre. A program mindenesetre képes rá, csak az 
+            elhatározásra van szükség...
+        </p>
+        <hr />      
+    </div>
+    <div>
+        <p>
+            <img src="monitor.jpg" width="200"  style="float:left; margin-right:10px;"/>
+            <img src="gombok.jpg" width="200"  style="float:right; margin-left:10px;"/>
+        </p>
+        <p>
+            Az orgona játszóasztalán kapott helyet a monitor, melyen a kántor követheti az énekrend alakulását. A billentyûzet és egér az orgonapad 
+            jobboldalán, a sípház oldalára szerelt konzolra került, alá pedig a számítógép háza.
+        </p>
+        <p>
+            A hagyományos, diavetítős énekvetítésnek szokásos tartozéka az orgonista keze ügyében található léptető gombsor. 
+            Ez a számítógép-billentyûzetnél sokkal praktikusabbnak bizonyult, ezért a kezdetektől fogva törekedtem ilyen távkapcsoló üzembeállítására. 
+            Eleinte egy  primitív kapcsolással a számítógép soros portjára csatlakozott néhány villanykapcsoló. Jól bevált, de otromba kinézetû volt, 
+            és az igények növekedésének nem tudott megfelelni. Ekkor először párhuzamos (nyomtató) portra alakítottam át, de az igazi megoldást egy 
+            kereskedelmi forgalomban kapható, PIC mikrovezérlőre alapozott, soros portra illeszkedő ki/bemeneti áramkör jelentette. Ennek segítségével 
+            akár nyolc kapcsoló vagy nyomógomb jele fogadható, és visszajelző lámpák használatát is lehetővé teszi.
+        </p>
+        <p>
+            Ennek üzembehelyezésével 
+            egy időben Ringhoffer Gergely orgonaépítő a villanykapcsolók helyett esztétikus 
+            gombokat épített be a játszóasztal szabad felületébe. Jelenleg tehát öt 
+            nyomógomb szolgálja a kántor igényeit: a vetítést bekapcsoló gomb fehéren 
+            világít, ha a projektor vetít; az előre és hátra léptetés mellett a következő, 
+            illetve előző énekre is közvetlenül (a további versszakok kihagyásával) lehet 
+            ugrani. 
+        </p>
+        <p>
+            Bátran állíthatom: a rendszer nagy megelégedésünkre szolgál, a gitárosok és a  kántorok is örömmel használják, a számítógéphez értők 
+            és a "fóbiások", fiatalok és nyugdíjasok egyaránt! Liszt Ferenc: Via Crucis címû keresztúti ciklusához is beírtuk a kórustételek 
+            szövegét, hogy tudják a hívek, mit éneklünk éppen. Az elmélkedés közben pedig válogatott 
+            keresztút-képeket vetítünk. Tavaly még filmvetítést is rendeztünk a projektor 
+            segítségével.
+        </p>
+        <p>
+            Többen elkérték a 
+            programot, szívesen adjuk &#8211; terjedjen minél szélesebb körben, a hívek és a 
+            kántorok örömére! Ahogy egy atya találóan megjegyezte: "vatikáni valutában" 
+            fizetnek érte, szerte az országban, sőt a határokon túl is használják.
+        </p>
+   </div>            
+  
+</div>
