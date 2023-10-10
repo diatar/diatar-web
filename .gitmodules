@@ -1,0 +1,3 @@
+[submodule "downloads/enektarak2"]
+	path = downloads/enektarak2
+	url = https://github.com/diatar/diatar-dtxs.git
