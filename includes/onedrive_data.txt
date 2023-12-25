@@ -1,5 +1,12 @@
 <?php return array(
 
+"v12.6wininst"		=> "https://onedrive.live.com/download?resid=8177E044BBCD915B%2118929&authkey=!AK0mwXNRz7BInz0",
+"v12.6winzip"		=> "https://onedrive.live.com/download?resid=8177E044BBCD915B%2118920&authkey=!AOLu-aeyduCadS8",
+"v12.6i386targz"	=> "https://onedrive.live.com/download?resid=8177E044BBCD915B%2118926&authkey=!AKBVQvFavgVPTS4",
+"v12.6x64targz"		=> "https://onedrive.live.com/download?resid=8177E044BBCD915B%2118930&authkey=!ALzwmIrNKQf8HS4",
+"v12.6i386deb"		=> "https://onedrive.live.com/download?resid=8177E044BBCD915B%2118924&authkey=!AO0zvlk08SeiDiI",
+"v12.6x64deb"		=> "https://onedrive.live.com/download?resid=8177E044BBCD915B%2118923&authkey=!AIho6xJZN0B0uHs",
+
 "v12.5wininst"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117407&authkey=AObaCpUSqwFjLYo",
 "v12.5winzip"		=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117405&authkey=AHDBZHfWqbGxK_o",
 "v12.5i386targz"	=> "https://onedrive.live.com/download?cid=8177E044BBCD915B&resid=8177E044BBCD915B%2117404&authkey=AGxwRMWAeE9JU4s",

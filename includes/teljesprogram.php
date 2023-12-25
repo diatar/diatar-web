@@ -1,6 +1,6 @@
 <div class="text expanded">
 	<p>
-		12.6 verzió – A csomagok tartalmazzák a vetítőprogramot - teljes körű leírással,
+		12.7 verzió – A csomagok tartalmazzák a vetítőprogramot - teljes körű leírással,
 		az énektárak szerkesztését végző programot, és ennek leírását,
 		valamint az eddig elkészült énektárakat (.dtx fájlok)
 	</p>
@@ -56,7 +56,7 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="./downloads/diatar_install-v12.6.win.exe">diatar_install.exe</a>
+			<a href="./downloads/diatar_install-v12.7.win.exe">diatar_install.exe</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">
@@ -73,7 +73,7 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_ODD">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="./downloads/diatar_12.6.1_win.zip">win.zip</a>
+			<a href="./downloads/diatar_12.7.1_win.zip">win.zip</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">
@@ -98,10 +98,10 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.6.1-1_i386.deb');?>">i386.deb</a>
+			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.1-1_i386.deb');?>">i386.deb</a>
 		</div>
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.6.1-1_amd64.deb');?>">amd64.deb</a>
+			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.1-1_amd64.deb');?>">amd64.deb</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">
@@ -117,27 +117,10 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_ODD">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.6.1-1_i386.rpm');?>">i386.rpm</a>
+			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.1_i386.tar.gz');?>">i386.tar.gz</a>
 		</div>
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.6.1-1_x86_64.rpm');?>">x86_64.rpm</a>
-		</div>
-	</div>
-	<div class="RIGHT_TABLE_RIGHT">
-		<div class="TABLE_TEXT expanded">
-			<p>
-				Az .rpm fájl a .deb átirata (alien-nel), ezért lehetőség szerint inkább a debian csomagot érdemes használni.
-			</p>
-		</div>
-	</div>
-</div>
-<div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
-	<div class="RIGHT_TABLE_LEFT">
-		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.6.1_i386.tar.gz');?>">i386.tar.gz</a>
-		</div>
-		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.6.1_x86_64.tar.gz');?>">x86_64.tar.gz</a>
+			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.1_x86_64.tar.gz');?>">x86_64.tar.gz</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">
@@ -181,10 +164,10 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
 	<div class="text expanded">
 		 <p>
-			Balogh Attila készített egy Raspberry Pi futtatható változatot.
-			Elsőként a <a href="./downloads/diatar_rpi">bináris image</a>-t kaptuk meg, hamarosan jön a leírás.
+			Balogh Attila 2019-ben készített egy Raspberry Pi futtatható változatot.
+			Csak a <a href="./downloads/diatar_rpi">bináris image</a>-t kaptuk meg.
 			A forráskódon csak minimális változtatást kellett végrehajtani.
-			Ez a változat egy néhány évvel ezelőtti verzióból készült, sajnos azóta nincs frissítés,
+			Ez a változat a 2019-es v12.3 verzióból készült, sajnos azóta nincs frissítés,
 			így a legújabb fejlesztéseket nem tartalmazza.
 		</p>
 	</div>

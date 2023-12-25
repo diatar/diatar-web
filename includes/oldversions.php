@@ -8,6 +8,27 @@
 </div>
 
 <br/>
+<div class="text expanded"><p>12.6 verzió</p></div>
+<div class="iconed_title windows_icon">
+	<div class="text12">
+		<a href=<?php echo OneDrive("v12.6wininst"); ?> download>installer</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href=<?php echo OneDrive("v12.6winzip"); ?> download>zip</a>
+	</div>
+</div>
+<div class="iconed_title linux_icon">
+	<div class="text12">
+		<a href=<?php echo OneDrive("v12.6i386targz"); ?> download>i386.tar.gz</a>
+		&nbsp;&nbsp;
+		<a href=<?php echo OneDrive("v12.6x64targz"); ?> download>x86_64.tar.gz</a>
+		&nbsp;&nbsp;
+		<a href=<?php echo OneDrive("v12.6i386deb"); ?> download>i386.deb</a>
+		&nbsp;&nbsp;
+		<a href=<?php echo OneDrive("v12.6x64deb"); ?> download>amd64.deb</a>
+	</div>
+</div>
+
+<br/>
 <div class="text expanded"><p>12.5 verzió</p></div>
 <div class="iconed_title windows_icon">
 	<div class="text12">

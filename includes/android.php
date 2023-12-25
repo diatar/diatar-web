@@ -1,6 +1,6 @@
 ﻿<div class="text expanded">
 	<p>
-		<b>v6.4 Android vezérlő és vetítő - Android alapú kivetítő applikációk okoskészülékekre</b>
+		<b>v6.5 Android vezérlő és vetítő - Android alapú kivetítő applikációk okoskészülékekre</b>
 	</p>
 	<br/>
 	<div class="iconed_title android_icon">
@@ -12,11 +12,12 @@
 		&nbsp;&nbsp;
 		<a href="./downloads/android/DiaVetito.apk">DiaVetito.apk</a>
 		&nbsp;&nbsp;
-		<a href="./downloads/android/DiatarAndroid.zip">forráskód</a>
+		<a href="https://github.com/diatar/diatar-android" target="_blank">forráskód</a>
 		<br/><br/>
 	    <p>Korábbi verziók a lap alján.</p>
 		<p>Újabban a Play áruház AAB (bundle) formátumú telepítő csomagot követel meg.
 		Amíg a fejlesztőkörnyezet lehetővé teszi, itt elérhető a közvetlenül telepíthető APK forma.</p>
+		<p>A forráskód Elek László SJ jóvoltából már a githubon érhető el.</p>
 	  </center>
 	</div>
 	<br/>
@@ -70,6 +71,11 @@
 	</p>
 
 	<ul class="dotted">
+		<li>
+			6.5 verzió: az új Android OS korlátozza a közös könyvtárakhoz való hozzáférést, így a saját DTXeket másképp kell kezelni:
+			a Beállítások/Program menüpont ablakában van egy DTX import nyomógomb, ezzel be lehet másolni egy fájlt,
+			ami attól kezdve megjelenik a programban.
+		</li>
 		<li>
 			6.4 verzió: dupla diák kezelése<br/>
 			Egymás utáni két diát össze lehet kapcsolni egy képre, ha rövidek a szövegek.
@@ -237,36 +243,30 @@
 		&nbsp;&nbsp;
 		<a href="./downloads/android/DiaVetito55.apk">DiaVetito55.apk</a>
 	  </center>
-	  <br/>
 	  <center>
 		<a href="./downloads/android/Diatar54.apk">Diatar54.apk</a>
 		&nbsp;&nbsp;
 		<a href="./downloads/android/DiaVetito54.apk">DiaVetito54.apk</a>
 	  </center>
-	  <br/>
 	  <center>
 		<a href="./downloads/android/Diatar53.apk">Diatar53.apk</a>
 		&nbsp;&nbsp;
 		<a href="./downloads/android/DiaVetito53.apk">DiaVetito53.apk</a>
 	  </center>
-	  <br/>
 	  <center>
 		<a href="./downloads/android/Diatar52.apk">Diatar52.apk</a>
 		&nbsp;&nbsp;
 		<a href="./downloads/android/DiaVetito52.apk">DiaVetito52.apk</a>
 	  </center>
-	  <br/>
 	  <center>
 		<a href="./downloads/android/Diatar51.apk">Diatar51.apk</a>
 		&nbsp;&nbsp;
 		<a href="./downloads/android/DiaVetito51.apk">DiaVetito51.apk</a>
 	  </center>
-	  <br/>
 	  <center>
 		<a href="./downloads/android/Diatar50.apk">Diatar50.apk</a>
 		&nbsp;&nbsp;
 		<a href="./downloads/android/DiaVetito50.apk">DiaVetito50.apk</a>
 	  </center>
-	  <br/>
 	</div>
 </div>

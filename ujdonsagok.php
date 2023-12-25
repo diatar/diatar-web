@@ -16,7 +16,49 @@
 		<br/>
         <div>
           <center>
-            <b>2023. október 10. <i> Github-on a forráskód</i></b>
+            <b>2023. december 25. <i></i></b>
+          </center>
+		  <ul class="dotted">
+			<li>
+				"exportálás" - olyan .DIA összeállítás, mely független az énektáraktól (minden dia egyedi szöveg).
+				Így ez a fájl elvihető olyan gépre is, ahol nincsenek meg a kötetek.
+			</li>
+			<li>
+				Automatikus mentés - ezt a kapcsolót beállítva nem kell minden változtatás után a [Mentés] gombot nyomkodni.
+			</li>
+			<li>
+				Áthúzott betűstílus - az új katolikus misekönyv körüli szövegváltozások miatt jött elő
+				az igény az ún. "strikethrough" írásmódra.
+			</li>
+			<li>
+				Figyelem! A Linux debian csomagok telepítője alapjaiban megváltozott - el kell olvasni a READMEt!
+			</li>
+			<li>
+				Az Ordináriumok és az Imák kötetébe beírtuk az új misekönyvben változott szövegeket.
+			</li>
+			<li>
+				Busnyák Erik szerezte meg nekünk Csányi Tamás: Szép régi énekek című kötetének elektronikus formáját.
+				A Ciszterci Szent Imre templom karnagya kéri, hogy minden javaslatot számára a karnagy@szentimr.hu címre írjanak meg.
+			</li>
+			<li>
+				Lakner Sándor: Zengő énekszó című kötete is új, a nyomdai anyagból lett begépelve a szerző engedélyével.
+				Szintén Busnyák Eriknek köszönjük a megszerzést.
+			</li>
+			<li>
+				Az Emmánuel közösség énekei már évek óta megvannak, de Szabó Dénes most alaposan átnézte, javította, bővítette.
+				Hálásan köszönjük a munkát!
+			</li>
+			<li>
+				Sajó József tovább folytatta a kották készítését; valamint a SzVU, Graduale és az Imák bővítését.
+			</li>
+		  </ul>
+		</div>
+		
+		<!-- 29 -->
+		<br/>
+        <div>
+          <center>
+            <b>2023. október 10. <i>Github-on a forráskód</i></b>
           </center>
 		  <ul class="dotted">
 			<li>
@@ -26,21 +68,6 @@
 		  </ul>
 		</div>
 		
-        <!-- 29 -->
-		<br/>
-        <div>
-          <center>
-            <b>2023. szeptember 11. <i>kell 32bites kiadás?</i></b>
-          </center>
-		  <ul class="dotted">
-			<li>
-				Egy <a href="https://diatar.eu/forum/viewtopic.php?t=239">körkérdést tettünk közzé a fórumon</a>.
-				Van-e szükség még 32bites Win/Linux kiadásokra. Kérjük, hogy aki használja
-				és frissíti a Diatárat olyan régi gépen, ami a 64bites kiadást nem támogatja, az jelezze az igényét!
-			</li>
-		  </ul>
-		</div>
-
         <!-- 28 -->
 		<br/>
         <div>

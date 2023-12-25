@@ -1,6 +1,6 @@
 <div class="text expanded">
 	<p>
-		12.6 verzió – Csak a programok külön (régi verzió frissítésére használható)
+		12.7 verzió – Csak a programok külön (régi verzió frissítésére használható)
 	</p>
 
 	<p>

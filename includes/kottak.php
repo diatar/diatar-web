@@ -2,22 +2,6 @@
 		Kották
 </div>
 
-<div class="RIGHT_TABLE TABLE_ENTRY_HIGHLIGHT_EVEN">
-  <div class="RIGHT_TABLE_LEFT">
-	<div class="download_link expanded">
-	  <p>Soós János: Szent József litánia <a href="/downloads/kottak/SztJozsefLit-SoosJanos-allo.pdf">- álló kotta</a></p>
-	  <p><a href="/downloads/kottak/SztJozsefLit-SoosJanos-Fekvo.pdf">- fekvő kotta</a></p>
-	</div>
-  </div>
-  <div class="RIGHT_TABLE_RIGHT">
-	<div class="TABLE_TEXT expanded">
-	  <p>
-		Soós János saját dallamot írt a Szent József litániához, örömmel tesszük közzé a kottáját.
-	  </p>
-	</div>
-  </div>
-</div>
-
 <div class="RIGHT_TABLE TABLE_ENTRY_ODD">
 	Sajó József gyönyörű megformázásában kaptunk számos kottát, a gyűjteményét folyamatosan bővíti.
 	Ezek a kántorok számára készültek, a fotó-ablak segítségével nyomtatott kotta helyett is használhatók.
@@ -74,7 +58,7 @@
 	  <p>
 		A Szent Vagy, Uram! és az Éneklő Egyház néhány kottája szintén Sajó Józseftől.
 									Minden kotta egyedileg begépelve, kottaíró programmal rajzolva, a máshol fellelhető esetleges hibák javítva.
-									A jövőben még bővíteni szándékozik.
+									Folyamatosan bővül.
 	  </p>
 	</div>
   </div>
@@ -112,3 +96,20 @@
 	</div>
   </div>
 </div>
+
+<div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
+  <div class="RIGHT_TABLE_LEFT">
+	<div class="download_link expanded">
+	  <p>Soós János: Szent József litánia <a href="/downloads/kottak/SztJozsefLit-SoosJanos-allo.pdf">- álló kotta</a></p>
+	  <p><a href="/downloads/kottak/SztJozsefLit-SoosJanos-Fekvo.pdf">- fekvő kotta</a></p>
+	</div>
+  </div>
+  <div class="RIGHT_TABLE_RIGHT">
+	<div class="TABLE_TEXT expanded">
+	  <p>
+		Soós János saját dallamot írt a Szent József litániához, örömmel tesszük közzé a kottáját.
+	  </p>
+	</div>
+  </div>
+</div>
+

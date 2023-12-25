@@ -127,13 +127,13 @@
                         <div class="RIGHT_TABLE TABLE_ENTRY_ODD">
                             <div class="RIGHT_TABLE_LEFT">
                                 <div class="download_link expanded">
-                                    <a href="/downloads/diatar-source.zip">Forráskód </a>
+                                    <a href="https://github.com/diatar" target="_blank">Forráskód</a>
                                 </div>
                             </div>
                             <div class="RIGHT_TABLE_RIGHT">
                                 <div class="TABLE_TEXT expanded">
                                     <p>
-                                    A program teljes forráskódja
+                                    A program teljes forráskódja, Elek László SJ jóvoltából a githubon.
                                     </p>
                                 </div>
                             </div>
