@@ -49,6 +49,10 @@
 				Hálásan köszönjük a munkát!
 			</li>
 			<li>
+				Tápiómenti Nagyboldogasszony Közösség énekei - ez az első, amit közvetlenül githubon kaptunk.
+				Halla Bálint készítette még 2018-ban, köszönjük a megosztást!
+			</li>
+			<li>
 				Sajó József tovább folytatta a kották készítését; valamint a SzVU, Graduale és az Imák bővítését.
 			</li>
 		  </ul>
