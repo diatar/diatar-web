@@ -4,3 +4,8 @@ _vti_*/
 cgi-bin/
 /forum/
 /google*.html
+/downloads/diatar*.zip
+/downloads/*.gz
+/downloads/*.deb
+/downloads/TanuljunkEnekelni.zip
+/downloads/diatar_rpi
