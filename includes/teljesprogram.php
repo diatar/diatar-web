@@ -98,10 +98,10 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2-1_i386.deb');?>">i386.deb</a>
+			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2-2_i386.deb');?>">i386.deb</a>
 		</div>
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2-1_amd64.deb');?>">amd64.deb</a>
+			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2-2_amd64.deb');?>">amd64.deb</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">

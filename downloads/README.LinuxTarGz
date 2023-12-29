@@ -1,4 +1,4 @@
-[HU]    Kiegészítő információk a Diatár 12.6-es verziójának Linuxos .tar.gz terjesztéséhez 
+[HU]    Kiegészítő információk a Diatár 12.7-es verziójának Linuxos .tar.gz terjesztéséhez 
         ----------------------------------------------------------------------------------
 
 Általános:
@@ -12,26 +12,28 @@
 
 Üzembe helyezés:   (a program telepítése nem igényel különösebb jogosultságot, de csak a telepítést végző felhasználó használhatja majd!)
 
- 1) kicsomagolás:                   tar -zxvf diatar_12.6.0.x86_64.tar.gz	(a 64 bites) (vagy megfelelő fájl menedzserben rá kattintva)
+ 1) kicsomagolás:                   tar -zxvf diatar_12.7.0.x86_64.tar.gz	(a 64 bites) (vagy megfelelő fájl menedzserben rá kattintva)
 
  2) a program futtathatóvá tétele:  chmod 744 diatar64   (a 64 bites) (vagy megfelelő fájl menedzserben rá kattintva)
 
- 3) Ha hangfájlokat is le akarunk játszani, akkor szükség van a "libportaudio2" és az "unzip" csomagokra is, melyek általában alapból nincsenek installálva. Ezeket az operációs rendszernek megfelelően kell letölteni és installálni
+ 3) a letöltött csomag ellenőrzése: sha256sum -b diatar_12.7.1-1_amd64.deb (a generált ellenőrző kódnak meg kell egyeznie a sha256sums.txt-ban levővel)
+
+ 4) Ha hangfájlokat is le akarunk játszani, akkor szükség van a "libportaudio2" és az "unzip" csomagokra is, melyek általában alapból nincsenek installálva. Ezeket az operációs rendszernek megfelelően kell letölteni és installálni
  
- 3a) A honlap (diatar.eu) Letöltés/Zenekíséretek oldaláról le kell tölteni a kívánt .zip fájlokat a Diatár könyvtárába, majd kicsomagolni őket:  unzip -q "*.zip"   (vagy megfelelő fájl menedzserben rá kattintva)
+ 4a) A honlap (diatar.eu) Letöltés/Zenekíséretek oldaláról le kell tölteni a kívánt .zip fájlokat a Diatár könyvtárába, majd kicsomagolni őket:  unzip -q "*.zip"   (vagy megfelelő fájl menedzserben rá kattintva)
 
  Verzióváltáskor a saját magunk által létrehozott dia-lista ill. konfigurációs fájlok elmentéséről és át-hozataláról nekünk kell gondoskodnunk! Lásd a lap alján*! )
 
 
 Megjegyzések:
 
- – a csomag LinuxMint 21.1 Cinnamon (64-bit) és LMDE (LinuxMintDebianEdition) 5 Cinnamon (32-bit) alatt lettek kipróbálva
+ – a csomag LinuxMint 21.2 Cinnamon (64-bit) és LMDE (LinuxMintDebianEdition) 6 Cinnamon (32-bit) alatt lettek kipróbálva
  – a hangrendszerrel kapcsolatos üzenetek (ALSA lib..., Cannot connect to server..., Jack...) csak információk, így figyelmen kívül hagyhatóak!
  – ismert problémák: a külső (vezérlő) hardware-k működése nem lett kipróbálva, Diatár főablak minimalizálása
 
 
 
-[EN]    Additional information for the Linux .tar.gz distribution of Diatar ver. 12.6
+[EN]    Additional information for the Linux .tar.gz distribution of Diatar ver. 12.7
         -----------------------------------------------------------------------------
 
 General:
@@ -45,20 +47,22 @@ General:
 
 Usage:  (It doesn't require any privileges but only the installing Linux user will be able to run the programs)
 
- 1) unpacking:                      tar -zxvf diatar_12.6.0.x86_64.tar.gz	(a 64 bit) (or by clicking on it in a suitable file manager)
+ 1) unpacking:                      tar -zxvf diatar_12.7.0.x86_64.tar.gz	(a 64 bit) (or by clicking on it in a suitable file manager)
 
  2) enabling the program to run:    chmod 744 diatar64   (a 64 bit) (or by clicking on it in a suitable file manager)
 
- 3) if we want to play also the sound files we shall need the "libportaudio2" and "unzip" packages, which are typically not installed by default. These have to be downloaded and installed according to the operating system.
+ 3) verifying the downloaded package: sha256sum -b diatar_12.7.1-1_amd64.deb (the generated checksum must be the same as the corresponding one in sha256sums.txt)
 
- 3a) download the selected .zip files from the Letöltés/Zenekiséretek page of homepage (diatar.eu) into the Diatar directory and unpack them:  unzip -q "*.zip"   (or by clicking on it in a suitable file manager)
+ 4) if we want to play also the sound files we shall need the "libportaudio2" and "unzip" packages, which are typically not installed by default. These have to be downloaded and installed according to the operating system.
+
+ 4a) download the selected .zip files from the Letöltés/Zenekiséretek page of homepage (diatar.eu) into the Diatar directory and unpack them:  unzip -q "*.zip"   (or by clicking on it in a suitable file manager)
 
 
  In case of installing a new version of Diatar you have to take care of manually saving and transferring your dia-list and configuration files! See at the bottom of page!* )
 
 Notes:
 
- – the package is tested under LinuxMint 21.1 Cinnamon (64-bit) and LMDE (LinuxMintDebianEdition) 5 Cinnamon (32-bit)
+ – the package is tested under LinuxMint 21.2 Cinnamon (64-bit) and LMDE (LinuxMintDebianEdition) 6 Cinnamon (32-bit)
  – sound system related messages (ALSA lib..., Cannot connect to server..., Jack...) are only information, so they can be ignored!
  – known problems: the external control hardware has not been tested, the minimalization of Diatár's main window
 

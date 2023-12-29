@@ -23,6 +23,11 @@ A program Telepítése/Eltávolítása:  (A program globálisan, minden Linux fe
     b) Terminálban:
         - sudo dpkg --install <elérési-útvonal>/diatar_12.7.1-1_amd64.deb   (a 64 bites telepítése)
         - sudo dpkg --purge diatar          (teljes eltávolítás: beleértve az összes általunk készített fájlt, pl. *.dia)
+
+	Ellenőrizzük a letöltött csomag sértetlenségét, eredetiségét:
+		- töltsük le a sha256sums.txt
+		- sha256sum -b diatar_12.7.1-1_amd64.deb	(a letöltött .deb fájl checksum-jának generálása)
+		- ellenőrizzük, hogy az így generált ellenőrző összeg megegyezik-e a sha256sums.txt-ben találhatóval!
     
 Zene kíséretek (hangfájlok) lejátszása:
 
@@ -62,7 +67,7 @@ Egyebek:
  – a dia sorok központi tárolására való /var/opt/diatar/dia közös elérésű könyvtár mindenki számára írható, de módosítani csak a fájlok tulajdonosai tudnak benne
  – a csomagok LinuxMint 21.2 Cinnamon (64-bit) és LMDE (LinuxMintDebianEdition) 6 Cinnamon (32-bit) alatt lettek kipróbálva
  – a hangrendszerrel kapcsolatos üzenetek (ALSA lib..., Cannot connect to server..., Jack...) csak információk, így figyelmen kívül hagyhatóak!
- – ismert problémák: a külső (vezérlő) hardware-k működése nem lett kipróbálva; a Diatár főablakának minimalizálása; egy-gépes üzemmódban egyes disztribúcióknál és külső monitor típusoknál nem működik a második képernyőre való vetítés; a Diatár GUI-ba való beágyazottsága nagyon környezet függő
+ – ismert problémák: a külső (vezérlő) hardware-k működése nem lett kipróbálva; a Diatár főablakának minimalizálása; egy-gépes üzemmódban egyes disztribúcióknál és külső monitor típusoknál nem működik a második képernyőre való vetítés; a Diatár GUI-ba való beágyazottsága nagyon környezet függő; a Diatár az Ubuntu 20.04-re NEM telepíthető
 
 
 
@@ -88,6 +93,11 @@ Installation/Removal of package:  (The program is installing globally for all Li
     b) in terminal:
         - sudo dpkg --install <path-to-package>/diatar_12.7.1-1_amd64.deb   (installing the 64 bit version)
         - sudo dpkg --purge diatar          (total removal: including all the files you have created, eg. *.dia)
+
+	Please verify the integrity of downloaded file:
+		- download sha256sums.txt
+		- sha256sum -b diatar_12.7.1-1_amd64.deb	(generate the checksum of .deb)
+		- compare the generated checksum with the corresponding one in sha256sums.txt
 
 Playing of music (sound) files:
 
@@ -127,7 +137,7 @@ Notes:
  – the /var/opt/diatar/dia directory - intended for central storage place of dia slides - is writable for everyone, but only the file owners can modify them
  – the packages were tested on LinuxMint 21.2 Cinnamon (64-bit) and LMDE (LinuxMintDebianEdition) 6 Cinnamon (32-bit)
  – sound system related messages (ALSA lib..., Cannot connect to server..., Jack...) are only information, so they can be ignored!
- – known problems: the external control hardware has not been tested; the minimalization of Diatar's main window; in one-machine mode on some distributions with some type of external monitors projecting to the second monitor does not work; the embedding of Diatar into the GUI is strongly depends on the environment
+ – known problems: the external control hardware has not been tested; the minimalization of Diatar's main window; in one-machine mode on some distributions with some type of external monitors projecting to the second monitor does not work; the embedding of Diatar into the GUI is strongly depends on the environment; Diatar can NOT be installed on Ubuntu 20.04
 
 
             *Felhasználók által használt tipikus diatár fájlok / *Typical diatar files used by users
