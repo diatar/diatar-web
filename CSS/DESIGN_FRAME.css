@@ -318,6 +318,12 @@ p
     background-position: top left;
     background-repeat: no-repeat;
 }
+.sha_icon
+{
+    background-image: url("../graphics/sha.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+}
 .pdf_icon
 {
     background-image: url("../graphics/pdf.jpg");

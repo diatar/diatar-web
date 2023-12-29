@@ -58,3 +58,17 @@
 		és a <a href="https://play.google.com/store/apps/details?id=com.polyjoe.DiaVetito" target="_blank">DiaVetítő</a>
 	</p>
 </div>
+
+<!-- SHA256 -->
+<br/><br/>
+<div class="iconed_title sha_icon">
+	SHA256 ellenőrzőösszegek
+</div>
+<div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
+	<div class="text expanded">
+		<p>
+		A biztonságos letöltés/telepítés érdekében az ellenőrzőösszegek itt találhatók:
+		<a href="./downloads/sha256sum.txt" target="_blank">sha256sum.txt</a>
+		</p>
+	</div>
+</div>

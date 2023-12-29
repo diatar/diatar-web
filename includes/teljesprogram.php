@@ -73,7 +73,7 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_ODD">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="./downloads/diatar_12.7.1_win.zip">win.zip</a>
+			<a href="./downloads/diatar_12.7.2_win.zip">win.zip</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">
@@ -98,10 +98,10 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.1-1_i386.deb');?>">i386.deb</a>
+			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2-1_i386.deb');?>">i386.deb</a>
 		</div>
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.1-1_amd64.deb');?>">amd64.deb</a>
+			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2-1_amd64.deb');?>">amd64.deb</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">
@@ -117,10 +117,10 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_ODD">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.1_i386.tar.gz');?>">i386.tar.gz</a>
+			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2_i386.tar.gz');?>">i386.tar.gz</a>
 		</div>
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.1_x86_64.tar.gz');?>">x86_64.tar.gz</a>
+			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2_x86_64.tar.gz');?>">x86_64.tar.gz</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">
@@ -169,6 +169,20 @@
 			A forráskódon csak minimális változtatást kellett végrehajtani.
 			Ez a változat a 2019-es v12.3 verzióból készült, sajnos azóta nincs frissítés,
 			így a legújabb fejlesztéseket nem tartalmazza.
+		</p>
+	</div>
+</div>
+
+<!-- SHA256 -->
+<br/><br/>
+<div class="iconed_title sha_icon">
+	SHA256 ellenőrzőösszegek
+</div>
+<div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
+	<div class="text expanded">
+		<p>
+		A biztonságos letöltés/telepítés érdekében az ellenőrzőösszegek itt találhatók:
+		<a href="./downloads/sha256sum.txt" target="_blank">sha256sum.txt</a>
 		</p>
 	</div>
 </div>
