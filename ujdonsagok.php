@@ -38,7 +38,7 @@
 			</li>
 			<li>
 				Busnyák Erik szerezte meg nekünk Csányi Tamás: Szép régi énekek című kötetének elektronikus formáját.
-				A Ciszterci Szent Imre templom karnagya kéri, hogy minden javaslatot számára a karnagy@szentimr.hu címre írjanak meg.
+				A Ciszterci Szent Imre templom karnagya kéri, hogy minden javaslatot számára a karnagy@szentimre.hu címre írjanak meg.
 			</li>
 			<li>
 				Lakner Sándor: Zengő énekszó című kötete is új, a nyomdai anyagból lett begépelve a szerző engedélyével.
