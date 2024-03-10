@@ -1,7 +1,3 @@
-<div class="BETA_TITLE">
-		Kották
-</div>
-
 <div class="RIGHT_TABLE TABLE_ENTRY_ODD">
 	Sajó József gyönyörű megformázásában kaptunk számos kottát, a gyűjteményét folyamatosan bővíti.
 	Ezek a kántorok számára készültek, a fotó-ablak segítségével nyomtatott kotta helyett is használhatók.

@@ -16,7 +16,7 @@
 		<br/>
         <div>
           <center>
-            <b>2023. december 25. <i></i></b>
+            <b>2023. december 25. <i>v12.7 automatikus mentés</i></b>
           </center>
 		  <ul class="dotted">
 			<li>

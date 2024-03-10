@@ -9,8 +9,10 @@
 	A <a href="?page=forum&f=10">gyakran ismételt kérdésekben</a> további segítséget talál a telepítéshez.
 </div>
 <div class="green_text expanded">
-	Bár a program használata ingyenes, mégis köszönettel vesszük, ha jelzi, aki terjeszti vagy használja.
-	Egy <a href="?page=forum&f=5">fórumbejegyzés</a> is elég. Ebből tudhatjuk meg, hogy kik és hol használják a programot.
+	Bár a program használata ingyenes és szabad (lásd balra a licenc információkat),
+	köszönettel vesszük, ha jelzi, aki terjeszti vagy használja.
+	Egy <a href="?page=forum&f=5">fórumbejegyzés</a> is elég.
+	Ebből tudhatjuk meg, hogy kik és hol használják a programot.
 	A fórum regisztrált tagjai rendszeresen tájékoztatást kapnak a frissítésekről. 
 </div>
 <div class="green_text expanded">
@@ -42,7 +44,7 @@
 				Ezek a fájlok az alábbi csomagoknak is részei.<br/>
 				(Adobe Acrobat PDF olvasó letölthető
 				<a href="https://www.adobe.com/hu/acrobat/pdf-reader.html" target="_blank">innen</a>)<br/>
-				További <a href="?page=tutorials">ismertetők</a> is elérhetők a weblapunkon.
+				További <a href="?page=tutorials">bemutatók</a> is elérhetők a weblapunkon.
 			</p>
 		</div>
 	</div>

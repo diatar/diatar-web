@@ -53,7 +53,7 @@
 <div class="text expanded">
 	 <p>
 		Android verzió is letölthető, okostelefonról vagy tabletről való vezérléshez,
-		okostévén (vagy tévéokosító eszközön) való kivetítésre.
+		okostévén (vagy tévéokosító eszközön) való kivetítésre.<br/>
 		Legjobb a Google Play áruházból letölteni: külön van a <a href="https://play.google.com/store/apps/details?id=diatar.eu" target="_blank">Diatár</a>
 		és a <a href="https://play.google.com/store/apps/details?id=com.polyjoe.DiaVetito" target="_blank">DiaVetítő</a>
 	</p>

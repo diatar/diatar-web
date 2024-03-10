@@ -1,7 +1,4 @@
 <div class="BETA_CONTAINER">
-    <div class="BETA_TITLE">
-        Fejlesztési (beta) verziók
-    </div>
     <div class="TABLE_TEXT expanded">
         Az utolsó "stabil" verziót követő, fejlesztési (Windows) változatok közül tölthető le innen néhány.
         FIGYELEM!!! Ezek fejlesztés közbeni állapotú, esetleges hibákkal terhelt programok,

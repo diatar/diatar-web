@@ -4,6 +4,18 @@
 	</p>
 	<br/>
 	<div class="iconed_title android_icon">
+		<p><b>Letöltés a Google Play áruházból:</b></p>
+	</div>
+	<div class="text12">
+		<center>
+			<a target="_blank" href="https://play.google.com/store/apps/details?id=diatar.eu">Diatar</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<a target="_blank" href="https://play.google.com/store/apps/details?id=com.polyjoe.DiaVetito">DiaVetito</a>
+		</center>
+	</div>
+	<br/>
+
+	<div class="iconed_title android_icon">
 		<p><b>Közvetlen letöltés:</b></p>
 	</div>
 	<div class="text12">
@@ -14,22 +26,11 @@
 		&nbsp;&nbsp;
 		<a href="https://github.com/diatar/diatar-android" target="_blank">forráskód</a>
 		<br/><br/>
-	    <p>Korábbi verziók a lap alján.</p>
+	    <p><a href="#KORABBI">Korábbi verziók</a> a lap alján.</p>
 		<p>Újabban a Play áruház AAB (bundle) formátumú telepítő csomagot követel meg.
 		Amíg a fejlesztőkörnyezet lehetővé teszi, itt elérhető a közvetlenül telepíthető APK forma.</p>
-		<p>A forráskód Elek László SJ jóvoltából már a githubon érhető el.</p>
+		<p>A forráskód Elek László SJ jóvoltából már a githubon található.</p>
 	  </center>
-	</div>
-	<br/>
-	<div class="iconed_title android_icon">
-		<p><b>Letöltés a Google Play áruházból:</b></p>
-	</div>
-	<div class="text12">
-		<center>
-			<a target="_blank" href="https://play.google.com/store/apps/details?id=diatar.eu">Diatar</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;
-			<a target="_blank" href="https://play.google.com/store/apps/details?id=com.polyjoe.DiaVetito">DiaVetito</a>
-		</center>
 	</div>
 	<br/><br/>
 
@@ -213,7 +214,7 @@
 		</li>
 	</ul>
 
-	<div class="iconed_title android_icon">
+	<div class="iconed_title android_icon" id="KORABBI">
 		<p><b>Korábbi verziók:</b></p>
 	</div>
 	<div class="text12">
