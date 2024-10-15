@@ -1,5 +1,10 @@
 <?php
 	//dia listak
+	// ?pageid=firstlines vagy words vagy dtxs vagy dia (elso sorok / szoszedet / diatarak / egy dia)
+	// ?key=A..Z vagy others (kezdobetu)
+	// ?file=kotet
+	// ?enek=verscim
+	// ?vers=versszak
 
 	error_reporting(E_ERROR | E_PARSE);
 
@@ -431,10 +436,21 @@ function GetDtxName($fname) {
 /////////////////////////////////////////////////////////////////////////////////
 
 function Dia($fname,$ie,$iv) {
+	echo '<canvas id="MainCanvas" width="728px" height="500px" style="border:1px solid #000000;">';
+	echo 'HTML canvas nem támogatott???...';
+	echo '</canvas>';
+
+	
 	$f=fopen("./downloads/enektarak/$fname","r");
 	if (!$f) return;
-	echo '<span style="font-size: 2em; line-height: 1.5em">';
+	//echo '<span style="font-size: 2em; line-height: 1.5em">';
 
+	echo '<script type="module">';
+	echo 'import PAINTDIA from "./JS/paintdia.js";'."\n";
+	echo 'let canvas = document.getElementById("MainCanvas");'."\n";
+	echo 'let ctx = canvas.getContext("2d");'."\n";
+	echo 'let paintdia = new PAINTDIA(ctx);'."\n";
+	
 	while (!feof($f)) {
 		$line=fgets($f);
 		if (empty($line)) continue;
@@ -449,12 +465,22 @@ function Dia($fname,$ie,$iv) {
 			}
 		} else if ($ch===' ') {
 			if ($ie==0 && $iv==0) {
-				DiaPrint(substr($line,1));
+				echo 'paintdia.addLine("'.substr($line,1,-2).'");'."\n";
 			}
 		}
 	}
 	fclose($f);
-	echo '</span>';
+
+	echo 'window.addEventListener("resize", resizeCanvas, false);'."\n";
+	echo 'function resizeCanvas() {'."\n";
+	echo '  canvas.width = canvas.parentNode.clientWidth;'."\n";
+	echo '  canvas.height = canvas.parentNode.clientHeight;'."\n";
+	echo '  paintdia.paint();'."\n";
+	echo'}'."\n";
+	echo 'resizeCanvas();'."\n";
+	echo '</script>';
+
+
 }
 
 function GetDiaName($fname,$ie,$iv) {

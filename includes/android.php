@@ -73,6 +73,10 @@
 
 	<ul class="dotted">
 		<li>
+			7.0 verzió: Már régóta igény volt a saját diaszöveg beírására. Elkészült az első
+			- még csak formázatlan szöveget lehetővé tevő - verzió, Juhász Dánielnek köszönjük!
+		</li>
+		<li>
 			6.5 verzió: az új Android OS korlátozza a közös könyvtárakhoz való hozzáférést, így a saját DTXeket másképp kell kezelni:
 			a Beállítások/Program menüpont ablakában van egy DTX import nyomógomb, ezzel be lehet másolni egy fájlt,
 			ami attól kezdve megjelenik a programban.
@@ -218,6 +222,16 @@
 		<p><b>Korábbi verziók:</b></p>
 	</div>
 	<div class="text12">
+	  <center>
+		<a href="./downloads/android/Diatar65.apk">Diatar65.apk</a>
+		&nbsp;&nbsp;
+		<a href="./downloads/android/DiaVetito65.apk">DiaVetito65.apk</a>
+	  </center>
+	  <center>
+		<a href="./downloads/android/Diatar64.apk">Diatar64.apk</a>
+		&nbsp;&nbsp;
+		<a href="./downloads/android/DiaVetito64.apk">DiaVetito64.apk</a>
+	  </center>
 	  <center>
 		<a href="./downloads/android/Diatar63.apk">Diatar63.apk</a>
 		&nbsp;&nbsp;

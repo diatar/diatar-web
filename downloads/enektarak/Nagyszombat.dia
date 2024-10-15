@@ -1,0 +1,863 @@
+[main]
+diaszam=156
+utf8=1
+
+[1]
+separator=Kivonulás
+
+[2]
+id=B2698D6D
+enek=826
+kotet=Éneklő Egyház
+
+[3]
+separator=Tűzszentelés
+
+[4]
+id=B2698D6D
+enek=826
+kotet=Éneklő Egyház
+
+[5]
+separator=Bevonulás
+
+[6]
+id=B2698D6D
+enek=826
+kotet=Éneklő Egyház
+
+[7]
+separator=
+
+[8]
+id=E80D1270
+versszak=1
+enek=Húsvét
+kotet=Imák és válaszok
+
+[9]
+separator=Beérkezés
+
+[10]
+id=B2698D6D
+enek=826
+kotet=Éneklő Egyház
+
+[11]
+separator=Exsultet - Húsvéti örömének
+
+[12]
+separator=Ószövetségi olvasmányok
+
+[13]
+id=1263FF33
+versszak=1a
+enek=Húsvéti vigília
+kotet=Zsoltár: ünnepek
+
+[14]
+id=55F2BF7E
+versszak=1b
+enek=Húsvéti vigília
+kotet=Zsoltár: ünnepek
+
+[15]
+id=107FE154
+versszak=2
+enek=Húsvéti vigília
+kotet=Zsoltár: ünnepek
+
+[16]
+id=DC68B43E
+versszak=3
+enek=Húsvéti vigília
+kotet=Zsoltár: ünnepek
+
+[17]
+id=78A7372D
+versszak=4
+enek=Húsvéti vigília
+kotet=Zsoltár: ünnepek
+
+[18]
+id=0FBF7E77
+versszak=5
+enek=Húsvéti vigília
+kotet=Zsoltár: ünnepek
+
+[19]
+id=573BF19E
+versszak=6
+enek=Húsvéti vigília
+kotet=Zsoltár: ünnepek
+
+[20]
+id=CAB2F0BD
+versszak=7a
+enek=Húsvéti vigília
+kotet=Zsoltár: ünnepek
+
+[21]
+id=25872C5F
+versszak=7b
+enek=Húsvéti vigília
+kotet=Zsoltár: ünnepek
+
+[22]
+separator=Gloria - felkérés
+
+[23]
+id=61077E65
+enek=834
+kotet=Éneklő Egyház
+
+[24]
+separator=Gloria
+
+[25]
+separator=Alleluja visszaadása
+
+[26]
+id=7E36E760
+enek=835
+kotet=Éneklő Egyház
+
+[27]
+separator=Vízszentelés - Mindenszentek litániája
+
+[28]
+id=53719D50
+versszak=1
+enek=836
+kotet=Éneklő Egyház
+
+[29]
+id=C0308E1E
+versszak=2
+enek=836
+kotet=Éneklő Egyház
+
+[30]
+id=8E460881
+versszak=3
+enek=836
+kotet=Éneklő Egyház
+
+[31]
+id=1D8925FF
+versszak=4
+enek=836
+kotet=Éneklő Egyház
+
+[32]
+separator=Húsvéti gyertya vízbe merítése
+
+[33]
+id=0EF6D5CE
+enek=837
+kotet=Éneklő Egyház
+
+[34]
+separator=Keresztségi fogadalom megújítása
+
+[35]
+separator=Szenteltvízhintés
+
+[36]
+id=167AB543
+enek=838
+kotet=Éneklő Egyház
+
+[37]
+separator=Felajánlás
+
+[38]
+id=12818BD5
+enek=742
+kotet=Éneklő Egyház
+
+[39]
+separator=Sanctus
+
+[40]
+separator=Agnus Dei
+
+[41]
+separator=Communio
+
+[42]
+id=D6F3D222
+versszak=antifóna
+enek=714
+kotet=Éneklő Egyház
+
+[43]
+id=6E31E2F6
+versszak=1
+enek=714
+kotet=Éneklő Egyház
+
+[44]
+id=AA284D6B
+versszak=2
+enek=714
+kotet=Éneklő Egyház
+
+[45]
+id=1567340B
+versszak=3
+enek=714
+kotet=Éneklő Egyház
+
+[46]
+id=ADC162D0
+versszak=4
+enek=714
+kotet=Éneklő Egyház
+
+[47]
+id=3969B0A7
+versszak=5
+enek=714
+kotet=Éneklő Egyház
+
+[48]
+id=A8753B94
+versszak=6
+enek=714
+kotet=Éneklő Egyház
+
+[49]
+id=74492ED5
+versszak=7
+enek=714
+kotet=Éneklő Egyház
+
+[50]
+id=91129633
+versszak=8
+enek=714
+kotet=Éneklő Egyház
+
+[51]
+id=9E5B1AA5
+versszak=9
+enek=714
+kotet=Éneklő Egyház
+
+[52]
+id=2EEC1ABC
+versszak=10
+enek=714
+kotet=Éneklő Egyház
+
+[53]
+id=82017B12
+versszak=11
+enek=714
+kotet=Éneklő Egyház
+
+[54]
+id=AF22B446
+versszak=12
+enek=714
+kotet=Éneklő Egyház
+
+[55]
+id=F44E5651
+versszak=antifóna
+enek=714
+kotet=Éneklő Egyház
+
+[56]
+separator=
+
+[57]
+id=BBD576E4
+versszak=1
+enek=114
+kotet=Szent Vagy, Uram!
+
+[58]
+id=8417E0D5
+versszak=2
+enek=114
+kotet=Szent Vagy, Uram!
+
+[59]
+id=556EF453
+versszak=3
+enek=114
+kotet=Szent Vagy, Uram!
+
+[60]
+id=56D992F2
+versszak=4
+enek=114
+kotet=Szent Vagy, Uram!
+
+[61]
+id=0ED419D3
+versszak=5
+enek=114
+kotet=Szent Vagy, Uram!
+
+[62]
+id=22FC4FA7
+versszak=6
+enek=114
+kotet=Szent Vagy, Uram!
+
+[63]
+separator=
+
+[64]
+id=CA422350
+versszak=1
+enek=116
+kotet=Szent Vagy, Uram!
+
+[65]
+id=E7DBE42F
+versszak=2
+enek=116
+kotet=Szent Vagy, Uram!
+
+[66]
+id=06234DD2
+versszak=3
+enek=116
+kotet=Szent Vagy, Uram!
+
+[67]
+id=9AFCF52B
+versszak=4
+enek=116
+kotet=Szent Vagy, Uram!
+
+[68]
+id=380C80FC
+versszak=5
+enek=116
+kotet=Szent Vagy, Uram!
+
+[69]
+id=3A026D7C
+versszak=6
+enek=116
+kotet=Szent Vagy, Uram!
+
+[70]
+separator=
+
+[71]
+id=78A819D4
+versszak=1
+enek=779
+kotet=Éneklő Egyház
+
+[72]
+id=3E774FC6
+versszak=2
+enek=779
+kotet=Éneklő Egyház
+
+[73]
+separator=Szentsír felnyitása
+
+[74]
+id=009477E3
+versszak=1
+enek=840
+kotet=Éneklő Egyház
+
+[75]
+id=7D2F632D
+versszak=2
+enek=840
+kotet=Éneklő Egyház
+
+[76]
+separator=Körmenet
+
+[77]
+id=BAAFC050
+versszak=1
+enek=87
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[78]
+id=A340D327
+versszak=2
+enek=87
+kotet=Szent Vagy, Uram!
+
+[79]
+id=A335EF0B
+versszak=3
+enek=87
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[80]
+id=597610EA
+versszak=4
+enek=87
+kotet=Szent Vagy, Uram!
+
+[81]
+id=3FCBF12C
+versszak=5
+enek=87
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[82]
+id=E4E88C34
+versszak=6
+enek=87
+kotet=Szent Vagy, Uram!
+
+[83]
+id=1F25E935
+versszak=7
+enek=87
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[84]
+id=4D100CCB
+versszak=8
+enek=87
+kotet=Szent Vagy, Uram!
+
+[85]
+id=3FB484D5
+versszak=9
+enek=87
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[86]
+id=7FFB1A76
+versszak=10
+enek=87
+kotet=Szent Vagy, Uram!
+
+[87]
+id=86ED4006
+versszak=11
+enek=87
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[88]
+id=33251467
+versszak=12
+enek=87
+kotet=Szent Vagy, Uram!
+
+[89]
+id=6230FC21
+versszak=13
+enek=87
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[90]
+id=F1186D0D
+versszak=14
+enek=87
+kotet=Szent Vagy, Uram!
+
+[91]
+id=8EA805B5
+versszak=15
+enek=87
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[92]
+id=511B5E4C
+versszak=16
+enek=87
+kotet=Szent Vagy, Uram!
+
+[93]
+id=22AAF611
+versszak=17
+enek=87
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[94]
+id=3DF4159B
+versszak=18
+enek=87
+kotet=Szent Vagy, Uram!
+
+[95]
+id=E110C9CC
+versszak=19
+enek=87
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[96]
+id=0D7420C5
+versszak=20
+enek=87
+kotet=Szent Vagy, Uram!
+
+[97]
+separator=
+
+[98]
+id=4A1E1B5C
+versszak=1
+enek=89
+kotet=Szent Vagy, Uram!
+
+[99]
+id=E6FE3A47
+versszak=2
+enek=89
+kotet=Szent Vagy, Uram!
+
+[100]
+id=8CF5F1AF
+versszak=3
+enek=89
+kotet=Szent Vagy, Uram!
+
+[101]
+id=250162FA
+versszak=4
+enek=89
+kotet=Szent Vagy, Uram!
+
+[102]
+id=A9766B3A
+versszak=5
+enek=89
+kotet=Szent Vagy, Uram!
+
+[103]
+id=33320473
+versszak=6
+enek=89
+kotet=Szent Vagy, Uram!
+
+[104]
+id=C9B8CA64
+versszak=7
+enek=89
+kotet=Szent Vagy, Uram!
+
+[105]
+id=E35D9ED5
+versszak=8
+enek=89
+kotet=Szent Vagy, Uram!
+
+[106]
+id=265BC6E2
+versszak=9
+enek=89
+kotet=Szent Vagy, Uram!
+
+[107]
+id=FECD8C6F
+versszak=10
+enek=89
+kotet=Szent Vagy, Uram!
+
+[108]
+id=BA9B9A4B
+versszak=11
+enek=89
+kotet=Szent Vagy, Uram!
+
+[109]
+separator=
+
+[110]
+id=3CC441B9
+versszak=1
+enek=90
+kotet=Szent Vagy, Uram!
+
+[111]
+id=0899760B
+versszak=2
+enek=90
+kotet=Szent Vagy, Uram!
+
+[112]
+id=1EBE31B7
+versszak=3
+enek=90
+kotet=Szent Vagy, Uram!
+
+[113]
+id=4736CD1C
+versszak=4
+enek=90
+kotet=Szent Vagy, Uram!
+
+[114]
+id=83CEE01F
+versszak=5
+enek=90
+kotet=Szent Vagy, Uram!
+
+[115]
+separator=Visszaérkezés
+
+[116]
+id=9FA9ADF4
+versszak=1
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[117]
+id=EBE0740A
+versszak=2
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[118]
+id=2A1667FD
+versszak=3
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[119]
+id=16226479
+versszak=4
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[120]
+id=FB338B60
+versszak=5
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[121]
+id=687F6BFD
+versszak=6
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[122]
+id=DAD596A6
+versszak=7
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[123]
+id=D5DAB390
+versszak=8
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[124]
+id=0598AAC9
+versszak=9
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[125]
+id=F0A7DA46
+versszak=10
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[126]
+id=ED4F8A9A
+versszak=11
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[127]
+id=C48E8661
+versszak=12
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[128]
+id=40053B04
+versszak=13
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[129]
+id=960F9B7A
+versszak=14
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[130]
+id=D7292719
+versszak=15
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[131]
+id=ADCD322D
+versszak=16
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[132]
+id=004150A4
+versszak=17
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[133]
+id=7B4A1301
+versszak=18
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[134]
+id=5EE6DBAB
+versszak=19
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[135]
+id=C9E783A2
+versszak=20
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[136]
+id=9453F295
+versszak=21
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[137]
+id=6E8A480B
+versszak=22
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[138]
+id=FA23BE6E
+versszak=23
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[139]
+id=60CE27BF
+versszak=24
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[140]
+id=4AA467A8
+versszak=25
+enek=276A
+kotet=Szent Vagy, Uram!
+dbldia=1
+
+[141]
+id=AA1EE8BF
+versszak=26
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[142]
+id=9A3B5513
+versszak=27
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[143]
+id=00000025
+versszak=magyar válasz
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[144]
+id=00000026
+versszak=latin válasz
+enek=276A
+kotet=Szent Vagy, Uram!
+
+[145]
+separator=
+
+[146]
+id=CA6E9212
+versszak=1
+enek=205 Antifóna Nagyszombattól Pünkösd utáni szombatig
+kotet=Szent Vagy, Uram!
+
+[147]
+id=A15BA8BD
+versszak=2
+enek=205 Antifóna Nagyszombattól Pünkösd utáni szombatig
+kotet=Szent Vagy, Uram!
+
+[148]
+id=00918967
+versszak=A
+enek=205 Antifóna Nagyszombattól Pünkösd utáni szombatig
+kotet=Szent Vagy, Uram!
+
+[149]
+separator=
+
+[150]
+id=86F2AB4F
+versszak=5 latin
+enek=155
+kotet=Éneklő Egyház
+
+[151]
+id=D54CA11B
+versszak=6 latin
+enek=155
+kotet=Éneklő Egyház
+
+[152]
+separator=Himnuszok
+
+[153]
+id=48A42A48
+versszak=1
+enek=275
+kotet=Szent Vagy, Uram!
+
+[154]
+separator=Záróének
+
+[155]
+id=061E1D56
+versszak=1
+enek=86
+kotet=Szent Vagy, Uram!
+
+[156]
+id=FF2E99C3
+versszak=2
+enek=86
+kotet=Szent Vagy, Uram!

@@ -12,6 +12,15 @@
 
 - Népénekes könyvek
 
+! Veszprémi
+><a href="letoltes.php?letoltes=./downloads/enektarak/veszpremi.dtx">Veszprémi Orgonakönyv (Veszprémi)</a>
+ Orgonakönyv a Veszprém-Egyházmegye Ima- és Énekeskönyvéhez
+ (Az énekeket orgonakisérettel ellátta: Gaal Sándor  ny. igazgató-tanító, királydijas karnagy)
+ A Veszprémi Egyházmegyei Hatóság 282/1937. számu engedélyével kiadja az Egyházmegyei Könyvnyomda, Könyv- és Papírkereskedés, Veszprém
+ Forrás: http://users.atw.hu/szentzene/index_data/egyebek.htm
+ A körülbelül száz éves kötetet 2024 elején egy "rejtőzködő" jótevő sok plébániára ill. kántorhoz eljuttatta.
+ Ezért hasznosnak gondoltuk, ha a Diatárban is vetíthető. Lektorálást igényelne!
+
 # Csányi
 ><a href="letoltes.php?letoltes=./downloads/enektarak/csanyi.dtx">Szép régi énekek (Csanyi)</a>
  Csányi Tamás (a Ciszterci Szent Imre templom karnagya; észrevételeket ide kér: karnagy@szentimre.hu)
@@ -204,7 +213,13 @@
  
 - Nemzetiségi és helyi énekek
 
-! Emmánuel közösség énekei
+! Szentjánosbogár
+><a href="letoltes.php?letoltes=./downloads/enektarak/szentjanosbogar.dtx">Szentjánosbogár énekeskönyv (Szentjánosbogár)</a>
+ A <a href="https://szentjanosbogar.hu">Szentjánosbogár közösség</a>
+ "Lila Szentjánosbogár énekeskönyv" kötetét Höchszt Erikának köszönjük.
+ A begépelést folyamatosan kiegészíti.
+
+# Emmánuel közösség énekei
 ><a href="letoltes.php?letoltes=./downloads/enektarak/emmanuel.dtx">Emmánuel közösség (Emmánuel)</a>
  Az Emmánuel közösség énekei.
  Az eredeti forrás (www.emmanuel.hu/enekek_mobilra) megszűnt, jelenlegi elérhetőség:
@@ -298,6 +313,11 @@
 
  
 - Ifjúsági énekek
+
+! Tápiómenti
+><a href="letoltes.php?letoltes=./downloads/enektarak/tapiomenti.dtx">Tápió Menti Énekkönyv (TGÉ)</a>
+ Tápiómenti Nagyboldogasszony Közösség énekei;
+ .docx ről .dtx-re fordította és tördelte Halla Bálint
 
 # Dalolj az Úrnak! Dicsőség az Úrnak! (DÚR)
 ><a href="letoltes.php?letoltes=./downloads/enektarak/dur.dtx">Dicsőség az Úrnak! (DÚR)</a>

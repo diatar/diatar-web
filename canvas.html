@@ -1,36 +1,38 @@
 <!doctype html public "-//w3c//dtd html 4.0 transitional//en">
 <html>
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
-   <meta name="GENERATOR" content="Hoze by hand">
-   <title>Canvas test</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+	<meta name="GENERATOR" content="Hoze by hand">
+	<link rel="stylesheet" type="text/css" href="CSS/PAINTDIA.css" />
+	<title>Canvas test</title>
 </head>
 <body>
 
-<canvas id="MainCanvas" width="640" height="480" style="border:1px solid #0000ff;">
+<canvas id="MainCanvas">
 HTML 'canvas' nem támogatott???...
 </canvas>
 
 </body>
 
 <script type="module">
-import PAINTDIA from "./JS/paintdia.js"
+	import PAINTDIA from "./JS/paintdia.js"
 
-let c = document.getElementById("MainCanvas");
-let ctx = c.getContext("2d");
-//ctx.moveTo(0,0);
-//ctx.lineTo(400,300);
-//ctx.stroke();
+	let canvas = document.getElementById("MainCanvas");
+	let ctx = canvas.getContext("2d");
 
-let paintdia = new PAINTDIA(ctx);
-paintdia.addLine("Ál\\Udj\\uad, \\Bem\\bber e n\\Ia\\Bgy j\\ióda\\bt!");
-paintdia.paint();
+	let paintdia = new PAINTDIA(ctx);
+	paintdia.addLine("Á\\Sl\\Udj\\uad, \\Be\\sm\\bber e n\\Ia\\Bgy j\\ióda\\bt!");
+	
+	window.addEventListener('resize', resizeCanvas, false);
 
-//ctx.font = "60px Arial";
-//let metrics = ctx.measureText("Áy");
-//let fontHeight = metrics.fontBoundingBoxAscent + metrics.fontBoundingBoxDescent;
-//ctx.fillText("Áldjad, ember", 0, fontHeight);
-//ctx.fillText("e nagy jódat", 100, 2*fontHeight);
+	function resizeCanvas() {
+		canvas.width = canvas.parentNode.clientWidth; //window.innerWidth;
+		canvas.height = canvas.parentNode.clientHeight; //window.innerHeight;
+		paintdia.paint();
+	}
+	
+	resizeCanvas();
+	
 </script>
 
 </html>
