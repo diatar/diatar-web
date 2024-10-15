@@ -1,53 +1,115 @@
+//drawing environment
 class ENVIRONMENT {
 	//fields:
-	ctx;				//canvas context
-	width;				//screen width
-	height;				//screen height
-	fontsize;			//font size
-	fontfamily;			//font family
+	oCtx;				//canvas context
+	nWidth;				//screen width
+	nHeight;			//screen height
+	nFontsize;			//font size
+	sFontfamily;		//font family
+	nFontascent2;		//half ascent (for strikethrough)
+	nFontdescent2;		//half descent (for underline)
+	nSpaceWidth;		//avg width of one space
+	nFontHeight;		//height of font
 	
+	//name containing bold/italic style and size info
 	getFontName(bd,it) {
-		return (bd ? "bold " : "")+(it ? "italic " : "") + this.fontsize + "pt " + this.fontfamily;
+		return (bd ? "bold " : "")+(it ? "italic " : "") + this.nFontsize + "pt " + this.sFontfamily;
 	};
 	setFont(bd,it) {
-		this.ctx.font = this.getFontName(bd,it);
-	};
-	outTxt(txt,x,y, bd,it,ul) {
-		this.setFont(bd,it);
-		this.ctx.fillText(txt, x, y);
-		const metrics = this.ctx.measureText(txt);
-		if (ul) {
-			let yul = y + metrics.fontBoundingBoxDescent/2;
-			this.ctx.beginPath();
-			this.ctx.moveTo(x, yul);
-			this.ctx.lineTo(x+metrics.width, yul);
-			this.ctx.stroke();
-		}
-		return metrics.width;
-	}
-	
+		this.oCtx.font = this.getFontName(bd,it);
+	};	
 };
 
+//end of atomic text
+const endCONT	= 0;	//continued (no separator)
+const endSPACE	= 1;	//space
+const endHYPH	= 2;	//hyphen
+const endEOL	= 3;	//end of line
+const endBREAK	= 4;	//break proposal
+
+//atomic block - this should be paint at once
 class ATOM {
 	//fields:
-	txt = "";				//text
-	bold = false;			//is bold?
-	italic = false;			//is italic?
-	underline = false;		//is underlined?
-	endchar = "";			//closing: empty, space, hyphen, ...
+	sTxt = "";				//text to output
+	bBold = false;			//is bold?
+	bItalic = false;		//is italic?
+	bUnderline = false;		//is underlined?
+	bStrike = false;		//is strikeout?
+	eEndtype = endCONT;		//closing: empty, space, hyphen, ...
+	nWidth = 0;				//object width
+	nTxtWidth = 0;			//text width - w/o ending
+	bBreak = false;			//line break after this?
 	
-	clone() {
+	clone() {				//create an empty copy of myself
 		let a = new ATOM();
-		a.bold=this.bold;
-		a.italic=this.italic;
-		a.underline=this.underline;
+		a.bBold=this.bBold;
+		a.bItalic=this.bItalic;
+		a.bUnderline=this.bUnderline;
+		a.bStrike=this.bStrike;
 		return a;
+	}
+	
+	getTxtWidthEnd() {
+		if (this.eEndtype==endBREAK) return this.sTxt+" ";
+		if (this.eEndtype==endSPACE) return this.sTxt+" ";
+		if (this.eEndtype==endHYPH) return this.sTxt+"-";
+		return this.sTxt;
+	}
+	
+	calcWidth(env) {
+		env.setFont(this.bBold, this.bItalic);
+		const metrics1 = env.oCtx.measureText(this.getTxtWidthEnd());
+		this.nWidth=metrics1.width;
+		const metrics2 = env.oCtx.measureText(this.sTxt);
+		this.nTxtWidth=metrics2.width;
+	}
+	
+	getCurrWidth() {
+		let w = this.nWidth;
+		//in not at the end of row and this has conditional ending, the width is just the text
+		if (!this.bBreak && (this.eEndtype==endBREAK || this.eEndtype==endHYPH)) w=this.nTxtWidth;
+		return w;
+	}
+
+	paint(x,y, env) {
+		env.setFont(this.bBold, this.bItalic);
+		env.oCtx.fillText(this.getTxtWidthEnd(), x, y);
+		if (this.bUnderline) {
+			let yul = y + env.nFontdescent2;
+			env.oCtx.beginPath();
+			env.oCtx.moveTo(x, yul);
+			env.oCtx.lineTo(x+this.nWidth, yul);
+			env.oCtx.stroke();
+		}
+		if (this.bStrike) {
+			let yst = y - env.nFontascent2;
+			env.oCtx.beginPath();
+			env.oCtx.moveTo(x, yst);
+			env.oCtx.lineTo(x+this.nWidth, yst);
+			env.oCtx.stroke();
+		}
+		return this.nWidth;
 	}
 }
 
+//one line of input text
 class LINE {
 	//fields:
-	atoms = [];				//array of ATOMs
+	aAtoms = [];				//array of ATOMs
+	
+	//push oldatom into atoms[] and create a new one
+	//  or keep the oldatom, if nothing to paint
+	pushAtom(oldatom) {
+		if (oldatom.sTxt.length>0			//if anything to paint
+			|| oldatom.eEndtype==endHYPH
+			|| oldatom.eEndtype==endSPACE
+			|| oldatom.eEndtype==endBREAK)
+		{
+			this.aAtoms.push(oldatom);
+			oldatom=oldatom.clone();
+		}
+		return oldatom;
+	}
 	
 	parse(txt) {
 		let esc=false;
@@ -57,26 +119,44 @@ class LINE {
 			let ch=txt.substr(i,1);
 			if (esc) {
 				esc=false;
-				if (ch=='\\' || ch==' ' || ch=='-') {
-					atom.txt+=ch;
+				//double backslash, nonbreaking space or n.b. hyphen
+				if (ch=='\\' || ch==' ' || ch=='_') {
+					if (ch=='_') ch='-';
+					atom.sTxt+=ch;
 					continue;
 				}
 				if (ch=='B' || ch=='b') {
-					this.atoms.push(atom);
-					atom = atom.clone();
-					atom.bold=(ch=='B');
+					atom = this.pushAtom(atom);
+					atom.bBold=(ch=='B');
 					continue;
 				}
 				if (ch=='I' || ch=='i') {
-					this.atoms.push(atom);
-					atom = atom.clone();
-					atom.italic=(ch=='I');
+					atom = this.pushAtom(atom);
+					atom.bItalic=(ch=='I');
 					continue;
 				}
 				if (ch=='U' || ch=='u') {
-					this.atoms.push(atom);
-					atom = atom.clone();
-					atom.underline=(ch=='U');
+					atom = this.pushAtom(atom);
+					atom.bUnderline=(ch=='U');
+					continue;
+				}
+				if (ch=='S' || ch=='s') {
+					atom = this.pushAtom(atom);
+					atom.bStrike=(ch=='S');
+					continue;
+				}
+				if (ch=='-') {
+					atom.eEndtype=endHYPH;
+					atom=this.pushAtom(atom);
+					continue;
+				}
+				if (ch=='.') {
+					atom.eEndtype=endBREAK;
+					atom=this.pushAtom(atom);
+					continue;
+				}
+				if (ch=='K' || ch=='G' || ch=='?') {
+					while (i<txt.length && txt.substr(i,1)!=';') i++;
 					continue;
 				}
 			} else {
@@ -84,50 +164,116 @@ class LINE {
 					esc=true;
 					continue;
 				}
-				atom.txt+=ch;
+				if (ch==' ') {
+					atom.eEndtype=endSPACE;
+					atom=this.pushAtom(atom);
+					continue;
+				}
+				atom.sTxt+=ch;
 			}
 		}
-		if (atom.txt.length>0) this.atoms.push(atom);
+		atom.eEndtype=endEOL;
+		this.pushAtom(atom);
+	}
+	
+	calcContinuationX(env) {
+		return 2*env.nSpaceWidth;
+	}
+
+	//returns the number of rows it uses
+	calcWidth(env) {
+		let nrows=1;
+		let x=0;
+		let lastbreakable=null;
+		let breakx=0;
+		for (let atom of this.aAtoms) {
+			atom.bBreak=false;
+			atom.calcWidth(env);
+			x+=atom.getCurrWidth();
+			if (x > env.nWidth) {
+				if (lastbreakable==null) {
+					//maybe here we should split the atom...
+					atom.bBreak=true;
+					x=this.calcContinuationX(env);
+					nrows++;
+					continue;
+				}
+				lastbreakable.bBreak=true;
+				lastbreakable=null;
+				x=this.calcContinuationX(env)+(x-breakx);
+				nrows++;
+				continue;
+			}
+			if (atom.eEndtype==endSPACE || atom.eEndtype==endBREAK || atom.eEndtype==endHYPH) {
+				lastbreakable=atom;
+				breakx=x;
+			}
+		}
+		return nrows;
 	}
 	
 	paint(env, y) {
 		let x=0;
-		for (let atom of this.atoms) {
-			let w = env.outTxt(atom.txt, x, y, atom.bold, atom.italic, atom.underline);
-			x+=w;
+		for (let atom of this.aAtoms) {
+			atom.paint(x, y, env);
+			if (atom.bBreak) {
+				y+=env.nFontHeight;
+				x=this.calcContinuationX(env);
+			} else {
+				x+=atom.getCurrWidth();
+			}
 		}
+		return y;
 	}
 }
 
 class PAINTDIA {
 	//fields:
-	env;					//ENVIRONMENT
-	lines = [];				//lines of source
+	oEnv;						//ENVIRONMENT
+	aLines = [];				//lines of source
 	
 	constructor(ctx) {
-		this.env = new ENVIRONMENT();
-		this.env.ctx = ctx;
-		this.env.width = ctx.canvas.clientWidth;
-		this.env.height = ctx.canvas.clientHeight;
+		this.oEnv = new ENVIRONMENT();
+		this.oEnv.oCtx = ctx;
+		this.oEnv.nWidth = ctx.canvas.clientWidth;
+		this.oEnv.nHeight = ctx.canvas.clientHeight;
 	}
 	
 	addLine(txt) {
 		let line = new LINE();
 		line.parse(txt);
-		this.lines.push(line);
+		this.aLines.push(line);
 	}
 	
 	paint() {
-		this.env.fontsize = 30;
-		this.env.fontfamily = "Arial";
-		this.env.setFont(false,false);
-		let metrics = this.env.ctx.measureText("Áy");
-		let fontHeight = metrics.fontBoundingBoxAscent + metrics.fontBoundingBoxDescent;
+		this.oEnv.nWidth = this.oEnv.oCtx.canvas.clientWidth;
+		this.oEnv.nHeight = this.oEnv.oCtx.canvas.clientHeight;
+		this.oEnv.sFontfamily = "Arial";
+
+		let fsize = 60;
+		let nrows = 0;
+		do {
+			this.oEnv.nFontsize = fsize;
+			this.oEnv.setFont(false,false);
+			let metrics = this.oEnv.oCtx.measureText("ÁyXXXXXXXX");
+			this.oEnv.nSpaceWidth = metrics.width/10;
+			this.oEnv.nFontHeight = metrics.fontBoundingBoxAscent + metrics.fontBoundingBoxDescent;
+			this.oEnv.nFontascent2 = metrics.fontBoundingBoxAscent/2;
+			this.oEnv.nFontdescent2 = metrics.fontBoundingBoxDescent/2;
+		
+			nrows=0;
+			for (let ln of this.aLines) {
+				nrows+=ln.calcWidth(this.oEnv);
+			}
+			if (fsize>20) fsize-=2; else fsize--;
+		} while (fsize>5 && nrows*this.oEnv.nFontHeight>=this.oEnv.nHeight);
+		
 		let y=0;
-		for (let ln of this.lines) {
-			y+=fontHeight;
-			ln.paint(this.env, y);
+		for (let ln of this.aLines) {
+			y+=this.oEnv.nFontHeight;
+			y=ln.paint(this.oEnv, y);
 		}
+		
 	}
 }
 
