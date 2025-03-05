@@ -1,0 +1,159 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="hu">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<title>Képernyő tükrözés Diatárral</title>
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Liberation Serif","serif";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+-->
+</style>
+</head>
+
+<body bgcolor="#CCFFFF">
+
+<p class="MsoNormal" align="center" style="text-align: center"><b>
+<span style="font-size: 18.0pt">Képernyő tükrözés, „Cast”-olás Diatárral</span></b></p>
+<p>Templomainkban újabban egyre többen használnak nagy képernyős TV-t dia vetítésre,
+melynek nagy része ma már okos-TV. Sajnálatos módon azonban a gyártók a saját,
+különféle egyedi operációs rendszereikkel szállítják ezeket,
+így nem telepíthető rájuk az Androidos DiaVetítő alkalmazás.
+Ilyen esetekben azonban megoldás lehet a Diatár vetítő képernyőjének az (át)tükrözése,
+kivetítése a TV képernyőjére.</p>
+<p>A megoldás lényege, hogy ezek a TV-k – függetlenül a rajtuk levő
+operációs rendszertől – már mind alapból tudnak valamilyen képernyő tükrözést
+(pl. Miracast-ot vagy Chromecast-ot), melyek különféle márkanevek alatt futnak.
+Ezt kihasználva minden kábelezés - és anélkül, hogy bármit is külön feltelepítenénk
+a TV-re – át tudjuk küldeni a Diatár által létrehozott dia-képet a TV-re.
+Különösen jól jöhet ez akkor, ha pl. idegen helyen vagyunk és így nincs lehetőségünk
+(nem illik) megpiszkálni a használni kívánt eszközt.</p>
+<p>Nagy előnye a módszernek, hogy elvileg még a helyi hálózatra (WiFi) sem kell rácsatlakoznunk,
+mert a beépített WiFi-Direct protokollnak köszönhetően így is elérhetjük a TV-t.
+Az egész olyan mintha egy láthatatlan (HDMI) kábellel csatlakoznánk a TV hátuljára.
+Ennek az ára viszont az, hogy egy picit több dolgunk van a Diatár vezérlő gépén,
+mert ott először be kell állítanunk a tükrözést!</p>
+<br/>
+
+<h1>Windows 10</h1>
+<p>Először is kapcsoljuk be a TV-t, majd a Gépház›Rendszer›Kijelző menüben
+a „Csatlakozás vezeték nélküli megjelenítőeszközhöz”-re kattintva
+az észlelt fogadó eszközök közül válasszuk ki a miénket.
+A Windows ekkor egy második kijelzőnek fogja tekinteni a TV-nket,
+melynek paramétereit - így pl. a képernyő felbontását is - automatikusan lekérdezi.
+Ezzel tulajdonképpen meg is vagyunk, hiszen van egy második képernyőnk,
+melyre a Diatárral már kényelmesen vetíthetünk.
+A biztonság kedvéért azért ellenőrizhetjük,
+hogy vetítő képernyőnek a megfelelő van-e beállítva a Diatár Képernyő beállításánál. (1. ábra)</p>
+<p>Sajnos, ahogy tapasztaltam, ez a virtuális képernyő kicsit megzavarja a Windows-t
+és így az elsődleges képernyőnél hibás felbontást mutat ill. a TV képernyőjét
+sem mindig használja ki teljesen a vetítéshez.</p>
+<p>Win11 alatt nyilván hasonló képen kell eljárni.</p>
+<p><center>
+<img border="0" src="win10_cast.png" width="100%" align="center"
+	alt="1. ábra: Vetítés második képernyőre"
+	longdesc="1. ábra: Vetítés második (virtuális) képernyőre - Windows 10" hspace="10">
+<br/><br/><i>1. ábra: Vetítés második (virtuális) képernyőre - Windows 10</i></center>
+</p>
+<br/>
+
+<h1>Linux</h1>
+<p>Linux alatt bonyolultabb a megoldás, mert alapból egy második virtuális képernyő
+(monitor) létrehozása (amire a Diatár Vetítőként vetíthet) nem támogatott,
+ráadásul éppen képernyő kezelési átállás közepén van a Linux világ: X11 -> Wayland!
+Ezen kívül még meg kell magát a tükrözést is oldanunk valahogy egy második lépésben.
+Az alábbiakat  Linux Mint 22.1 Cinnamon alatt próbáltam ki.</p>
+<br/>
+<h3><u>Első lépés</u>: egy második (virtuális) monitor létrehozása</h3>
+<br/>
+<p>a) X11: a
+<a href="https://github.com/augustoicaro/Immersed-Linux-Virtual-Monitors" target="_blank">https://github.com/augustoicaro/Immersed-Linux-Virtual-Monitors</a>
+címen egy jó leírást találunk arról, hogy X11 alatt hogy lehet létrehozni egy virtuális monitort.
+Mivel ez a leírás egy speciális programhoz való, szerintem nekünk elég a ’Intel driver’
+ill. a ’Nvidia driver’ fejezetet végre hajtani, legalábbis nekem Intel videó kártyával így működik.
+(Ez a virtuális monitor csak a rendszer újraindításáig él.) (2. ábra)</p>
+<br/>
+<p>b) Egy másik megoldás, mely kicsit általánosabb mert (talán)
+Wayland-on is működik „Honigmelone” friss hozzászólása itt:
+<a href="https://github.com/loki-47-6F-64/sunshine/issues/47#issuecomment-2561943366" target="_blank">https://github.com/loki-47-6F-64/sunshine/issues/47#issuecomment-2561943366</a>.
+Szintén kipróbáltam a Fujitsu Lifebook U757-es laptopomon,
+de valamiért nem az általam ’szimulált’ monitor felbontásait mutatja, hanem csak két kisebbet,
+de különben rendben működni látszik. (Az így létrehozott virtuális monitor
+a rendszer újraindítása után is megmarad.)</p>
+<br/>
+<p>c) Ha valaki nem akar ilyen csúnyán belenyúlni a rendszerbe,
+annak ott van még egy hardware-es megoldás, mely
+„Dummy Plug / Virtual Display Emulator / Headless Ghost Display Adapter” néven fut.
+Ez egy pici és olcsó eszköz, amit valamelyik monitor csatlakozóba
+(VGA / Hdmi / DP) bedugva egy valódi monitort szimulál és így létrehozza a második (virtuális) képernyőnket,
+amire aztán már vetíthetünk. Ezekből „EDID” kompatibilis eszközt érdemes venni.
+Vigyázzunk, mert néhányat úgy hirdetnek,
+hogy „Please make sure your devices is with stand-alone graphics card instead of integrated-graphics”!
+Ezt a módszert nem tudtam kipróbálni.</p>
+<br/>
+<p>d) Azoknak akik nem tudnak vagy akarnak második képernyőt létrehozni, van még egy lehetőségük,
+a Diatár ’egy-képernyős’ üzemmódban való használata.
+Ekkor a vezérlés az egyetlen vetítő képernyő jobb felső sarkában található pici menü használatával lehetséges.
+A Beállítások› Képernyők›Főablak helyett menü bekapcsolásával érhető el.</p>
+<br/>
+<h3><u>Második lépés</u>: maga a tükrözés Chromiummal</h3>
+<br/>
+<p>A képernyő tartalmának az átvitelére a Chromium böngészőt használtam,
+mivel a Gnome-Network-Displays-t nem tudtam működésre bírni.</p>
+<p>Először – amennyiben szükséges - hozzuk létre a második virtuális képernyőt.
+Ekkor a Diatárban is megjelenik egy második képernyő, melyre már vetíthetünk is.
+Tükrözéshez a Chromium jobb felső sarkában levő Beállítások -> Átküldés,
+mentés és megosztás›Átküldés ablakban válasszuk ki a Források közül a ’Képernyő átküldését’,
+aztán a megtalált vetítő eszközt, majd a ’2. képernyőt’ választva osszuk meg azt.</p>
+<br/>
+<p><center>
+<img border="0" src="Linux-VirtKepE.png" width="80%" align="center"
+	alt="2. ábra: Vetítés második képernyőre"
+	longdesc="2. ábra: Vetítés második (virtuális) képernyőre Chromiummal az 'a)' módszerrel - LinuxMint 22.1 Cinnamon" hspace="10">
+<br/><br/><i>2. ábra: Vetítés második (virtuális) képernyőre Chromiummal az 'a)' módszerrel - LinuxMint 22.1 Cinnamon</i></center>
+</p>
+<br/>
+
+<h1>Android</h1>
+<br/>
+<p>Az eszköz felhasználói felületének (GUI) megfelelően, a Beállításoknál először
+kapcsoljuk be a tükrözést a kiválasztott TV-re, majd a Diatárban indítsuk el a dia-sor vetítését.
+Érdemes ’elfektetni’ a mobilt, majd kinagyítani a dia szöveg részt a teljes képernyőre.</p>
+<p>A Galaxy A15-ös (Android 14) mobilomon a Beállítások›Csatlakoztatott eszközök›Smart View alatt
+kiválasztjuk a felismert vetítő eszközt. Indítsuk el a Diatárat, válasszuk ki a kívánt dia-sort,
+majd a telefont ’elfektetve’ (90 fokkal elfordítva) ’seperjünk’ a képernyőn felfelé,
+hogy teljes képernyőn lássuk a dia szövegét. Ekkor koppintással ki-be kapcsolhatjuk a vetítést,
+ill. jobbra-balra söprögetéssel lépegethetünk a diák között. Nem tökéletes, de ez is egy használható megoldás!</p>
+<br/>
+
+<h1>Megjegyzések:</h1>
+<br/>
+<ul>
+<li>számomra nem világos, hogy ezek a tükrözések milyen fizikai közeget használnak a közvetítésre
+(WiFi, Bluetooth, Ethernet) ill. hogy mikor melyik eszköz melyik protokollt
+(Miracast, Chromecast) használja, választja ki. A Windows Miracast-ot biztosan használ és úgy néz ki,
+hogy a Chromium és az Androidos okos eszköz is ismeri a Miracast protokollt ill. a Chromecast-ot.</li>
+<li>a Miracastról a
+<a href="https://en.wikipedia.org/wiki/Miracast" target="_blank">https://en.wikipedia.org/wiki/Miracast</a>
+oldalon olvashatunk bővebben, míg a Chromecast a Google saját megoldása a tükrözésre.</li>
+<li>sajnos a különböző eszközökön a tükrözés megvalósítása nem mindig tökéletes,
+egyedi eltérések vannak, így a gyakorlatban mi is találkozhatunk kisebb, nagyobb problémákkal</li>
+<li>a képernyő tükrözés több számítógép erőforrást igényel,
+mert a vetített képet folyamatos adat küldéssel ’mozgó képként’,
+videó jellel viszi át. Ez régi, lassú gépeknél problémát okozhat!
+Szintén problémás lehet a jel átvitel viszonylag kis hatótávolsága.</li>
+<li>ezt a leírást és ezeket kísérleteket valódi okos TV hiányában - azt szimulálva - egy
+androidos X96-mini TV-felokosító eszközön egy Miracast nevű applikációt futtatva csináltam.</li>
+</ul>
+<br/>
+<p>2025. február</p>
+<p>afo</p>
+
+</body>
+
+</html>
