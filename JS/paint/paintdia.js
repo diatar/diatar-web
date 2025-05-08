@@ -20,6 +20,7 @@ class ATOM {
 	nWidth = 0;				//object width
 	nTxtWidth = 0;			//text width - w/o ending
 	bBreak = false;			//line break after this?
+	oAccord = null;			//chord
 	
 	clone() {				//create an empty copy of myself
 		let a = new ATOM();
@@ -30,7 +31,7 @@ class ATOM {
 		return a;
 	}
 	
-	getTxtWidthEnd() {
+	getTxtWithEnd() {
 		if (this.eEndtype==endBREAK) return this.sTxt+" ";
 		if (this.eEndtype==endSPACE) return this.sTxt+" ";
 		if (this.eEndtype==endHYPH) return this.sTxt+"-";
@@ -39,22 +40,24 @@ class ATOM {
 	
 	calcWidth(env) {
 		env.setFont(this.bBold, this.bItalic);
-		const metrics1 = env.oCtx.measureText(this.getTxtWidthEnd());
+		const metrics1 = env.oCtx.measureText(this.getTxtWithEnd());
 		this.nWidth=metrics1.width;
 		const metrics2 = env.oCtx.measureText(this.sTxt);
 		this.nTxtWidth=metrics2.width;
+		if (this.oAccord!=null) this.oAccord.calcWidth(env);
 	}
 	
-	getCurrWidth() {
+	getCurrWidth(env) {
 		let w = this.nWidth;
-		//in not at the end of row and this has conditional ending, the width is just the text
+		//if not at the end of row and this has conditional ending, the width is just the text
 		if (!this.bBreak && (this.eEndtype==endBREAK || this.eEndtype==endHYPH)) w=this.nTxtWidth;
+		if (this.oAccord!=null && env.bDrawAccord && this.oAccord.nWidth > w) w=this.oAccord.nWidth;
 		return w;
 	}
 
 	paint(x,y, env) {
 		env.setFont(this.bBold, this.bItalic);
-		env.oCtx.fillText(this.getTxtWidthEnd(), x, y);
+		env.oCtx.fillText(this.getTxtWithEnd(), x, y);
 		if (this.bUnderline) {
 			let yul = y + env.nFontdescent2;
 			env.oCtx.beginPath();
@@ -69,7 +72,9 @@ class ATOM {
 			env.oCtx.lineTo(x+this.nWidth, yst);
 			env.oCtx.stroke();
 		}
-		return this.nWidth;
+		if (this.oAccord!=null && env.bDrawAccord) {
+			this.oAccord.paint(x,y-env.nFontHeight,env);
+		}
 	}
 }
 
@@ -77,6 +82,7 @@ class ATOM {
 class LINE {
 	//fields:
 	aAtoms = [];				//array of ATOMs
+	bHasAccord = false;		//true if any ACCORD
 	
 	//push oldatom into atoms[] and create a new one
 	//  or keep the oldatom, if nothing to paint
@@ -84,7 +90,8 @@ class LINE {
 		if (oldatom.sTxt.length>0			//if anything to paint
 			|| oldatom.eEndtype==endHYPH
 			|| oldatom.eEndtype==endSPACE
-			|| oldatom.eEndtype==endBREAK)
+			|| oldatom.eEndtype==endBREAK
+			|| oldatom.oAccord!=null)
 		{
 			this.aAtoms.push(oldatom);
 			oldatom=oldatom.clone();
@@ -137,7 +144,19 @@ class LINE {
 					continue;
 				}
 				if (ch=='K' || ch=='G' || ch=='?') {
+					i++;
+					if (ch=='?' && i<txt.length) ch=txt.substr(i++,1);
+					let p0=i;
 					while (i<txt.length && txt.substr(i,1)!=';') i++;
+					if (ch=='G') {
+						let newacc = new ACCORD();
+						newacc.clear();
+						if (newacc.decode(txt.substr(p0,i-p0))) {
+							atom=this.pushAtom(atom);
+							atom.oAccord=newacc;
+							this.bHasAccord=true;
+						}
+					}
 					continue;
 				}
 			} else {
@@ -170,7 +189,7 @@ class LINE {
 		for (let atom of this.aAtoms) {
 			atom.bBreak=false;
 			atom.calcWidth(env);
-			x+=atom.getCurrWidth();
+			x+=atom.getCurrWidth(env);
 			if (x > env.nWidth) {
 				if (lastbreakable==null) {
 					//maybe here we should split the atom...
@@ -199,9 +218,10 @@ class LINE {
 			atom.paint(x, y, env);
 			if (atom.bBreak) {
 				y+=env.nFontHeight;
+				if (env.bDrawAccord && env.bHasAccord) y+=env.nFontHeight;
 				x=this.calcContinuationX(env);
 			} else {
-				x+=atom.getCurrWidth();
+				x+=atom.getCurrWidth(env);
 			}
 		}
 		return y;
@@ -219,11 +239,27 @@ class PAINTDIA {
 		this.oEnv.nWidth = ctx.canvas.clientWidth;
 		this.oEnv.nHeight = ctx.canvas.clientHeight;
 	}
+
+	getHasAccord() {
+		return this.oEnv.bHasAccord;
+	}
+	
+	getDrawAccord() {
+		return this.oEnv.bDrawAccord;
+	}
+	
+	setDrawAccord(newval) {
+		if (!this.oEnv.bHasAccord) return;
+		this.oEnv.bDrawAccord=newval;
+		this.oEnv.oCtx.clearRect(0,0,this.oEnv.nWidth,this.oEnv.nHeight);
+		this.paint();
+	}
 	
 	addLine(txt) {
 		let line = new LINE();
 		line.parse(txt);
 		this.aLines.push(line);
+		if (line.bHasAccord) this.oEnv.bHasAccord=true;
 	}
 	
 	paint() {
@@ -248,12 +284,14 @@ class PAINTDIA {
 			for (let ln of this.aLines) {
 				nrows+=ln.calcWidth(this.oEnv);
 			}
+			if (this.oEnv.bDrawAccord && this.oEnv.bHasAccord) nrows*=2;
 			if (fsize>20) fsize-=2; else fsize--;
 		} while (fsize>5 && nrows*this.oEnv.nFontHeight+descent >= this.oEnv.nHeight);
 		
 		let y=0;
 		for (let ln of this.aLines) {
 			y+=this.oEnv.nFontHeight;
+			if (this.oEnv.bDrawAccord && this.oEnv.bHasAccord) y+=this.oEnv.nFontHeight;
 			y=ln.paint(this.oEnv, y);
 		}
 		

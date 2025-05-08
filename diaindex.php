@@ -1,6 +1,6 @@
 <?php
 	//dia listak
-	// ?pageid=firstlines vagy words vagy dtxs vagy dia (elso sorok / szoszedet / diatarak / egy dia)
+	// ?pageid=firstlines / words / dtxs / dia / search -> (elso sorok / szoszedet / diatarak / egy dia / kereses)
 	// ?key=A..Z vagy others (kezdobetu)
 	// ?file=kotet
 	// ?enek=verscim
@@ -8,6 +8,7 @@
 
 	error_reporting(E_ERROR | E_PARSE);
 
+	//parameterek:
 	$key=(isset($_REQUEST['key']) ? $_REQUEST['key'] : 'A');
 	if ($key!='others' && (strlen($key)<>1 || $key<'A' || $key>'Z')) $key='A';
 	$pageid=(isset($_REQUEST['page']) ? $_REQUEST['page'] : 'firstlines');
@@ -15,19 +16,37 @@
 	$ienek=(isset($_REQUEST['enek']) ? $_REQUEST['enek'] : 0);
 	$ivers=(isset($_REQUEST['vers']) ? $_REQUEST['vers'] : 0);
 
-	if ($pageid!='firstlines' && $pageid!='words' && $pageid!='dtxs' && $pageid!='dia')
+	//default
+	if ($pageid!='firstlines'	//kezdosorok
+		&& $pageid!='words'		//szoszedet
+		&& $pageid!='dtxs'		//dialista
+		&& $pageid!='dia'		//egy dia
+		&& $pageid!='search'	//kereses
+	)
 		$pageid='firstlines';
 
-	class DataRecord {
-		public $txt;
-		public $fname;
-		public $kotet;
-		public $enek;
-		public $vszak;
-		public $ienek;
-		public $ivers;
+	$searchstr="";
+	if ($pageid=='search') {
+		if (!$_SERVER["REQUEST_METHOD"]=="POST" || !isset($_POST['search']))
+			$pageid='firstlines';
+		else
+			$searchstr=$_POST['search'];
 	}
 
+	//egy elem adatgyujteshez
+	class DataRecord {
+		public $txt;		//megtalalt szoveg
+		public $fname;		//file
+		public $kotet;		//kotetnev
+		public $enek;		//versnev
+		public $vszak;		//versszak nev
+		public $ienek;		//enek index
+		public $ivers;		//vszak index
+		public $isor;		//sor index
+		public $ipos;		//soron belul
+	}
+
+	//ekezetek, akcentek kihelyettesitese
     $replacement_chars = array(
     // Decompositions for Latin-1 Supplement
     chr(195).chr(128) => 'A', chr(195).chr(129) => 'A',
@@ -128,14 +147,18 @@
 	chr(0xC8).chr(0x98) => 'S', 'Ț' => 'T'
     );
 
+	//itt kezdodik a kepernyo felepitese (a kozos fejlec utan persze)
+	
 	echo '<div class="MAIN_CONTENT_POS1">';
 
+	//felso sor: listazasi lehetosegek
 	echo '<p>';
 	echo '<a href="?page=dtxs">Énektárak</a>';
 	echo '&nbsp;&nbsp;<a href="?page=words">Szószedet</a>';
 	echo '&nbsp;&nbsp;<a href="?page=firstlines">Kezdősorok</a>';
 	echo '</p><br/>';
 	
+	//adott lista fejlece
 	echo '<div class="iconed_title">';
 	if ($pageid==='words') {
 		echo 'Szószedet az összes diából:';
@@ -146,6 +169,7 @@
 			echo 'Énektárak listája:';
 	} else if ($pageid==='dia') {
 		echo GetDiaName($file,$ienek,$ivers);
+		echo '&nbsp;&nbsp;&nbsp;&nbsp;<label id="UseChordCB"><input type="checkbox" id="UseChord" name="UseChord" checked>Akkordok</label>';
 	} else {
 		echo 'Összes dia listája a kezdősor szerint:';
 	}
@@ -157,7 +181,11 @@
 	} else if ($pageid==='dia') {
 		echo '<div class="DIAINDEX1">';
 		Dia($file,$ienek,$ivers);
-	} else {
+	} else if ($pageid==='search') {
+		echo '<div class="DIAINDEX1">';
+		Keres();
+	} else { //words, firstlines
+		//ABC linkek
 		for ($ch=ord('A'); $ch<=ord('Z'); $ch++) {
 			if ($key===chr($ch)) echo '<strong>';
 			echo '<a href="?page=', $pageid, '&key=', chr($ch), '">', chr($ch), '</a>&nbsp;&nbsp;';
@@ -167,6 +195,7 @@
 		echo '<a href="?page=', $pageid, '&key=others">*</a></br></br>';
 		if ($key==='others') echo '</strong>';
 
+		//masodik betu
 		$kk=($key==='others' ? '*' : $key);
 		for ($ch=ord('A'); $ch<=ord('Z'); $ch++) {
 			echo '<a href="#', $kk, chr($ch), '">', $kk, chr($ch), '</a>&nbsp;&nbsp;';
@@ -175,15 +204,21 @@
 
 		echo '<div class="DIAINDEX1">';
 
+		//ide gyulik az eredmeny
+		//  $dialst[szoveg] = array( DataRecord, DataRecord... )
 		$dialst=array();
 
+		//az osszes .DTX filet vegignezzuk
 		$files = scandir('./downloads/enektarak');
 		foreach($files as $fname)
 			if (strtolower(substr($fname,-4)) === '.dtx')
 				ProcessFile($fname);
 			
-		$lastch2='';
+		//sorbarendezes
 		ksort($dialst, SORT_STRING|SORT_FLAG_CASE);
+
+		//kiiras
+		$lastch2='';
 		foreach($dialst as $places) {
 			$first=true;
 			$prevf=""; $preve=0; $prevv=0;
@@ -198,6 +233,7 @@
 					echo '<p>', $dia->txt, '<br/>';
 					$first=false;
 				}
+				//dia hivatkozas csak egyszer
 				if ($dia->ienek==$preve && $dia->ivers==$prevv && $dia->fname===$prevf) continue;
 				$prevf=$dia->fname; $preve=$dia->ienek; $prevv=$dia->ivers;
 				echo "&nbsp;&nbsp;<a href=\"?page=dia&file=$dia->fname&enek=$dia->ienek&vers=$dia->ivers\">$dia->kotet: $dia->enek$dia->vszak</a>";
@@ -211,6 +247,7 @@ echo '</div>';	//MAIN_CONTENT_POS1
 
 /////////////////////////////////////////////////////////////////////////////////
 
+//egy file bedolgozasa
 function ProcessFile(&$fname) {
 global $dialst, $key, $pageid;
 
@@ -222,7 +259,7 @@ global $dialst, $key, $pageid;
 
 	$bwords=($pageid==='words');
 	$rnev = substr($fname,0,strlen($fname)-4);
-	$firstline=""; $enekszam=""; $diaszam=""; $ienek=0; $ivers=0;
+	$firstline=""; $enekszam=""; $diaszam=""; $ienek=0; $ivers=0; $isor=0; $ipos=0;
 	while (!feof($f)) {
 		$txt=fgets($f);
 		if (empty($txt)) continue;
@@ -231,29 +268,32 @@ global $dialst, $key, $pageid;
 			$rnev=trim(substr($txt,1));
 			break;
 		case '>':
-			$ienek++; $ivers=0;
+			$ienek++; $ivers=0; $isor=0; $ipos=0;
 			$enekszam=trim(substr($txt,1));
 			$firstline=""; $diaszam="";
 			break;
 		case '/':
-			$ivers++;
+			$ivers++; $isor=0; $ipos=0;
 			$diaszam=trim($txt); $firstline="";
 			break;
 		case ' ':
 			if (empty($enekszam) || !empty($firstline)) break;
+			$isor++;
 			$firstline=UnEscape($txt);
 			if ($bwords) {
+				//szavakra bontjuk, csak 4+ hosszuakat listazzuk
 				$xpl=explode(' ',$firstline);
 				foreach($xpl as $txt) {
+					$ipos++;
 					if (strlen($txt)<4) continue;
 					$txt=CleanTxt($txt);
-					if (strlen($txt)>=4) AddDia($txt, $fname, $rnev, $enekszam, $diaszam, $ienek, $ivers);
+					if (strlen($txt)>=4) AddDia($txt, $fname, $rnev, $enekszam, $diaszam, $ienek, $ivers, $isor, $ipos);
 				}
 				$firstline="";
 			} else {
 				$firstline=CleanTxt($firstline);
 				if (!empty($firstline))
-					AddDia($firstline, $fname, $rnev, $enekszam, $diaszam, $ienek, $ivers);
+					AddDia($firstline, $fname, $rnev, $enekszam, $diaszam, $ienek, $ivers, 0, 0);
 			}
 			break;
 		}
@@ -262,7 +302,8 @@ global $dialst, $key, $pageid;
 	
 }
 
-function AddDia(string &$txt, string &$fname, string &$kotet, string &$enek, string &$vszak, int $ie, int $iv) {
+//globalis $dialst epitese
+function AddDia(string &$txt, string &$fname, string &$kotet, string &$enek, string &$vszak, int $ie, int $iv, $is, $ip) {
 global $dialst, $key;
 	$unacc=remove_accents($txt);
 	$ch0=strtoupper($unacc[0]);
@@ -315,6 +356,7 @@ function UnEscape(&$txt) {
 	return $res;
 }
 
+//kibovitett TRIM funkcio
 function CleanTxt(&$txt) {
 //	return trim($txt, " \n\r\t\v\x00-*):.+/…–|’(\"„”“,;!?0123456789'");
 //	$txt=trim($txt);
@@ -324,6 +366,7 @@ function CleanTxt(&$txt) {
 	return mb_substr($txt,$p1,$p2-$p1,'UTF-8');
 }
 
+//ekezettelenites
 function remove_accents(&$txt) {
 global $replacement_chars;
     //if ( !preg_match('/[\x80-\xff]/', $txt) )
@@ -334,6 +377,7 @@ global $replacement_chars;
 
 /////////////////////////////////////////////////////////////////////////////////
 
+//enektarak listaja
 function DTXList() {
 	$dtxs=array();
 	$files = scandir('./downloads/enektarak');
@@ -433,8 +477,12 @@ function GetDtxName($fname) {
 	return 'DTX:'.$fname;
 }
 
+function Keres() {
+}
+
 /////////////////////////////////////////////////////////////////////////////////
 
+//egy dia kivetitese
 function Dia($fname,$ie,$iv) {
 	echo '<canvas id="MainCanvas" width="728px" height="500px" style="border:1px solid #000000;">';
 	echo 'HTML canvas nem támogatott???...';
@@ -446,7 +494,7 @@ function Dia($fname,$ie,$iv) {
 	//echo '<span style="font-size: 2em; line-height: 1.5em">';
 
 	echo '<script type="module">';
-	echo 'import PAINTDIA from "./JS/paintdia.js";'."\n";
+	echo 'import PAINTDIA from "./JS/paint/paintdia.js";'."\n";
 	echo 'let canvas = document.getElementById("MainCanvas");'."\n";
 	echo 'let ctx = canvas.getContext("2d");'."\n";
 	echo 'let paintdia = new PAINTDIA(ctx);'."\n";
@@ -465,24 +513,33 @@ function Dia($fname,$ie,$iv) {
 			}
 		} else if ($ch===' ') {
 			if ($ie==0 && $iv==0) {
-				echo 'paintdia.addLine("'.substr($line,1,-2).'");'."\n";
+				echo 'paintdia.addLine("' . addslashes(substr($line,1,-2)) . '");'."\n";
 			}
 		}
 	}
 	fclose($f);
+	
+	echo 'if (!paintdia.getHasAccord()) document.getElementById("UseChordCB").style.display="none";'."\n";
 
 	echo 'window.addEventListener("resize", resizeCanvas, false);'."\n";
 	echo 'function resizeCanvas() {'."\n";
-	echo '  canvas.width = canvas.parentNode.clientWidth;'."\n";
+	echo '  canvas.width = canvas.parentNode.clientWidth-2;'."\n"; //I don't understand this -2; needed to see right border
 	echo '  canvas.height = canvas.parentNode.clientHeight;'."\n";
 	echo '  paintdia.paint();'."\n";
 	echo'}'."\n";
+	
+	echo 'function clickUseChord(event) {'."\n";
+	echo '    paintdia.setDrawAccord(event.target.checked);'."\n";
+	echo '}'."\n";
+	echo 'window.addEventListener("DOMContentLoaded", () => {'."\n";
+    echo '    document.getElementById("UseChord").addEventListener("click", clickUseChord);'."\n";
+	echo '});'."\n";
+	
 	echo 'resizeCanvas();'."\n";
 	echo '</script>';
-
-
 }
 
+//dia nevet linkben adja vissza
 function GetDiaName($fname,$ie,$iv) {
 	$f=fopen("./downloads/enektarak/$fname","r");
 	if (!$f) return $fname;
@@ -514,69 +571,6 @@ function GetDiaName($fname,$ie,$iv) {
 	fclose($f);
 	if (empty($nev)) return $fname;
 	return "<a href=\"?page=dtxs&file=$fname\">$nev</a>: $enek$vers";
-}
-
-function DiaPrint(&$txt) {
-	$res=""; $escmode=0; $bd=false; $ul=false; $it=false;
-	$len=strlen($txt);
-	for ($i=0; $i<$len; $i++) {
-		$c=$txt[$i];
-		if ($escmode==2) {
-			if ($c===';') $escmode=0;
-			continue;
-		}
-		if ($escmode==1) {
-			if ($c==='?' || $c==='K' || $c==='G') {
-				$escmode=2;
-				continue;
-			}
-			switch($c) {
-			case '\\':
-			case ' ':
-				$res .= $c;
-				break;
-			case '.':
-				$res .= ' ';
-				break;
-			case 'B':
-				if (!$bd) $res.='<b>';
-				$bd=true;
-				break;
-			case 'b':
-				if ($bd) $res.='</b>';
-				$bd=false;
-				break;
-			case 'U':
-				if (!$ul) $res.='<u>';
-				$ul=true;
-				break;
-			case 'u':
-				if ($ul) $res.='</u>';
-				$ul=false;
-				break;
-			case 'I':
-				if (!$it) $res.='<i>';
-				$it=true;
-				break;
-			case 'i':
-				if ($it) $res.='</i>';
-				$it=false;
-				break;
-			}
-			$escmode=0;
-			continue;
-		}
-		if ($c === "\\") {
-			$escmode=1;
-			continue;
-		}
-		$res .= $c;
-	}
-	if ($bd) $res.='</b>';
-	if ($ul) $res.='</u>';
-	if ($it) $res.='</i>';
-
-	echo "<p>$res</p>";
 }
 
 ?>

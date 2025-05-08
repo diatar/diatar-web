@@ -24,6 +24,14 @@ const AkkordCanBeMinor = [
     false,  false,  false,  false,  false,  false,   false,  false
   ];
 
+//chord modifiers on screen
+const AkkordOutputArray = [
+    '',     '+',    'o',    '7',    '7+',   'o/7',  'o/7-',  'o/7+',  '+/7',
+    '+/7+', '6',    '7/9',  '7/9-', '7/9+', '+/7/9','+/7/9+','7+/9',  '7+/9+',
+    '+/7+/9','+/7+/9+','o/7/9','o/7/9-','9','9-',  '9+',    '+/9',   '+/9+',
+    'o/9',  'o/9-', '4',    '2',    '4/7',   '4/9', '4/9-',  '4/9+'
+  ];
+
 
 //one chord
 class ACCORD {
@@ -36,23 +44,29 @@ class ACCORD {
 	bBassIS;		// raised bass
 	bMoll;			// true = moll
 	nModIdx;		// modifier index
+	nWidth;			// draw width
+	nW1=0; nW2; nWmod; nWbass;   //internal widths
+
+	constructor() {
+		this.clear();
+	}
 	
 	//clears fields
 	clear() {
 		this.ahMain=ahNONE; this.bMainES=false; this.bMainIS=false;
 		this.ahBass=ahNONE; this.bBassES=false; this.bBassIS=false;
-		this.bMoll=false;
+		this.bMoll=false; this.nModIdx=0;
 	};
 	
 	//string input -> fields; returns false if not a valid chord
 	decode(str) {
-		let ret = doDecode(str);
-		if (!ret) clear();			//on error clean up the structure
+		let ret = this.doDecode(str);
+		if (!ret) this.clear();			//on error clean up the structure
 		return ret;
 	}
 	
 	doDecode(str) {
-		clear();
+		this.clear();
 		if (!str) return false;
 		
 		//decoding main chord note
@@ -129,6 +143,60 @@ class ACCORD {
 			if (str==AkkordModArray[idx]) return idx;
 		}
 		return 0;
+	}
+
+	NoteStr(ah,bis,bes,bmoll) {
+		let str="";
+		switch (ah) {
+			case ahC : str+=(bmoll ? 'c' : 'C'); break;
+			case ahD : str+=(bmoll ? 'd' : 'D'); break;
+			case ahE : str+=(bmoll ? 'e' : 'E'); break;
+			case ahF : str+=(bmoll ? 'f' : 'F'); break;
+			case ahG : str+=(bmoll ? 'g' : 'G'); break;
+			case ahA : str+=(bmoll ? 'a' : 'A'); break;
+			case ahH :
+				if (bes) str+=(bmoll ? 'b' : 'B'); else str+=(bmoll ? 'h' : 'H');
+				break;
+		}
+		if (bis) str+='is'; else if (bes && ah!=ahH) str+=(ah==ahE || ah==ahA ? 's' : 'es');
+		if (bmoll) str+='m';
+		return str;
+	}
+	
+	calcWidth(env) {
+		if (this.ahMain==ahNONE) {
+			this.nWidth=0;
+			return;
+		}
+		let str = this.NoteStr(this.ahMain,this.bMainIS,this.bMainES,this.bMoll);
+		env.setFont(true,false);
+		this.nW1 = env.oCtx.measureText(str.substr(0,1)).width;
+		env.setFont(false,false);
+		this.nW2 = env.oCtx.measureText(str.substr(1)).width;
+		this.nWbass = ( this.ahBass==ahNONE ? 0 : env.oCtx.measureText('/'+this.NoteStr(this.ahBass,this.bBassIS,this.bBassES,false)) );
+		this.nWmod=0;
+		if (this.nModIdx>0) {
+			env.setFontPercent(70,false,false);
+			this.nWmod = env.oCtx.measureText(AkkordOutputArray[this.nModIdx]).width;
+		}
+		this.nWidth=this.nW1+this.nW2+this.nWmod+this.nWbass;
+	}
+	
+	paint(x,y,env) {
+		if (this.ahMain==ahNONE) return;
+		let str = this.NoteStr(this.ahMain,this.bMainIS,this.bMainES,this.bMoll);
+		env.setFont(true,false);
+		env.oCtx.fillText(str.substr(0,1),x,y);
+		x+=this.nW1;
+		env.oCtx.fillText(str.substr(1),x,y);
+		x+=this.nW2;
+		if (this.nModIdx>0) {
+			env.setFontPercent(70,false,false);
+			env.oCtx.fillText(AkkordOutputArray[this.nModIdx],x,y);
+			env.setFont(false,false);
+			x+=this.nWmod;
+		}
+		if (this.ahBass!=ahNONE) env.oCtx.fillText('/'+this.NoteStr(this.ahBass,this.bBassIS,this.bBassES,false));
 	}
 };
 
