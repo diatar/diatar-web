@@ -38,6 +38,12 @@
             </li>
             <li>
             <p style="margin-bottom: 4px;">
+				<strong><mark>Képernyő-tükrőzés, "CASTING"</mark></strong>
+                <a target="blank" href="Casting/casting.html">Miracast vagy Chromecast vagy valami más?</a>. 'afo' leírása tapasztalatairól.
+            </p>
+            </li>
+            <li>
+            <p style="margin-bottom: 4px;">
 				<strong><mark>BLUETOOTH</mark></strong>
 				<a target="blank" href ="Bluetooth_vez/Diatár vezérlése okostelefonról.htm">Almásy András bluetooth-alapú távvezérlést készített.</a>
 				Ezzel egy mobiltelefonnal és egy mikrovezérlővel bluetooth kapcsolaton keresztül lehet léptetni a Windows-os Diatár programot.
@@ -102,7 +108,7 @@
                  Veres Mihálytól, a <b>felsőgödi Jézus Szíve Plébánia</b> mellett működő 
                 "Bozóky Gyula Alapítvány" Kuratóriumi elnökétől is kaptunk egy érdekes beszámolót, amit szíves engedelmével
                 <a target="_self" href="Felsogod/Felsogod.html">közzéteszünk</a>. 
-                Ez is egy mevalósítási változat, reméljük másoknak is tanulságos, segíthet kialakítani egy saját renndszert.
+                Ez is egy megvalósítási változat, reméljük másoknak is tanulságos, segíthet kialakítani egy saját renndszert.
             </p>
             </li>
             <li>
@@ -129,7 +135,7 @@
                 Korlátozott lehetőségeik ellenére, sikerült működő rendszert összeállítaniuk.
                 Vetítővásznat ők sem használnak, a falra vetítenek.
                 <a target="_self" href="Brasso/Brasso_Hu.html">A magyar nyelvü leírás itt olvasható</a>.<br />
-                Szintén István munkája a <a target="_blank" href="./letoltes.php?letoltes=./downloads/enektarak/Roman.zip">
+                Szintén István munkája a <a href="./downloads/enektarak/Roman.zip" download>
                     teljes román nyelvű énektár</a> elkészítése. Külön köszönet érte! <br />
                <i>
                 Adi Ștefan, de la parohia <b>"Preasfânta Inimă a lui Isus"</b> din Brașov – Blumăna ne-a trimis următoarea prezentare.
@@ -137,7 +143,7 @@
                 În pofida posibilităților limitate au reușit să construiască un sistem funcțional.
                 Nu folosesc ecran, proiecția se realizează direct pe peretele din stânga altarului.
                 <a target="_self" href="Brasso/Brasso_Ro.html">Puteți citi prezentarea în limba româna aici.</a>.<br />
-                De asemenea <a target="_blank" href="./letoltes.php?letoltes=./downloads/enektarak/Roman.zip">
+                De asemenea <a href="./downloads/enektarak/Roman.zip" download>
                     întreaga colecție a cântecelor în limba româna</a> este opera lui Ștefan. Mulțumim!
                </i>
             </p>
@@ -146,7 +152,7 @@
         </div>
     </div>
 
-    <div id="slideshow" class="slide_show">
+    <div id="slideshow" class="slide_show" style="display: none;">
         <center>  
         <div id="vege" style="display: none;"><a href ="javascript:close_slideshow()"> Vége </a></div>
 		<br/>
@@ -165,6 +171,7 @@
                    var ele1 = document.getElementById("szoveg");
                    var ele2 = document.getElementById("szoveg1")
                    var ele3 = document.getElementById("szoveg3")
+				   var slish = document.getElementById("slideshow");
                    //ele1.style.display = "none"; 
                             
                 function open_slideshow (src,height)
@@ -172,19 +179,22 @@
 				   frame.src=src;
 				   frame.height=height;
 				   frame.width="760px";
-                   document.getElementById("slideshow").appendChild(frame); 
+				   slish.appendChild(frame); 
+				   slish.style.display = "block";
                    ele.style.display = "block"; 
                    ele1.style.display = "none"; 
                 }
                 function close_slideshow()
                 {
-                    document.getElementById("slideshow").removeChild(frame);
+                    var slish=document.getElementById("slideshow").removeChild(frame);
                     ele.style.display = "none";
                     ele1.style.display = "block";
+					//slish.style.display = "none";
                    
                 }
             </script>               
 </div>
+
 <!--  Eredeti
     <div class="text">
     <div id="szoveg" class="expanded" style="display: block" >   

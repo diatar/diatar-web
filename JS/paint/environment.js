@@ -2,16 +2,19 @@
 class ENVIRONMENT {
 	//fields:
 	oCtx;				//canvas context
-	nWidth;				//screen width
-	nHeight;			//screen height
-	nFontsize;			//font size
-	sFontfamily;		//font family
+	oKotta;				//music sheet drawer object
+	nWidth;				//screen width (pixel)
+	nHeight;			//screen height (pixel)
+	nFontsize;			//font size (pt)
+	sFontfamily;		//font family name
 	nFontascent2;		//half ascent (for strikethrough)
 	nFontdescent2;		//half descent (for underline)
-	nSpaceWidth;		//avg width of one space
-	nFontHeight;		//height of font
+	nSpaceWidth;		//avg width of one space (pixel)
+	nFontHeight;		//height of font (pixel)
 	bHasAccord = false;	//are there chords in text?
 	bDrawAccord = true;	//we would like to draw chords?
+	bHasKotta = false;	//are there music notes in text?
+	bDrawKotta = true;	//we would like to draw music sheet?
 	
 	//name containing bold/italic style and size info
 	getFontName(bd,it) {

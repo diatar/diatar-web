@@ -61,7 +61,7 @@
 	<b><i>László Rezső atya és csapata</i></b> készített, elsősorban papok számára - olyan helyekre, ahol nincs kántor -
 	egyszerűen felhasználható <b><i>összeállításokat, komplett miséket, hanganyaggal</i></b>.
 	<br/>
-	<a href="https://drive.google.com/drive/folders/1mdmIn9LzcPbWmcXmqTCqAFbgJVhKqp_s?usp=sharing" target=blank>
+	<a href="https://drive.google.com/drive/folders/1OTadkXLvhjYUAwoyDcw1ryoU7xbxQwHw" target=blank>
 		Az anyag megnézhető, letölthető innen.
 	</a>
 	<br/>

@@ -1,6 +1,6 @@
 ﻿<div class="text expanded">
 	<p>
-		<b>v6.5 Android vezérlő és vetítő - Android alapú kivetítő applikációk okoskészülékekre</b>
+		<b>v8.2 Android vezérlő és vetítő - Android alapú kivetítő applikációk okoskészülékekre</b>
 	</p>
 	<br/>
 	<div class="iconed_title android_icon">
@@ -69,9 +69,31 @@
 		<b>DiaVetito</b>
 		Képet és szöveget tud megjeleníteni, szövegméret, pozíció, szín stb. sokmindent tud már, folyamatos fejlesztés alatt.
 		A képernyőt megérintve látható az IP cím és megadható a port.
+		8.2 verziótól Internetes fogadás is választható. Ha elkezdjük gépelni a nevet,
+		alatta a listából kijelölhető a küldő.
 	</p>
 
 	<ul class="dotted">
+		<li>
+			8.2 verzió: internetes küldés a Diatar-ban és fogadás a DiaVetito-ben.
+			Regisztrálás, jelszómódosítás stb. egyelőre csak az asztali Diatárban lehetséges.
+			A küldéshez a Beállítás/Internet alatt lehet belépni név+jelszó megadásával.
+		</li>
+		<li>
+			8.1 verzió: Saját szöveg szerkesztése egyszerű formázással.
+			A szerkesztő ablakban B (bold=vastag), I (italic=dőlt), U (underline=aláhúzott), S (strike=áthúzott)
+			formázáshoz találhatók gombok, valamint négy vezérlő karakter szúrható be
+			(feltételes kötőjel, nemtörhető kötőjel, nemtörhető szóköz, sortörési javaslat).
+		</li>
+		<li>
+			8.0 verzió: Zsolozsma letöltés. Ahogyan a Win/Linux/RPI változatok, már az Androidos is képes
+			a napi zsolozsma megjelenítésére. A szövegforrás a
+			<a href="https://breviar.sk/hu/" target=blank>https://breviar.sk/hu/</a> cím.
+		</li>
+		<li>
+			7.1 verzió: Beállítások/Énektárak egy új menüpont, itt megadható, mely kötetekre van szükségünk.
+			Ugyanitt saját köteteket is tudunk importálni.
+		</li>
 		<li>
 			7.0 verzió: Már régóta igény volt a saját diaszöveg beírására. Elkészült az első
 			- még csak formázatlan szöveget lehetővé tevő - verzió, Juhász Dánielnek köszönjük!
@@ -222,6 +244,26 @@
 		<p><b>Korábbi verziók:</b></p>
 	</div>
 	<div class="text12">
+	  <center>
+		<a href="./downloads/android/Diatar81.apk">Diatar81.apk</a>
+		&nbsp;&nbsp;
+		<a href="./downloads/android/DiaVetito81.apk">DiaVetito81.apk</a>
+	  </center>
+	  <center>
+		<a href="./downloads/android/Diatar80.apk">Diatar80.apk</a>
+		&nbsp;&nbsp;
+		<a href="./downloads/android/DiaVetito80.apk">DiaVetito80.apk</a>
+	  </center>
+	  <center>
+		<a href="./downloads/android/Diatar71.apk">Diatar71.apk</a>
+		&nbsp;&nbsp;
+		<a href="./downloads/android/DiaVetito71.apk">DiaVetito71.apk</a>
+	  </center>
+	  <center>
+		<a href="./downloads/android/Diatar70.apk">Diatar70.apk</a>
+		&nbsp;&nbsp;
+		<a href="./downloads/android/DiaVetito70.apk">DiaVetito70.apk</a>
+	  </center>
 	  <center>
 		<a href="./downloads/android/Diatar65.apk">Diatar65.apk</a>
 		&nbsp;&nbsp;

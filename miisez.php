@@ -1,7 +1,7 @@
 <div class="MAIN_CONTENT_POS1">
     <div class="text">
         <p>
-            Ezt a templomi vetítésre szolgáló programot 2005 nyarán kezdtük el fejleszteni. (Köszönet érete ifj. Rieth József (Hoze)-nek és Pacor István-nak.)
+            Ezt a templomi vetítésre szolgáló programot 2005 nyarán kezdtük el fejleszteni. (Köszönet érete ifj. Rieth Józsefnek (Hoze) és Pacor Istvánnak.)
             2005. karácsonya óta folyamatosan működik a
             <a target="blank" href="http://www.esztergomi-ersekseg.hu/?fm=1&am=4&op=plebaniaview&p_id=145">
                 Budapest Mátyásföldi Szt. József rk. plébániatemplom</a>ban 
@@ -23,7 +23,7 @@
     <div class="dotted_text">
         <ul>
         	<li> Ingyenes program</li>
-            <li> Windows, Linux, Android alatt futó változatok</li>
+            <li> Windows, Linux, Raspberry, Android alatt futó változatok</li>
             <li> Sok és folyamatosan bővülő katolikus és protestáns énektár-készlet:
 						    SzVU! és Éneklő Egyház énekei, Dicsérjétek az Urat!, ordináriumok, zsoltárválaszok 
                 (vasárnap, ünnepek, hétköznapok), Sárga könyv, Kék könyv, Népdalzsoltárok, Mátraverebélyi énekek, Cserkészek daloskönyve, 

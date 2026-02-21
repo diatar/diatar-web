@@ -227,6 +227,9 @@ function waitMsg()
 												include("diaindex.php");
 												break;
                                     default:
+											if (isset($_REQUEST['subpage']))
+												include("regisegek.php");
+											else
                                                 include("ujdonsagok.php");
                                 }                                
                             ?>
@@ -235,7 +238,7 @@ function waitMsg()
                 </div>
                 <div class="FRAME_BOTTOM">
                     <div class="CPY">
-                        Copyright &copy; Diatar 2010-2022
+                        Copyright &copy; Diatar 2010-2024
 						<a href="?page=gdpr">Adatvédelem</a>&nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
                 </div>

@@ -41,6 +41,8 @@
 			<br/>&nbsp;<br/>
            <div class="dotted_text">
                <ul>
+                    <li> <a href="javascript:open_slideshow('tutors/internet/t1.html',1200)">Internetes vetítés</a></li>
+
                     <li> <a href ="javascript:open_slideshow('tutors/enekrendlista/t1.html',850)">Az éneklisták titkai</a> </li>
 
                     <li> <a href ="javascript:open_slideshow('tutors/datumra/t1.html',750)">Hogyan kell egy adott napon automatikusan 

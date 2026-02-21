@@ -7,7 +7,11 @@
 <p align="center"><a href="#HASZNOS">Hasznos segédletek, linkek</a></p>
 <br/><br/>
 
-<div class="RIGHT_TABLE TABLE_ENTRY_ODD" id="FORRAS">
+<div class="BETA_TITLE" id="FORRAS">
+		Forráskód
+</div>
+
+<div class="RIGHT_TABLE TABLE_ENTRY_ODD">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
 			<a href="https://github.com/diatar" target="_blank">Forráskód</a>
@@ -22,8 +26,13 @@
 	</div>
 </div>
 
+<div><br/></div>
+<div class="BETA_TITLE" id="DIA">
+		Egyedi DIA összeállítások
+</div>
+
 <!-- Mátyásföldi diák -->
-<div class="RIGHT_TABLE TABLE_ENTRY_EVEN" id="DIA">
+<div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
 			<a href="/downloads/diak.zip">Mátyásföldi diák </a>
@@ -42,9 +51,58 @@
 		</div>
 	</div>
 </div>
-<div><br/></div>
 
+<!-- Nagyheti szertartasok -->
+<div class="RIGHT_TABLE TABLE_ENTRY_ODD">
+	<div class="RIGHT_TABLE_LEFT">
+		<div class="download_link expanded">
+			<a href="./downloads/enektarak/nagyhet.ZIP" download>Nagyheti szertartás!</a>
+			<a href="./downloads/enektarak/Nagycsutortok.dia" download>Nagycsütörtök</a>
+			<a href="./downloads/enektarak/Nagypentek.dia" download>Nagypéntek</a>
+			<a href="./downloads/enektarak/Nagyszombat.dia" download>Nagyszombat</a>
+		</div>
+	</div>
+	<div class="RIGHT_TABLE_RIGHT">
+		<div class="TABLE_TEXT expanded">
+			<p>
+				Sajó József küldött a nagyheti szertartásokra egy-egy vázlatot.
+				Innen letölthető a ZIP csomag (tartalmazza mindhárom diát) de akár a "dia"-k egyesével is.
+				Az így kapott vázlatokat bárki tetszése szerint bővítheti, átalakíthatja.
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- Roman enekek -->
+<div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
+	<div class="RIGHT_TABLE_LEFT">
+		<div class="download_link expanded">
+			<a href="./downloads/enektarak/Roman.zip">Román (Românești)</a>
+		</div>
+	</div>
+	<div class="RIGHT_TABLE_RIGHT">
+		<div class="TABLE_TEXT expanded">
+			<p>
+				 Adi Istvántól, Brassóból kaptuk ezt a gyűjteményt (köszönjük),
+				 ami a román nyelvű liturgia énekeit tartalmazza.
+				 Tömörített ZIP állomány, csak ki kell csomagolni a diatar programot tartalmazó könyvtárba
+				 és máris használható.
+				 </br>
+				 De la Adi Ștefan din Brașov am primit această colecție (mulțumim frumos),
+				 care cuprinde cântecele liturgice în limba română.
+				 Este o arhivă ZIP, trebuie doar dezarhivate în folderul aplicației diatar,
+				 și se pot utiliza.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+<!--  ******************************************************************* -->
 <!--  Kották -->
+<!--  ******************************************************************* -->
+
+<div><br/></div>
 <div class="BETA_TITLE" id="KOTTA">
 		Kották
 </div>

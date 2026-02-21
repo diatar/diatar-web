@@ -20,8 +20,10 @@
 		 áttértünk a Diatár program megoldásaira Mohácson a Magyarok Nagyasszonya templomban.
         </p>
     </div>
-    <center>    
-        <img border="0" src="https://i.imgur.com/u7uOMcv.jpg" width="400" alt="vetítővászon" />
+    <center>
+		<a title="1. ábra: Vetítővászon Mohácson" href="/images/mohacs1.jpg" target="_blank">
+			<img border="0" src="/images/mohacs1.jpg" width="400" alt="vetítővászon" />
+		</a>
 		<br/>
     </center>
     
@@ -48,7 +50,9 @@
     </div>
     <div>
         <p>
-            <img src="https://i.imgur.com/21YTz2y.jpg" width="400" style="float:left; margin-right:10px;"/>
+		<a title="2. ábra: Laptop az orgona szélén" href="/images/mohacs2.jpg" target="_blank">
+            <img src="/images/mohacs2.jpg" width="400" style="float:left; margin-right:10px;"/>
+		</a>
 		</p>
 		<p>
 			<b>A rendszer specifikációi:</b><br/>
@@ -76,7 +80,9 @@
 	</div>
 	<div>
         <p>
-            <img src="https://i.imgur.com/jpZEWgI.jpg" width="400"  style="float:left; margin-right:10px;"/>
+		<a title="Léptető nyomógombok" href="/images/mohacs3.jpg" target="_blank">
+            <img src="/images/mohacs3.jpg" width="400"  style="float:left; margin-right:10px;"/>
+		</a>
         </p>
         <p>
 			Önmagában jelen állapotában is meg vagyunk elégedve a programmal és a rendszerrel,
@@ -100,7 +106,9 @@
 		<br/>
 	</div>
 	<center>    
-		<img border="0" src="https://i.imgur.com/PD6scHV.jpg" width="400" alt="kottavetítés" />
+		<a title="4. ábra: Kotta vetítése" href="/images/mohacs4.jpg" target="_blank">
+			<img border="0" src="/images/mohacs4.jpg" width="400" alt="kottavetítés" />
+		</a>
 		<br/>
 	</center>
 	<div>

@@ -1,22 +1,22 @@
-[HU]    Kiegészítő információk a Diatár 12.7-es verziójának Linuxos .tar.gz terjesztéséhez 
+[HU]    Kiegészítő információk a Diatár 13.1-es verziójának Linuxos .tar.gz terjesztéséhez 
         ----------------------------------------------------------------------------------
 
 Általános:
 
  – a fájl tartalmazza a Diatár és a DiaSzerkesztő programot az összes énekeskönyv előre elkészített diájával együtt, kivéve a hozzávaló hangfájlokat
- – ezek a programok kompatibilisek mind a Windowsos mind az Androidos változataikkal, azaz képesek hálózati üzemmódban együtt működni velük
- – a programok elméletileg több Intel alapú Linux disztribúción is futtathatóak
+ – ezek a programok kompatibilisek mind a Windowsos, az Androidos ill. Raspberry Pi OS változataikkal, azaz képesek hálózati üzemmódban együtt működni velük
+ – a programok elméletileg több Intel és ARM alapú Linux disztribúción is futtathatóak
  – ez a disztribúciós mód a Diatár fájljainak egy általános Linux op. rendszerben, egy tetszőleges könyvtárába való (installálás nélküli) bemásolására szolgál
  – a letöltött fájlt csak ki kell tömöríteni egy, a Diatár számára létrehozott könyvtárban és a programok is majd innen lesznek indíthatóak 
  – Debian alapú rendszer esetén is használható, de ez esetben inkább a standard .deb csomag installálása javasolt mely megfelelően be is ágyazza a programokat a környezetükbe
 
 Üzembe helyezés:   (a program telepítése nem igényel különösebb jogosultságot, de csak a telepítést végző felhasználó használhatja majd!)
 
- 1) kicsomagolás:                   tar -zxvf diatar_12.7.0.x86_64.tar.gz	(a 64 bites) (vagy megfelelő fájl menedzserben rá kattintva)
+ 1) a letöltött fájl ellenőrzése: sha256sum -b diatar_13.1.0_x86_64.tar.gz (a generált ellenőrző kódnak meg kell egyeznie a sha256sums.txt-ban levővel)
 
- 2) a program futtathatóvá tétele:  chmod 744 diatar64   (a 64 bites) (vagy megfelelő fájl menedzserben rá kattintva)
+ 2) kicsomagolás:                   tar -zxvf diatar_13.1.0_x86_64.tar.gz	(a 64 bites) (vagy megfelelő fájl menedzserben rá kattintva)
 
- 3) a letöltött csomag ellenőrzése: sha256sum -b diatar_12.7.1-1_amd64.deb (a generált ellenőrző kódnak meg kell egyeznie a sha256sums.txt-ban levővel)
+ 3) a program futtathatóvá tétele:  chmod 744 diatar64   (a 64 bites) (vagy megfelelő fájl menedzserben rá kattintva)
 
  4) Ha hangfájlokat is le akarunk játszani, akkor szükség van a "libportaudio2" és az "unzip" csomagokra is, melyek általában alapból nincsenek installálva. Ezeket az operációs rendszernek megfelelően kell letölteni és installálni
  
@@ -27,31 +27,31 @@
 
 Megjegyzések:
 
- – a csomag LinuxMint 21.2 Cinnamon (64-bit) és LMDE (LinuxMintDebianEdition) 6 Cinnamon (32-bit) alatt lettek kipróbálva
+ – a csomag LinuxMint 22.2 Cinnamon (64-bit) és LMDE (LinuxMintDebianEdition) 6 Cinnamon (32/64-bit) alatt lettek kipróbálva
  – a hangrendszerrel kapcsolatos üzenetek (ALSA lib..., Cannot connect to server..., Jack...) csak információk, így figyelmen kívül hagyhatóak!
  – ismert problémák: a külső (vezérlő) hardware-k működése nem lett kipróbálva, Diatár főablak minimalizálása
 
 
 
-[EN]    Additional information for the Linux .tar.gz distribution of Diatar ver. 12.7
+[EN]    Additional information for the Linux .tar.gz distribution of Diatar ver. 13.1
         -----------------------------------------------------------------------------
 
 General:
 
  – the package contains the Diatar and the DiaEditor programs together with the ready made slides of all songbooks, except the matching sound files
- – these programs are compatible whith their Windows and Android variants i.e. they are able to collaborate with them in network installation
- – the programs theoretically can be used in lots of Intel based Linux distributions too
+ – these programs are compatible whith their Windows, Android and Raspberry Pi OS variants i.e. they are able to collaborate with them in network installation
+ – the programs theoretically can be used in lots of Intel and ARM based Linux distributions too
  – this distribution technique is for copying all files of Diatar into a directory of a generic Linux system (without installing the programs)
  – the downloaded file has to be unpacked in a directory dedicated to Diatar and the programs can be run also from here
  – it can be used also in a Debian based system but in that case the usage of .deb package is recommended which also embeds the programs into their environment
 
 Usage:  (It doesn't require any privileges but only the installing Linux user will be able to run the programs)
 
- 1) unpacking:                      tar -zxvf diatar_12.7.0.x86_64.tar.gz	(a 64 bit) (or by clicking on it in a suitable file manager)
+ 1) verifying the downloaded file: sha256sum -b diatar_13.1.0_x86_64.tar.gz (the generated checksum must be the same as the corresponding one in sha256sums.txt)
 
- 2) enabling the program to run:    chmod 744 diatar64   (a 64 bit) (or by clicking on it in a suitable file manager)
+ 2) unpacking:                      tar -zxvf diatar_13.1.0_x86_64.tar.gz	(a 64 bit) (or by clicking on it in a suitable file manager)
 
- 3) verifying the downloaded package: sha256sum -b diatar_12.7.1-1_amd64.deb (the generated checksum must be the same as the corresponding one in sha256sums.txt)
+ 3) enabling the program to run:    chmod 744 diatar64   (a 64 bit) (or by clicking on it in a suitable file manager)
 
  4) if we want to play also the sound files we shall need the "libportaudio2" and "unzip" packages, which are typically not installed by default. These have to be downloaded and installed according to the operating system.
 
@@ -62,7 +62,7 @@ Usage:  (It doesn't require any privileges but only the installing Linux user wi
 
 Notes:
 
- – the package is tested under LinuxMint 21.2 Cinnamon (64-bit) and LMDE (LinuxMintDebianEdition) 6 Cinnamon (32-bit)
+ – the package is tested under LinuxMint 22.2 Cinnamon (64-bit) and LMDE (LinuxMintDebianEdition) 6 Cinnamon (32/64-bit)
  – sound system related messages (ALSA lib..., Cannot connect to server..., Jack...) are only information, so they can be ignored!
  – known problems: the external control hardware has not been tested, the minimalization of Diatár's main window
 

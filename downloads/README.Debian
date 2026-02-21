@@ -1,7 +1,7 @@
 diatar for Debian (Ubuntu, LinuxMint, Raspberry Pi OS, ...)
 -----------------------------
 
-[HU]    Kiegészítő információk a Diatár 12.7-es verziójának Linux (.deb) csomagjaihoz 
+[HU]    Kiegészítő információk a Diatár 13.1-es verziójának Linux (.deb) csomagjaihoz 
         -----------------------------------------------------------------------------
 
 Általános:
@@ -14,21 +14,21 @@ diatar for Debian (Ubuntu, LinuxMint, Raspberry Pi OS, ...)
 
 A program Telepítése/Eltávolítása:  (A program globálisan, minden Linux felhasználó számára települ)
 
+	Ellenőrizzük a letöltött csomag sértetlenségét, eredetiségét:
+		- töltsük le a sha256sums.txt
+		- sha256sum -b diatar_13.1.0-1_amd64.deb	(a letöltött .deb fájl checksum-jának generálása)
+		- ellenőrizzük, hogy az így generált ellenőrző összeg megegyezik-e a sha256sums.txt-ben találhatóval!
+    
     A letöltött csomagot szuper-user (root) jogosultságokkal lehet telepíteni ill. eltávolítani (privilegizált felhasználó alatt):
 
     a) GUI-s módszer (ez az ajájlott és kényelmes módszer):
-        - fájl-menedzserben a letöltött csomag ikonjára (dupla) kattintva, majd a megjelenő ablakban értelemszerűen (pl. GDebi-vel)
-        - (Synaptic) csomag menedzserrel		(teljes eltávolítás: beleértve az összes általunk készített fájlt, pl. *.dia)
+        - fájl-menedzserben a letöltött csomag ikonjára (dupla) kattintva, majd a megjelenő ablakban értelemszerűen (pl. GDebi-vel, Captain-nal)
+        - (Synaptic, Szoftverkezelő) csomag menedzserrel		(teljes eltávolítás: beleértve az összes általunk készített fájlt, pl. *.dia)
 
     b) Terminálban:
-        - sudo dpkg --install <elérési-útvonal>/diatar_12.7.1-1_amd64.deb   (a 64 bites telepítése)
+        - sudo dpkg --install <elérési-útvonal>/diatar_13.1.0-1_amd64.deb   (a 64 bites telepítése)
         - sudo dpkg --purge diatar          (teljes eltávolítás: beleértve az összes általunk készített fájlt, pl. *.dia)
 
-	Ellenőrizzük a letöltött csomag sértetlenségét, eredetiségét:
-		- töltsük le a sha256sums.txt
-		- sha256sum -b diatar_12.7.1-1_amd64.deb	(a letöltött .deb fájl checksum-jának generálása)
-		- ellenőrizzük, hogy az így generált ellenőrző összeg megegyezik-e a sha256sums.txt-ben találhatóval!
-    
 Zene kíséretek (hangfájlok) lejátszása:
 
     A hangfájlok lejátszásához és kicsomagolásához szükség van a "libportaudio2" és az "unzip" csomagokra, melyek általában nincsenek feltelepítve.
@@ -65,13 +65,13 @@ Egyebek:
 	b) csak az aktuális Linux felhasználó számára:   1) mkdir -p ~/.config/autostart 2) cp -t ~/.config/autostart /opt/diatar/inst/polyjoe-diatar.desktop
  – a telepítés a diatar közös elérésű adatainak egy /var/opt/diatar alatti könyvtár struktúrát hoz létre. (Ez a hely használandó a mindenki számára hozzáférhető adatok számára, míg a saját fájljainkat a HOME könyvtárunkban tarthatjuk elkülönítve.)
  – a dia sorok központi tárolására való /var/opt/diatar/dia közös elérésű könyvtár mindenki számára írható, de módosítani csak a fájlok tulajdonosai tudnak benne
- – a csomagok LinuxMint 21.2 Cinnamon (64-bit) és LMDE (LinuxMintDebianEdition) 6 Cinnamon (32-bit) alatt lettek kipróbálva
+ – a csomagok LinuxMint 22.2 Cinnamon (64-bit) és LMDE (LinuxMintDebianEdition) 6 Cinnamon (32/64-bit) alatt lettek kipróbálva
  – a hangrendszerrel kapcsolatos üzenetek (ALSA lib..., Cannot connect to server..., Jack...) csak információk, így figyelmen kívül hagyhatóak!
  – ismert problémák: a külső (vezérlő) hardware-k működése nem lett kipróbálva; a Diatár főablakának minimalizálása; egy-gépes üzemmódban egyes disztribúcióknál és külső monitor típusoknál nem működik a második képernyőre való vetítés; a Diatár GUI-ba való beágyazottsága nagyon környezet függő; a Diatár az Ubuntu 20.04-re NEM telepíthető
 
 
 
-[En]    Additional information for Linux (.deb) package of Diatar ver. 12.7
+[En]    Additional information for Linux (.deb) package of Diatar ver. 13.1
         -------------------------------------------------------------------
 
 General:
@@ -84,20 +84,20 @@ General:
 
 Installation/Removal of package:  (The program is installing globally for all Linux users)
 
+	Please verify the integrity of downloaded file:
+		- download sha256sums.txt
+		- sha256sum -b diatar_13.1.0-1_amd64.deb	(generate the checksum of .deb)
+		- compare the generated checksum with the corresponding one in sha256sums.txt
+
     The downloaded package can be installed or removed as a super-user (root) under privileged user account:
 
     a) on the GUI (this is the recomended, comfortable mode):
-        - double click on package's icon in file manager, than follow the dialogue (eg. with GDebi)
-        - with (Synaptic) package manager		(total removal: including all the files you have created, eg. *.dia)
+        - double click on package's icon in file manager, than follow the dialogue (eg. with GDebi, Captain)
+        - with (Synaptic, Software manager) package manager		(total removal: including all the files you have created, eg. *.dia)
 
     b) in terminal:
-        - sudo dpkg --install <path-to-package>/diatar_12.7.1-1_amd64.deb   (installing the 64 bit version)
+        - sudo dpkg --install <path-to-package>/diatar_13.1.0-1_amd64.deb   (installing the 64 bit version)
         - sudo dpkg --purge diatar          (total removal: including all the files you have created, eg. *.dia)
-
-	Please verify the integrity of downloaded file:
-		- download sha256sums.txt
-		- sha256sum -b diatar_12.7.1-1_amd64.deb	(generate the checksum of .deb)
-		- compare the generated checksum with the corresponding one in sha256sums.txt
 
 Playing of music (sound) files:
 
@@ -135,7 +135,7 @@ Notes:
     b) only for the actual Linux user:   1) mkdir -p ~/.config/autostart 2) cp -t ~/.config/autostart /opt/diatar/inst/polyjoe-diatar.desktop
  – the installation creates a sub-directory system under /var/opt/diatar for the commonly accessible data of diatar (This location is intended to store data for everybody's usage, while your HOME directory is for your private files.)
  – the /var/opt/diatar/dia directory - intended for central storage place of dia slides - is writable for everyone, but only the file owners can modify them
- – the packages were tested on LinuxMint 21.2 Cinnamon (64-bit) and LMDE (LinuxMintDebianEdition) 6 Cinnamon (32-bit)
+ – the packages were tested on LinuxMint 22.2 Cinnamon (64-bit) and LMDE (LinuxMintDebianEdition) 6 Cinnamon (32/64-bit)
  – sound system related messages (ALSA lib..., Cannot connect to server..., Jack...) are only information, so they can be ignored!
  – known problems: the external control hardware has not been tested; the minimalization of Diatar's main window; in one-machine mode on some distributions with some type of external monitors projecting to the second monitor does not work; the embedding of Diatar into the GUI is strongly depends on the environment; Diatar can NOT be installed on Ubuntu 20.04
 
@@ -146,5 +146,6 @@ Notes:
     /var/opt/diatar/dtx/_javitasok_.dtx       - az énekes könyvek szövegeinek helyi változatai / local versions of song-book texts'
     /var/opt/diatar/dia/*.dia                 - közös elérésű dia-sor fájlok / commonly accessible dia-list files
     /var/opt/diatar/dtx/xxx/yyy.mp3           - az 'xxx' énekeskönyv hang fájljai / the sound files of song book 'xxx'
+    /var/opt/diatar/breviar/*.zip             - a letöltött éves zsolozsma fájlok tömörítve / the downloaded yearly breviar files
     /var/opt/diatar/*.pdf                     - linkek a felhasználói kézikönyvekre / links to the user manuals
 

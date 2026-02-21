@@ -42,9 +42,9 @@ class ACCORD {
 	ahBass;			// bass note,    -"-
 	bBassES;		// lowered bass
 	bBassIS;		// raised bass
-	bMoll;			// true = moll
-	nModIdx;		// modifier index
-	nWidth;			// draw width
+	bMoll;			// true = moll (minor chord)
+	nModIdx;		// modifier index (in AkkordModArray)
+	nWidth;			// draw width (px)
 	nW1=0; nW2; nWmod; nWbass;   //internal widths
 
 	constructor() {
@@ -145,6 +145,7 @@ class ACCORD {
 		return 0;
 	}
 
+	//synthesize chord note string from parts
 	NoteStr(ah,bis,bes,bmoll) {
 		let str="";
 		switch (ah) {
@@ -163,6 +164,7 @@ class ACCORD {
 		return str;
 	}
 	
+	//setup nWidth (full), nW1 (note start), nW2 (note rest), nWbass (bass part), nWmod (modifier)
 	calcWidth(env) {
 		if (this.ahMain==ahNONE) {
 			this.nWidth=0;
@@ -181,7 +183,8 @@ class ACCORD {
 		}
 		this.nWidth=this.nW1+this.nW2+this.nWmod+this.nWbass;
 	}
-	
+
+	//draw chord
 	paint(x,y,env) {
 		if (this.ahMain==ahNONE) return;
 		let str = this.NoteStr(this.ahMain,this.bMainIS,this.bMainES,this.bMoll);

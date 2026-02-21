@@ -170,6 +170,7 @@
 	} else if ($pageid==='dia') {
 		echo GetDiaName($file,$ienek,$ivers);
 		echo '&nbsp;&nbsp;&nbsp;&nbsp;<label id="UseChordCB"><input type="checkbox" id="UseChord" name="UseChord" checked>Akkordok</label>';
+		echo '&nbsp;&nbsp;&nbsp;&nbsp;<label id="UseKottaCB"><input type="checkbox" id="UseKotta" name="UseKotta" checked>Kotta</label>';
 	} else {
 		echo 'Összes dia listája a kezdősor szerint:';
 	}
@@ -520,6 +521,7 @@ function Dia($fname,$ie,$iv) {
 	fclose($f);
 	
 	echo 'if (!paintdia.getHasAccord()) document.getElementById("UseChordCB").style.display="none";'."\n";
+	echo 'if (!paintdia.getHasKotta()) document.getElementById("UseKottaCB").style.display="none";'."\n";
 
 	echo 'window.addEventListener("resize", resizeCanvas, false);'."\n";
 	echo 'function resizeCanvas() {'."\n";
@@ -533,6 +535,13 @@ function Dia($fname,$ie,$iv) {
 	echo '}'."\n";
 	echo 'window.addEventListener("DOMContentLoaded", () => {'."\n";
     echo '    document.getElementById("UseChord").addEventListener("click", clickUseChord);'."\n";
+	echo '});'."\n";
+
+	echo 'function clickUseKotta(event) {'."\n";
+	echo '    paintdia.setDrawKotta(event.target.checked);'."\n";
+	echo '}'."\n";
+	echo 'window.addEventListener("DOMContentLoaded", () => {'."\n";
+    echo '    document.getElementById("UseKotta").addEventListener("click", clickUseKotta);'."\n";
 	echo '});'."\n";
 	
 	echo 'resizeCanvas();'."\n";

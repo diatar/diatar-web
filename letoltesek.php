@@ -88,7 +88,7 @@
                 echo "ZENEKÍSÉRETEK";
                 break;
 			case "android":
-				echo "ANDROID VERZIÓ";
+				echo "ANDROID VÁLTOZAT";
 				break;
             case "others":
                 echo "MINDEN MÁS";

@@ -1,6 +1,6 @@
 <div class="text expanded">
 	<p>
-		12.7 verzió – A csomagok tartalmazzák a vetítőprogramot - teljes körű leírással,
+		13.1 verzió – A csomagok tartalmazzák a vetítőprogramot - teljes körű leírással,
 		az énektárak szerkesztését végző programot, és ennek leírását,
 		valamint az eddig elkészült énektárakat (.dtx fájlok)
 	</p>
@@ -58,7 +58,7 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="./downloads/diatar_install-v12.7.win.exe">diatar_install.exe</a>
+			<a href="./downloads/diatar_install-v13.1.win.exe">diatar_install.exe</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">
@@ -75,7 +75,7 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_ODD">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="./downloads/diatar_12.7.2_win.zip">win.zip</a>
+			<a href="./downloads/diatar_13.1.3_win.zip">win.zip</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">
@@ -83,7 +83,8 @@
 			<p>
 				Hagyományos tömörített csomag. Csak ki kell tömöríteni egy könyvtárba és máris használható.
 				Ha printer-portos távkapcsoló-illesztőre van szükség, első alkalommal írási jog kell a
-				C:\WINDOWS\SYSTEM32 könyvtárhoz, ahova egy service rutint telepít (ld. a használati útmutatóban)
+				C:\WINDOWS\SYSTEM32 könyvtárhoz, ahova egy service rutint telepít (ld. a használati útmutatóban).<br/>
+				Zsolozsmák letöltéséhez az openssl32 vagy openssl64 könyvtárban levő két DLLt a program mellé kell másolni (attól függ, a 32bites vagy 64bites programváltozatot használja-e).
 			</p>
 		</div>
 	</div>
@@ -100,10 +101,10 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2-2_i386.deb');?>">i386.deb</a>
+			<a href="./downloads/diatar_13.1.3-1_i386.deb">i386.deb</a>
 		</div>
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2-2_amd64.deb');?>">amd64.deb</a>
+			<a href="./downloads/diatar_13.1.3-1_amd64.deb">amd64.deb</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">
@@ -119,10 +120,10 @@
 <div class="RIGHT_TABLE TABLE_ENTRY_ODD">
 	<div class="RIGHT_TABLE_LEFT">
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2_i386.tar.gz');?>">i386.tar.gz</a>
+			<a href="./downloads/diatar-linux_13.1.3_i386.tar.gz" download>i386.tar.gz</a>
 		</div>
 		<div class="download_link expanded">
-			<a href="letoltes.php?letoltes=<?php echo urlencode('./downloads/diatar_12.7.2_x86_64.tar.gz');?>">x86_64.tar.gz</a>
+			<a href="./downloads/diatar-linux_13.1.3_x86_64.tar.gz" download>x86_64.tar.gz</a>
 		</div>
 	</div>
 	<div class="RIGHT_TABLE_RIGHT">
@@ -135,6 +136,50 @@
 				akkor az <i>ioroutine</i> fájlnak <i>setuid root</i> jogot kell adni
 				(ld. a használati útmutatóban).
 				További részletek a <a href="./downloads/readmereader.php?file=2" target="_blank">README.LinuxTarGz</a> fájlban.
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- Raspberry Pi valtozatok -->
+<br/><br/>
+<div class="iconed_title rpi_icon">
+	Raspberry Pi változatok
+</div>
+<div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
+	<div class="RIGHT_TABLE_LEFT">
+		<div class="download_link expanded">
+			<a href="./downloads/diatar_13.1.3-1_armhf.deb">armhf.deb</a>
+		</div>
+		<div class="download_link expanded">
+			<a href="./downloads/diatar_13.1.3-1_arm64.deb">arm64.deb</a>
+		</div>
+	</div>
+	<div class="RIGHT_TABLE_RIGHT">
+		<div class="TABLE_TEXT expanded">
+			<p>
+				Sikerült megoldani a Raspberry PI telepítő készítését is, így ez is teljes értékűen használható.
+				Mivel a "Raspberry Pi OS" (korábban Raspbian néven) valójában egy Linux Debian disztribúció,
+				mindenben a Linux szerint települ és működik, részleteket lásd fentebb, a Linux-nál.
+			</p>
+		</div>
+	</div>
+</div>
+<div class="RIGHT_TABLE TABLE_ENTRY_ODD">
+	<div class="RIGHT_TABLE_LEFT">
+		<div class="download_link expanded">
+			<a href="./downloads/diatar-rpios_13.1.3_armhf.tar.gz" download>32bit_armhf.tar.gz</a>
+		</div>
+		<div class="download_link expanded">
+			<a href="./downloads/diatar-rpios_13.1.3_arm64.tar.gz" download>64bit_arm64.tar.gz</a>
+		</div>
+	</div>
+	<div class="RIGHT_TABLE_RIGHT">
+		<div class="TABLE_TEXT expanded">
+			<p>
+				Csomagkezelő nélkül használható források, az rdiatar32/64 ill. rdiaeditor32/64 a futtatandó binárisok.
+				Az eltérő architektúra miatt a printer-port kiegészítés itt nem használható,
+				de minden másban a Linux szekcióban leírtak szerint működik.
 			</p>
 		</div>
 	</div>
@@ -154,23 +199,6 @@
 			(<a href="?page=letoltesek&subpage=android">lásd külön lapon: Letöltés/Android</a>),
 			okostelefonról vagy tabletről való vezérléshez,
 			okostévén (vagy tévéokosító eszközön) való kivetítésre.
-		</p>
-	</div>
-</div>
-
-<!-- Raspberry Pi valtozatok -->
-<br/><br/>
-<div class="iconed_title rpi_icon">
-	Raspberry Pi változat
-</div>
-<div class="RIGHT_TABLE TABLE_ENTRY_EVEN">
-	<div class="text expanded">
-		 <p>
-			Balogh Attila 2019-ben készített egy Raspberry Pi futtatható változatot.
-			Csak a <a href="./downloads/diatar_rpi">bináris image</a>-t kaptuk meg.
-			A forráskódon csak minimális változtatást kellett végrehajtani.
-			Ez a változat a 2019-es v12.3 verzióból készült, sajnos azóta nincs frissítés,
-			így a legújabb fejlesztéseket nem tartalmazza.
 		</p>
 	</div>
 </div>

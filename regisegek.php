@@ -6,6 +6,258 @@
             <b>Korábbi újdonságok</b>
         </div>
 
+        <!-- 27 -->
+		<br/>
+        <div>
+          <center>
+            <b>2022. december 31. <i>v12.6 Éneklisták a weblapon</i></b>
+          </center>
+		  <ul class="dotted">
+			<li>
+				A weblapra egy új fő menüpont került 'Énektárak' néven.
+				Itt az összes énektár hierarchikus listája, valamint a versek kezdősora szerinti lista,
+				és egy teljes szószedet található. Minden listából maga a versszak szövege is megjeleníthető.
+			</li>
+			<li>
+				A Windows/Linux változatban ezentúl minden dialista fülhöz lehet automatikus betöltést rendelni
+				(eddig 9-hez lehetett).
+			</li>
+			<li>
+				Ugyanitt jelezték, hogy immár kevés a négy IP cím, mostantól 6 vetítőhöz tud kapcsolódni a szoftver.
+			</li>
+			<li>
+				A fő képernyőn alul volt egy háttérkép ki/be kapcsoló gomb, ez egy ideje háromféle funkciót is elláthat:
+				a háttérkép mellett (helyett) a kották, illetve hanglejátszás is kikapcsolható.
+				Ezek a funkciók billentyűzetről, külső kapcsolóról is elérhetővé váltak.
+			</li>
+			<li>
+				Szükségessé vált Androidon is a vetítési margók beállítása. Sokszor azonban logikusabb ezt
+				nem a vezérlő, hanem direktben a vetítő gépről megtenni. Erre egy új kapcsoló szolgál,
+				elérhető mind a Win/Linux, mint Android változatban.
+			</li>
+			<li>
+				Az új Android program AAB (bundle) formában érhető el a Google Play áruházban,
+				ez mostantól ott kötelező elvárás. Ugyanakkor a weblapról végszükségben közvetlenül letölthető az APK.
+			</li>
+			<li>
+				A friss Android változat DiaVetitő programjában a "faketouch" elvárást kikapcsoltuk.
+				Ez azt jelenti, hogy olyan készülékre is telepíthető, ahol még a legegyszerűbb érintési lehetőség sincs.
+			</li>
+			<li>
+				Tovább bővültek és javultak a SzVU!, ÉE, Graduale, Imák stb. szövegei, valamint kottái,
+				Sajó József jóvoltából.
+			</li>
+			<li>
+				Egy magánkollekció a "Somogyi gyűjtemény", erről a címről:
+				<a href="https://somogyigyujtemeny.pallcsalad.hu/" target="_blank">https://somogyigyujtemeny.pallcsalad.hu/</a>
+				érhető el. Busnyák Eriknek köszönjük a bemásolást.
+			</li>
+			<li>
+				Megszereztük a DUR és az Unitárius énekeskönyv hanganyagát, mostantól ezek is elérhetőek
+				(hála Busnyák Erik segítségéért!)
+			</li>
+			<li>
+				Az új református énekeskönyv anyagának lektorálását Padányi Ádámnak köszönjük, immár teljes a kötet.
+			</li>
+			<li>
+				Az eddig "Erdélyi református énekfüzetek" néven futó kötet három énekfüzetet tartalmaz.
+				Elkészült ezek begépelése, valamint zenével való kiegészítése (köszönet Busnyák Eriknek!).
+				Mostantól "Dunamelléki" néven található meg.
+			</li>
+		  </ul>
+		</div>
+
+        <!-- 26 -->
+		<br/>
+        <div>
+          <center>
+            <b>2022. február 27. <i>v12.5 javítás és új kötetek</i></b>
+          </center>
+		  <ul class="dotted">
+			<li>
+				A programon a decemberi frissítés óta csak egy gyors módosítás történt:
+				<a href="https://diatar.eu/forum/viewtopic.php?p=543#p543">A fórumon</a> jelzett hiba szerint
+				az új triola és pentola ritmusok összekötője épp fedésbe kerülhetett a kottavonalakkal.
+			</li>
+			<li>
+				Itt is jelezzük, hogy az Android változat fejlesztését sikerült áttenni Android Studio alá,
+				így immár a 6.0 verzió is elérhető a Google Play áruházból.
+			</li>
+			<li>
+				László Rezső atyáék már korábban is készítettek zenei anyagot (amit közzétettünk a Dicsérjétek az Urat énekeskönyvhöz),
+				most egy bővebb anyagnak vannak a végén.
+				A céljuk az volt, hogy minél egyszerűbben használható kész miséket rakjanak össze papoknak, akiknek nincs kántor lehetőségük.
+				A terjedelmes, több miseváltozatot is tartalmazó anyag megnézhető, letölthető egy
+				<a href="https://drive.google.com/drive/folders/1OTadkXLvhjYUAwoyDcw1ryoU7xbxQwHw" target=blank>Google-drive linkről</a>.
+				A tervek szerint az anyag a jövőben tovább fog bővülni.
+				Hálásan adjuk közre.
+			</li>
+			<li>
+				Ezúttal a hétköznapi zsoltárokat ellenőrizte Ipacs Bence atya, összevetve az Olvasmányoskönyvvel.
+				Sok kiegészítés és javítás készült, köszönjük neki, és hamarosan az újak kottáit is pótoljuk majd.
+			</li>
+			<li>
+				2021.09.12. a Nemzetközi Eucharisztikus Kongresszus zárómiséje volt,
+				erre az alkalomra egy komplett füzet készült az énekekkel, imákkal.
+				Nagyon köszönjük Soós Jánosnak, hogy begépelt hat olyat, amely tovább él, és más kötetekből nem érhető el.
+				Új kötetet készített ezekből a "Nemzetiségi, helyi" énekek csoportjába.
+			</li>
+			<li>
+				A tavalyi év végére készült el a megújult református énekeskönyv, az anyaga a
+				<a href="https://enekeskonyv.reformatus.hu" target =blank>https://enekeskonyv.reformatus.hu</a>
+				címen elérhető. Egy gyors bemásolás után máris megosztjuk, hogy a közösségek mielőbb használhassák.
+			</li>
+			<li>
+				Új menüpontként szerepel az "Adatvédelem" a weboldalon.
+				Az ottani jogi szövegre elsősorban az Androidos változat Play áruházban publikálásához volt szükség,
+				de vonatkozik az összes PC alapú rendszerre is,
+				és a jövőben szeretnénk kiegészíteni a weblap GDPR információival is.
+			</li>
+		  </ul>
+		</div>
+
+        <!-- 25 -->
+		<br/>
+        <div>
+          <center>
+            <b>2021. december 29. <i>Diatár v12.5 - arányosítható kotta és akkord, triola</i></b>
+          </center>
+		  <ul class="dotted">
+			<li>
+				A kiírt szöveg és kotta, illetve akkordfeliratok mérete egymáshoz képest fix volt eddig.
+				Mostantól 10%..200% között állítható az arány, kotta és akkord esetén is külön-külön.
+			</li>
+			<li>
+				Speciális kérés volt az áttetsző háttér lehetősége.
+				A pandémia idején népszerűvé lett online miseközvetítéseknél lehet segítség, hogy a videora rátehető a vetítés.
+			</li>
+			<li>
+				A kottázásban új lehetőség a triola, illetve kvintola beírása. Ez nem új ritmus,
+				hanem a kötőívek és gerendák mintájára egy összefogó kapocs a hangok felett/alatt.
+			</li>
+			<li>
+				Immár az Android változat is megjeleníti a kötőíveket - a szövegben és a kottában is.
+			</li>
+			<li>
+				Szokás szerint számos apró javítást is tartalmaz az új verzió.
+				Sajnos pár napja derült ki egy ritkán előjövő hiba, amit már nem sikerült javítani:
+				Linuxban, ha nagyobb méretű vetítő monitor van az elsődleges képernyő mellett,
+				és alul fix tálca, akkor ez lehatárolja a vetített képet. A megoldás az,
+				ha a vetítő képernyőt máshová helyezzük a virtuális asztalon, vagy a tálcát eltűnővé tesszük.
+			</li>
+			<li>
+				Ismét kaptunk néhány gyönyörű kottát Sajó Józseftől: a Graduale, a Zsoltárok és az ÉE kíséretei bővültek;
+				a Graduale, ÉE és a latin imák szövege is kiegészült, javításra került, illetve további dallamok kerültek be.
+			</li>
+			<li>
+				Ipacs Bence atya a SzVU! kötetet kiegészítette a Hozsanna 310-452 énekekkel,
+				valamint az Ordináriumok kötetét számos válasszal, bűnbánati formulával, lucernárium szövegekkel, stb; köszönjük!
+			</li>
+			<li>
+				A "Harangszó" (korábban Kottás harangszó - szlovákiai magyar énekeskönyv) teljes rendbetételét,
+				kiegészítését Busnyák Erik vállalta és végezte el, igazán alaposan és precízen!
+			</li>
+			<li>
+				A gyászmisék zsoltárait Ipacs Bencétől kaptuk, és rögtön elkészült a dallamkottákkal való feltöltése is Soós János által.
+				Mindkettejüknek köszönet!
+			</li>
+			<li>
+				Új kötet a votív misék zsoltárválaszai is, szintén Soós Jánosbnak köszönjük az adaptációt és kottázást.
+			</li>
+			<li>
+				Elkészült az "Énekeljetek az Úrnak" kötete, folyamatban van a Baka-féle "Erdélyegyházmegyei énekeskönyv" beírása,
+				a Zsolozsma kötete folyamatosan bővül a teljes nagy Zsolozsmáskönyv (illetve az online zsolozsmák) alapján.
+			</li>
+		  </ul>
+		</div>
+
+        <!-- 24 -->
+		<br/>
+        <div>
+          <center>
+            <b>2021. január 31. <i>Baja Barátok ismertetője</i></b>
+          </center>
+		  <ul class="dotted">
+		  Nemrégen készült el a Baján, a Páduai Szent Antal plébániatemplomban a vetítési rendszer.
+		  A mostani helyzetben gyakorivá váltak az interneten közvetített szertartások,
+		  és itt egy ilyen összeállítás része lett a Diatár: a közvetítésbe bekeverhető az énekszöveg,
+		  méghozzá átlátszó háttérrel a stream sarkába helyezve. A megoldás izgalmas voltára tekintettel
+		  soron kívül közzétesszük a vetített-képes előadás formájában kapott leírást.
+		  <a href="?page=ismerteto&oldal=BajaBaratok/p1.html&magassag=600">A leírás az Ismertetők menüben található.</a>
+		  A szerző (Vinkó Zoli) szívesen segít, válaszol - email és fórum elérhetősége az ismertetőben van.
+		  Köszönjük neki!!!
+		  </ul>
+		</div>
+
+        <!-- 23 -->
+		<br/>
+        <div>
+          <center>
+            <b>2020. december 29. <i>Diatár v12.4 - preferált kötetek, kotta Androidon</i></b>
+          </center>
+          <ul class="dotted">
+			<li>
+				Számos apró javítás mellett az idei évben elkészült a kottavetítés az androidos változatokba.
+				Kötőíveket még nem tud, de azon kívül minden PCs kottaelemet megjelenít.
+			</li>
+			<li>
+				Olyan örvendetesen szaporodnak az énekes kötetek (59-nél tartunk!),
+				hogy tavaly célszerűnek látszott a program "Teljes listák" felsorolását hierarchikusra alakítani.
+				Idén pedig kiegészült a lista egy legelső, "kiemeltek" bekezdéssel,
+				ahova a legfontosabbnak tartott, preferált diatárak kerülhetnek be (ld. Beállítások/Diatárak alpont).
+			</li>
+			<li>
+				Többek kérése volt (legutóbb a fórumon is megjelent) sok ének és versszak bemásolásához
+				egyszerre beillesztés lehetősége. Most ezt a DiaEditor vágólapról képes már megtenni.
+				Némi egyszerű előformázásra van csak szükség, ami jelöli az ének (>) és a versszak (/) nevét.
+			</li>
+			<li>
+				Egy negatívumról is illik beszámolni: a program ablakának "minimalizálás" funkciója nem működik hibátlanul.
+				Mivel nagyon eltérő Windows és Linux rendszereken is működni kellene,
+				itt a hiba keresése és javítása még folyamatban van.
+			</li>
+			<li>
+				Nagyon sok segítséget ajánlott fel Busnyák Erik, aki Juhász László nagybátyja segítségével több kötet
+				begépelését, kiegészítését, javítását végzi. Ez úton is köszönjük a munkáját (munkájukat)!
+			</li>
+			<li>
+				Lelki Gyöngyök lektorálása, kiegészítése elkészült (Busnyák Erik végezte a 10.kiadás, 1937. alapján)
+			</li>
+			<li>
+				Kottás Harangszó (újabb neve tudtommal csak Harangszó) 5. kiadása sokkal bővebb, mint az eredeti.
+				Busnyák Erik az összes fellelhető szöveget begépelte, kiegészítette.
+			</li>
+			<li>
+				"Hitünk énekei" - a Hetednapi Adventista Egyház énekei elkészült, a kötet teljes, de nincs javítva.
+				Örömmel vennénk lektorálást!
+			</li>
+			<li>
+				Már beszámoltunk a DUR (Dicsőség az Úrnak!) kötetről, néhány további bővítéssel és javítással most teljes.
+			</li>
+			<li>
+				Az Éneklő Egyház kötete kiegészült sok-sok kottával:
+				a hagyományos népénekeken kívül lényegében minden kottás lett.
+			</li>
+			<li>
+				A latin imák kibővültek a latin mise papi szövegeivel.
+			</li>
+			<li>
+				A Kárpátaljai Református Ifjúsági Szervezet énekeskönyve (KRISZ) Rieth Kati által lektorálva - köszönjük!
+			</li>
+			<li>
+				Baka János hatalmas népénekgyűjteménye "Erdélyegyházmegyei Énekeskönyv" címmel (Sándory Mihály könyvnyomdája, Gyergyószentmiklós, 1914.)
+				feltehetőleg egyike volt a ma használatos SzVU! kötet elődeinek, Harmath Artúr és Sík Sándor forrásmunkáinak.
+				Akit érdekel: rengeteg ma használatos népénekünk régi szöveg- és énekformája található meg benne.
+				Az Országos Széchenyi könyvtár tette digitálisan publikussá. A begépelés folyamatban van.
+			</li>
+			<li>
+				Busnyák Erik továbbította az "Énekeljetek az Úrnak" nevű kötet elektronikus változatát
+				(Felnőtt, gyermek és egyéb énekek; 2000.IX.08. Szalay Mihály r.k. kántor, Brezda).
+				Félkész, begépelése folyamatban van.
+			</li>
+		  </ul>
+		</div>
+
         <!-- 22 -->
 		<br/>
         <div>
@@ -70,7 +322,7 @@
 				Az ifjúsági és gitáros énekeket összegyűjtő kötet most jelent meg, az énekek szövege máris letölthető
 				a Letöltések/Énektárak menüpontból az
 				"<a href="?page=letoltesek&subpage=enektarak#Grp4">Ifjúsági énekek</a>" résznél.
-				(link: <a href="letoltes.php?letoltes=./downloads/enektarak/dur.dtx">DÚR</a>)
+				(link: <a href="./downloads/enektarak/dur.dtx" download>DÚR</a>)
 				A fájlt a többi DTX közé kell másolni és máris használható.
 			</li>
 		  </ul>

@@ -14,6 +14,7 @@
 			continue;
 		}
 		$longname=$fname;
+		$shortname=$fname;
 		$grpname="";
 		$order="0";
 		while (!feof($f)) {
@@ -22,13 +23,14 @@
 				$ch=$txt[0];
 				if ($ch==='>' || $ch==='/') break;
 				else if ($ch==='N') $longname=substr($txt,1);
+				else if ($ch==='R') $shortname=substr($txt,1);
 				else if ($ch==='C') $grpname=substr($txt,1);
 				else if ($ch==='S') $order=substr($txt,1);
 			}
 		}
 		fclose($f);
 		echo $fname .','. filesize($fname) .','. date('YmdHis',filemtime($fname))
-			.',"'. $grpname .'",'. $order .',"'. $longname .'"'."\n";
+			.',"'. $grpname .'",'. $order .',"'. $longname .'","'. $shortname .'"'. "\n";
 	}
 
 ?>

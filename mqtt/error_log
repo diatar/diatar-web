@@ -1,0 +1,3 @@
+[27-Jul-2025 22:27:09 Europe/Budapest] PHP Warning:  fsockopen(): unable to connect to test.mosquitto.org:8080 (Cannot assign requested address) in /home/orgonam/public_html/diatar.eu/mqtt/tcptest.php on line 2
+[27-Jul-2025 22:29:11 Europe/Budapest] PHP Warning:  fsockopen(): unable to connect to test.mosquitto.org:8080 (Cannot assign requested address) in /home/orgonam/public_html/diatar.eu/mqtt/tcptest.php on line 2
+[27-Jul-2025 22:29:28 Europe/Budapest] PHP Warning:  fsockopen(): unable to connect to test.mosquitto.org:8081 (Cannot assign requested address) in /home/orgonam/public_html/diatar.eu/mqtt/tcptest.php on line 2

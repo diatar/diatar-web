@@ -1,6 +1,6 @@
 <div class="text expanded">
 	<p>
-		12.7 verzió – Csak a programok külön (régi verzió frissítésére használható)
+		13.0 verzió – Csak a programok külön (régi verzió frissítésére használható)
 	</p>
 
 	<p>
@@ -20,6 +20,12 @@
 <div class="iconed_title linux_icon">
 	<div class="text12">
 		<a href="./downloads/diatar-program-linux.tar.gz">32/64 bites Linux-okra</a>
+	</div>
+</div>
+
+<div class="iconed_title rpi_icon">
+	<div class="text12">
+		<a href="./downloads/diatar-program-rpios.tar.gz">32/64 bites RPIOS-re</a>
 	</div>
 </div>
 		
